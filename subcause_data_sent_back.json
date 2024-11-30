@@ -1,0 +1,14 @@
+[
+  {
+    "SubCauseID": 36,
+    "CauseID": 24,
+    "ProbabilityPercentage": 65,
+    "CreatedOn": "2024-11-21 00:00:00.0000000",
+    "CreatedBy": "User24",
+    "UpdatedOn": "2024-11-21 00:00:00.0000000",
+    "UpdatedBy": "User24",
+    "IsActive": "1",
+    "TopCauseID": 124,
+    "SubCauseName": "SubCause Name 24"
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "topCauseName": "Control Bottom Cabinet",
+  "topCauseID": 2,
+  "causeObject": [
+    {
+      "CauseID": 10,
+      "TopCauseID": 2,
+      "ProbabilityPercentage": 2.4,
+      "CreatedOn": "2024-11-19 22:29:33.7766667",
+      "UpdatedOn": "2024-11-19 22:29:33.7766667",
+      "IsActive": "1",
+      "CauseName": "-75K2 timer connection and operation",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064"
+    },
+    {
+      "CauseID": 11,
+      "TopCauseID": 2,
+      "ProbabilityPercentage": 4.8,
+      "CreatedOn": "2024-11-19 22:29:33.7766667",
+      "UpdatedOn": "2024-11-19 22:29:33.7766667",
+      "IsActive": "1",
+      "CauseName": "Contactor -75K4 connection and operation",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064"
+    },
+    {
+      "CauseID": 12,
+      "TopCauseID": 2,
+      "ProbabilityPercentage": 5.8,
+      "CreatedOn": "2024-11-19 22:29:33.7766667",
+      "UpdatedOn": "2024-11-19 22:29:33.7766667",
+      "IsActive": "1",
+      "CauseName": "Contactor -75K3 connection and operation",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064"
+    },
+    {
+      "CauseID": 13,
+      "TopCauseID": 2,
+      "ProbabilityPercentage": 7.6,
+      "CreatedOn": "2024-11-19 22:29:33.7766667",
+      "UpdatedOn": "2024-11-19 22:29:33.7766667",
+      "IsActive": "1",
+      "CauseName": "-75K5 safety chain relay  connection and operation",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064"
+    },
+    {
+      "CauseID": 14,
+      "TopCauseID": 2,
+      "ProbabilityPercentage": 7.8,
+      "CreatedOn": "2024-11-19 22:29:33.7766667",
+      "UpdatedOn": "2024-11-19 22:29:33.7766667",
+      "IsActive": "1",
+      "CauseName": "Cable 481 connection",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064"
+    },
+    {
+      "CauseID": 15,
+      "TopCauseID": 2,
+      "ProbabilityPercentage": 10.9,
+      "CreatedOn": "2024-11-19 22:29:33.7766667",
+      "UpdatedOn": "2024-11-19 22:29:33.7766667",
+      "IsActive": "1",
+      "CauseName": "Door Auxillary Switch -9Q2",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064"
+    },
+    {
+      "CauseID": 16,
+      "TopCauseID": 2,
+      "ProbabilityPercentage": 11.6,
+      "CreatedOn": "2024-11-19 22:29:33.7766667",
+      "UpdatedOn": "2024-11-19 22:29:33.7766667",
+      "IsActive": "1",
+      "CauseName": "ACB -2Q1 auxillary X6 (S1) connection",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064"
+    },
+    {
+      "CauseID": 17,
+      "TopCauseID": 2,
+      "ProbabilityPercentage": 17,
+      "CreatedOn": "2024-11-19 22:29:33.7766667",
+      "UpdatedOn": "2024-11-19 22:29:33.7766667",
+      "IsActive": "1",
+      "CauseName": "Emergency Switch -75S3 capacitor panel",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064"
+    },
+    {
+      "CauseID": 18,
+      "TopCauseID": 2,
+      "ProbabilityPercentage": 19.9,
+      "CreatedOn": "2024-11-19 22:29:33.7766667",
+      "UpdatedOn": "2024-11-19 22:29:33.7766667",
+      "IsActive": "1",
+      "CauseName": "Emergency Switch -75S1 control panel",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064"
+    },
+    {
+      "CauseID": 19,
+      "TopCauseID": 2,
+      "ProbabilityPercentage": 12.2,
+      "CreatedOn": "2024-11-19 22:29:33.7766667",
+      "UpdatedOn": "2024-11-19 22:29:33.7766667",
+      "IsActive": "1",
+      "CauseName": "MCB -75F1 connection and operation",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064"
+    }
+  ],
+  "timestamp": "2024-11-28T12:06:39+05:30"
+}

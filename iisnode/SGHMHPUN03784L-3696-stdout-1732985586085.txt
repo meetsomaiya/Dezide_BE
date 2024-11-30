@@ -1,0 +1,638 @@
+checkAdmin route module loaded
+Server is listening on port \\.\pipe\dc45a133-7d84-4134-96d9-ceffe0a53f03
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM1-50" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+FM parameter "FM51-100" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM1-50 200 2 - 162.782 ms
+GET /api/fetch_events_for_fm?fm=FM51-100 304 - - 101.750 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM101-150" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM101-150 304 - - 125.758 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM151-200" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM151-200 304 - - 138.162 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM201-250" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM201-250 304 - - 147.848 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM251-300" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM251-300 304 - - 123.923 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM301-350" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM301-350 200 2 - 152.173 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM351-400" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM351-400 304 - - 134.192 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM401-450" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM401-450 200 2 - 143.597 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM51-100" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM51-100 304 - - 212.658 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM101-150" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM101-150 304 - - 264.791 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM151-200" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM151-200 304 - - 138.438 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM201-250" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM201-250 304 - - 136.971 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM251-300" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM251-300 304 - - 145.371 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM101-150" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM101-150 304 - - 137.292 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM51-100" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM51-100 304 - - 193.213 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM101-150" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM101-150 304 - - 156.107 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM151-200" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM151-200 304 - - 153.910 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM201-250" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM201-250 304 - - 126.657 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM51-100" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM51-100 304 - - 238.140 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM1-50" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM1-50 304 - - 131.697 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM51-100" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM51-100 304 - - 174.536 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM51-100" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM51-100 304 - - 136.535 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM51-100" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM51-100 304 - - 129.867 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM101-150" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM101-150 304 - - 222.958 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM151-200" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM151-200 304 - - 149.175 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM51-100" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM51-100 304 - - 154.915 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM1-50" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM1-50 304 - - 173.865 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM101-150" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM101-150 304 - - 143.993 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+FM parameter "FM201-250" and events written to file: D:\Dezide_node\Dezide_BE\apis\fm_retrieved_on_backend.json
+GET /api/fetch_events_for_fm?fm=FM201-250 304 - - 135.140 ms
