@@ -1,0 +1,9 @@
+{
+  "questionName": "From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?",
+  "questionID": 4,
+  "eventID": 102,
+  "questionAnswers": [
+    "One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.",
+    "All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time."
+  ]
+}

@@ -1,15 +1,1 @@
-[
-  {
-    "EventID": 153,
-    "ModelID": 1,
-    "ParentID": 101,
-    "IsParent": "0",
-    "CreatedOn": "2024-11-28 14:58:56.5766667",
-    "UpdatedOn": "2024-11-28 14:58:56.5766667",
-    "IsActive": "1",
-    "ProbabilityPercentage": 87,
-    "EventName": "demoevent",
-    "CreatedBy": "40139",
-    "UpdatedBy": "40139"
-  }
-]
+[]

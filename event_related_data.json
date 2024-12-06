@@ -1,46 +1,6 @@
 {
-  "topCauseName": "24V Feedback Problem",
-  "eventID": 79,
-  "causeObject": [
-    {
-      "EventID": 99,
-      "ModelID": 1,
-      "ParentID": 79,
-      "IsParent": "0",
-      "CreatedOn": "2024-11-21 13:03:20.0666667",
-      "UpdatedOn": "2024-11-21 13:03:20.0666667",
-      "IsActive": "1",
-      "ProbabilityPercentage": 5,
-      "CauseName": "DIO264 (-50A3) operation",
-      "CreatedBy": "41064",
-      "UpdatedBy": "41064"
-    },
-    {
-      "EventID": 100,
-      "ModelID": 1,
-      "ParentID": 79,
-      "IsParent": "0",
-      "CreatedOn": "2024-11-21 13:03:20.0700000",
-      "UpdatedOn": "2024-11-21 13:03:20.0700000",
-      "IsActive": "1",
-      "ProbabilityPercentage": 21.4,
-      "CauseName": "Check NO contact -75K5",
-      "CreatedBy": "41064",
-      "UpdatedBy": "41064"
-    },
-    {
-      "EventID": 101,
-      "ModelID": 1,
-      "ParentID": 79,
-      "IsParent": "0",
-      "CreatedOn": "2024-11-21 13:03:20.0700000",
-      "UpdatedOn": "2024-11-21 13:03:20.0700000",
-      "IsActive": "1",
-      "ProbabilityPercentage": 73.6,
-      "CauseName": "Check 24V supply at 023",
-      "CreatedBy": "41064",
-      "UpdatedBy": "41064"
-    }
-  ],
-  "timestamp": "2024-11-30T18:27:07+05:30"
+  "topCauseName": "Faulty 10F1",
+  "eventID": 103,
+  "causeObject": [],
+  "timestamp": "2024-12-06T16:55:53+05:30"
 }

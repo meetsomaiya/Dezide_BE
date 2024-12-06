@@ -17,6 +17,26 @@ const api5 = require('./apis/fetch_sub_cause_based_on_cause');
 /* user side scripts */
 
 const api6 = require('./apis/fetch_events_for_fm');
+const api7 = require('./apis/fetch_question_data_based_on_event');
+const api8 = require('./apis/fetch_consecutive_question_for_event');
+
+/* user side scripts pt 2 */
+
+const api9 = require('./apis/fetch_turbine_data');
+
+const api10 = require('./apis/fetch_fm_data');
+
+const api11 = require('./apis/fetch_image_and_explanation_for_action');
+
+const api12 = require('./apis/fetch_turbine_model_and_temperature_variant');
+
+const api13 = require('./apis/dummy_fetch');
+
+const api14 = require('./apis/fetch_question_for_events');
+
+const api15 = require('./apis/fetch_subquestion_for_event');
+
+
 
 
 
@@ -31,7 +51,23 @@ app.use('/api/fetch_sub_cause_based_on_cause', api5);
 /* user side scripts */
 
 app.use('/api/fetch_events_for_fm', api6);
+app.use('/api/fetch_question_data_based_on_event', api7);
+app.use('/api/fetch_consecutive_question_for_event', api8);
 
+/* user side scripts pt 2 */
+
+app.use('/api/fetch_turbine_data', api9);
+app.use('/api/fetch_fm_data', api10);
+
+app.use('/api/fetch_image_and_explanation_for_action', api11);
+
+app.use('/api/fetch_turbine_model_and_temperature_variant', api12);
+
+app.use('/api/dummy_fetch', api13);
+
+app.use('/api/fetch_question_for_events', api14);
+
+app.use('/api/fetch_subquestion_for_event', api15);
 
 
 app.listen(port, () => {

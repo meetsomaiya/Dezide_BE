@@ -1,0 +1,12 @@
+{
+  "turbineModels": [
+    "S 88",
+    "S 82 ",
+    "S 9x",
+    "S 111"
+  ],
+  "temperatureVariants": [
+    "STV",
+    "LTV"
+  ]
+}

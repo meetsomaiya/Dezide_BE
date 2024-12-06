@@ -38,9 +38,9 @@ router.get('/', async (req, res) => {
                 [CreatedOn],
                 [UpdatedOn],
                 [IsActive],
-                [EventName],
                 [CreatedBy],
-                [UpdatedBy]
+                [UpdatedBy],
+                [EventName]
             FROM Tbl_Events_Main
             WHERE EventName = ?
         `;
@@ -76,9 +76,9 @@ router.get('/', async (req, res) => {
                 [UpdatedOn],
                 [IsActive],
                 [ProbabilityPercentage],
-                [EventName],
                 [CreatedBy],
-                [UpdatedBy]
+                [UpdatedBy],
+                [EventName]
             FROM Tbl_Events_Main
             WHERE ParentID = ?
         `;
@@ -99,43 +99,29 @@ router.get('/', async (req, res) => {
             UpdatedBy: cause.UpdatedBy,
         }));
 
-        // Combine all EventIDs from mainData and tblTopCauseData
-        const allEventIDs = [
-            mainData.EventID,
-            ...tblTopCauseData.map(cause => cause.EventID),
-        ];
-
-        // Fetch Tbl_Actions data for all EventIDs
-        const actionsQuery = `
-            SELECT 
-                [ActionID],
-                [EventID],
-                [ActionTime],
-                [ActionCost],
-                [CreatedOn],
-                [UpdatedOn],
-                [IsActive],
-                [CreatedBy],
-                [UpdatedBy],
-                [ActionName]
-            FROM Tbl_Actions
-            WHERE EventID IN (${allEventIDs.map(() => '?').join(',')})
+        // Fetch event hierarchy using stored procedure
+        const eventHierarchyQuery = `
+            EXEC Usp_GetEventHierarchy ?
         `;
-        const actionsParams = allEventIDs;
-        const actionsResults = await dbConnection.query(actionsQuery, actionsParams);
+        const eventHierarchyParams = [mainData.EventID];
+        const eventHierarchyResults = await dbConnection.query(eventHierarchyQuery, eventHierarchyParams);
 
-        const eventObject = actionsResults.map(action => ({
-            ActionID: action.ActionID,
-            EventID: action.EventID,
-            ActionTime: action.ActionTime,
-            ActionCost: action.ActionCost,
-            CreatedOn: action.CreatedOn,
-            UpdatedOn: action.UpdatedOn,
-            IsActive: action.IsActive,
-            ActionName: action.ActionName,
-            CreatedBy: action.CreatedBy,
-            UpdatedBy: action.UpdatedBy,
-        }));
+        // Map the stored procedure response, excluding items with null ActionName
+        const eventObject = eventHierarchyResults
+            .filter(item => item.ActionName !== null) // Filter out null ActionName
+            .map(item => ({
+                EventID: item.EventID,
+                RootID: item.RootID,
+                EventName: item.EventName,
+                ProbabilityPercentage: item.ProbabilityPercentage,
+                IsParent: item.IsParent,
+                ParentID: item.ParentID,
+                ActionID: item.ActionID,
+                ActionName: item.ActionName,
+                ActionTime: item.ActionTime,
+                ActionCost: item.ActionCost,
+                Level: item.Level,
+            }));
 
         // Prepare the response data
         const dataToWrite = {
@@ -148,14 +134,9 @@ router.get('/', async (req, res) => {
 
         // Write the data to a JSON file
         const filePath = './events_data_sent_back.json';
-        fs.writeFile(filePath, JSON.stringify(dataToWrite, null, 2), (err) => {
-            if (err) {
-                console.error('Failed to write to JSON file:', err);
-                return res.status(500).json({ error: 'Failed to write data to file' });
-            }
+        await fs.promises.writeFile(filePath, JSON.stringify(dataToWrite, null, 2));
 
-            console.log('Event data saved to JSON file:', dataToWrite);
-        });
+        console.log('Event data saved to JSON file:', dataToWrite);
 
         // Send the data back in the response
         res.status(200).json({
