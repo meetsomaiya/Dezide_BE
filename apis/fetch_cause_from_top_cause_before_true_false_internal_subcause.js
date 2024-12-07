@@ -73,20 +73,8 @@ router.get('/', async (req, res) => {
             ProbabilityPercentage: record.ProbabilityPercentage, // DECIMAL
             CauseName: record.EventName,                     // VARCHAR
             CreatedBy: record.CreatedBy,                     // VARCHAR
-            UpdatedBy: record.UpdatedBy,                     // VARCHAR
+            UpdatedBy: record.UpdatedBy                      // VARCHAR
         }));
-
-        // Check for sub-causes for each related EventID
-        for (const cause of organizedCauseObjects) {
-            const subCauseQuery = `
-                SELECT COUNT(1) AS Count
-                FROM [Tbl_Events_Main]
-                WHERE [ParentID] = ? AND [IsActive] = 1
-            `;
-            const subCauseResult = await connection.query(subCauseQuery, [cause.EventID]);
-
-            cause.internalSubCause = (subCauseResult[0].Count > 0); // Set flag based on sub-cause presence
-        }
 
         // Prepare data for JSON file and response
         const responseData = {

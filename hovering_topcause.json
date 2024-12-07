@@ -1,0 +1,21 @@
+{
+  "cause": "Faulty cable (+TOW-W10) from CB):X5 to CTO:X5",
+  "eventId": 105,
+  "actions": [
+    "Check resistance between wires X5:1,2,3 and cable insulation of +TOW-W10 wire no. 1,2,3 in the bottom cabinet."
+  ],
+  "questions": [
+    "Is any of the following circuit breaker tripped?"
+  ],
+  "questionAnswers": [
+    "None of the breaker tripped.",
+    "230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).",
+    "3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).",
+    "3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO)."
+  ],
+  "timestamp": "2024-12-07 22:15:19"
+}/3_EmergencyRun.",
+    "All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time."
+  ],
+  "timestamp": "2024-12-07 22:15:19"
+}

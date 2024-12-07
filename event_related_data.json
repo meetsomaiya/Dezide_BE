@@ -1,6 +1,91 @@
 {
-  "topCauseName": "Faulty 10F1",
-  "eventID": 103,
-  "causeObject": [],
-  "timestamp": "2024-12-06T16:55:53+05:30"
+  "topCauseName": "Due to 19K1 relay-Emergency stop/95 degree switch",
+  "eventID": 108,
+  "causeObject": [
+    {
+      "EventID": 127,
+      "ModelID": 1,
+      "ParentID": 108,
+      "IsParent": "0",
+      "CreatedOn": "2024-11-21 14:31:50.0466667",
+      "UpdatedOn": "2024-11-21 14:31:50.0466667",
+      "IsActive": "1",
+      "ProbabilityPercentage": 16.7,
+      "CauseName": "22S1 FC1 Emer stop 3",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064",
+      "internalSubCause": false
+    },
+    {
+      "EventID": 128,
+      "ModelID": 1,
+      "ParentID": 108,
+      "IsParent": "0",
+      "CreatedOn": "2024-11-21 14:31:50.0466667",
+      "UpdatedOn": "2024-11-21 14:31:50.0466667",
+      "IsActive": "1",
+      "ProbabilityPercentage": 16.7,
+      "CauseName": "21S1 FC1 Emer stop 2",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064",
+      "internalSubCause": false
+    },
+    {
+      "EventID": 129,
+      "ModelID": 1,
+      "ParentID": 108,
+      "IsParent": "0",
+      "CreatedOn": "2024-11-21 14:31:50.0466667",
+      "UpdatedOn": "2024-11-21 14:31:50.0466667",
+      "IsActive": "1",
+      "ProbabilityPercentage": 16.7,
+      "CauseName": "20S1 FC1 Emer stop 1",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064",
+      "internalSubCause": false
+    },
+    {
+      "EventID": 130,
+      "ModelID": 1,
+      "ParentID": 108,
+      "IsParent": "0",
+      "CreatedOn": "2024-11-21 14:31:50.0466667",
+      "UpdatedOn": "2024-11-21 14:31:50.0466667",
+      "IsActive": "1",
+      "ProbabilityPercentage": 16.7,
+      "CauseName": "20K3 realy FC3 95 degree",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064",
+      "internalSubCause": false
+    },
+    {
+      "EventID": 131,
+      "ModelID": 1,
+      "ParentID": 108,
+      "IsParent": "0",
+      "CreatedOn": "2024-11-21 14:31:50.0466667",
+      "UpdatedOn": "2024-11-21 14:31:50.0466667",
+      "IsActive": "1",
+      "ProbabilityPercentage": 16.7,
+      "CauseName": "20K2 realy FC2 95 degree",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064",
+      "internalSubCause": false
+    },
+    {
+      "EventID": 132,
+      "ModelID": 1,
+      "ParentID": 108,
+      "IsParent": "0",
+      "CreatedOn": "2024-11-21 14:31:50.0466667",
+      "UpdatedOn": "2024-11-21 14:31:50.0466667",
+      "IsActive": "1",
+      "ProbabilityPercentage": 16.7,
+      "CauseName": "20K1 realy FC1 95 degree",
+      "CreatedBy": "41064",
+      "UpdatedBy": "41064",
+      "internalSubCause": false
+    }
+  ],
+  "timestamp": "2024-12-07T21:36:06+05:30"
 }

@@ -1,6 +1,6 @@
 {
   "eventName": "FM283 Pitch_EmergencyRun",
-  "timestamp": "2024-12-06 16:53:54",
+  "timestamp": "2024-12-07 21:55:09",
   "mainData": {
     "EventID": 102,
     "ModelID": 1,
@@ -9,9 +9,9 @@
     "CreatedOn": "2024-11-21 13:16:08.2733333",
     "UpdatedOn": "2024-11-21 13:16:08.2733333",
     "IsActive": "1",
-    "EventName": "FM283 Pitch_EmergencyRun",
     "CreatedBy": "41064",
-    "UpdatedBy": "41064"
+    "UpdatedBy": "41064",
+    "EventName": "FM283 Pitch_EmergencyRun"
   },
   "tblTopCauseData": [
     {
@@ -25,7 +25,8 @@
       "TopCauseName": "Faulty 10F1",
       "ProbabilityPercentage": 0.3,
       "CreatedBy": "41064",
-      "UpdatedBy": "41064"
+      "UpdatedBy": "41064",
+      "internalCause": false
     },
     {
       "EventID": 104,
@@ -38,7 +39,8 @@
       "TopCauseName": "Due to 2Q1 trip",
       "ProbabilityPercentage": 0.7,
       "CreatedBy": "41064",
-      "UpdatedBy": "41064"
+      "UpdatedBy": "41064",
+      "internalCause": true
     },
     {
       "EventID": 105,
@@ -51,7 +53,8 @@
       "TopCauseName": "Faulty cable (+TOW-W10) from CB):X5 to CTO:X5",
       "ProbabilityPercentage": 0.5,
       "CreatedBy": "41064",
-      "UpdatedBy": "41064"
+      "UpdatedBy": "41064",
+      "internalCause": false
     },
     {
       "EventID": 106,
@@ -64,7 +67,8 @@
       "TopCauseName": "Nacelle to hub 230V AC supply issue",
       "ProbabilityPercentage": 2.1,
       "CreatedBy": "41064",
-      "UpdatedBy": "41064"
+      "UpdatedBy": "41064",
+      "internalCause": true
     },
     {
       "EventID": 107,
@@ -77,7 +81,8 @@
       "TopCauseName": "Due to 19K3 voltage surveillence nacelle supply and LVRT timer",
       "ProbabilityPercentage": 4.7,
       "CreatedBy": "41064",
-      "UpdatedBy": "41064"
+      "UpdatedBy": "41064",
+      "internalCause": true
     },
     {
       "EventID": 108,
@@ -90,7 +95,8 @@
       "TopCauseName": "Due to 19K1 relay-Emergency stop/95 degree switch",
       "ProbabilityPercentage": 5,
       "CreatedBy": "41064",
-      "UpdatedBy": "41064"
+      "UpdatedBy": "41064",
+      "internalCause": true
     },
     {
       "EventID": 109,
@@ -103,7 +109,8 @@
       "TopCauseName": "Frequency converter faulty",
       "ProbabilityPercentage": 0.1,
       "CreatedBy": "41064",
-      "UpdatedBy": "41064"
+      "UpdatedBy": "41064",
+      "internalCause": false
     },
     {
       "EventID": 110,
@@ -116,7 +123,8 @@
       "TopCauseName": "Due to 16K1 problem",
       "ProbabilityPercentage": 5.9,
       "CreatedBy": "41064",
-      "UpdatedBy": "41064"
+      "UpdatedBy": "41064",
+      "internalCause": true
     },
     {
       "EventID": 111,
@@ -129,7 +137,8 @@
       "TopCauseName": "Due to battery surveillence",
       "ProbabilityPercentage": 2,
       "CreatedBy": "41064",
-      "UpdatedBy": "41064"
+      "UpdatedBy": "41064",
+      "internalCause": true
     },
     {
       "EventID": 112,
@@ -142,7 +151,8 @@
       "TopCauseName": "Due to -5 degree switch",
       "ProbabilityPercentage": 2,
       "CreatedBy": "41064",
-      "UpdatedBy": "41064"
+      "UpdatedBy": "41064",
+      "internalCause": true
     },
     {
       "EventID": 113,
@@ -155,7 +165,8 @@
       "TopCauseName": "Due to nacelle supply missing to hub",
       "ProbabilityPercentage": 74.7,
       "CreatedBy": "41064",
-      "UpdatedBy": "41064"
+      "UpdatedBy": "41064",
+      "internalCause": true
     },
     {
       "EventID": 114,
@@ -168,7 +179,8 @@
       "TopCauseName": "Due to DC-DC converter",
       "ProbabilityPercentage": 2,
       "CreatedBy": "41064",
-      "UpdatedBy": "41064"
+      "UpdatedBy": "41064",
+      "internalCause": true
     }
   ],
   "eventObject": [

@@ -17,7 +17,7 @@ router.use((req, res, next) => {
 
 // Define the GET endpoint
 router.get('/', async (req, res) => {
-    const eventName = req.query.eventName;
+    const eventName = req.query.eventName; // Extract eventName from query parameters
 
     if (!eventName) {
         return res.status(400).json({ error: 'Event name is required' });
@@ -25,9 +25,10 @@ router.get('/', async (req, res) => {
 
     let dbConnection;
     try {
+        // Connect to the database
         dbConnection = await connectToDatabase();
 
-        // Fetch the main event data
+        // Query to fetch the main event data
         const mainEventQuery = `
             SELECT 
                 [EventID],
@@ -50,9 +51,21 @@ router.get('/', async (req, res) => {
             return res.status(404).json({ message: 'No data found for the given event name.' });
         }
 
-        const mainData = mainEventResults[0];
+        // Extract the single result into mainData
+        const mainData = {
+            EventID: mainEventResults[0].EventID,
+            ModelID: mainEventResults[0].ModelID,
+            ParentID: mainEventResults[0].ParentID,
+            IsParent: mainEventResults[0].IsParent,
+            CreatedOn: mainEventResults[0].CreatedOn,
+            UpdatedOn: mainEventResults[0].UpdatedOn,
+            IsActive: mainEventResults[0].IsActive,
+            EventName: mainEventResults[0].EventName,
+            CreatedBy: mainEventResults[0].CreatedBy,
+            UpdatedBy: mainEventResults[0].UpdatedBy,
+        };
 
-        // Fetch top causes using ParentID
+        // Query to fetch top causes using ParentID
         const topCausesQuery = `
             SELECT 
                 [EventID],
@@ -72,42 +85,30 @@ router.get('/', async (req, res) => {
         const topCausesParams = [mainData.EventID];
         const topCausesResults = await dbConnection.query(topCausesQuery, topCausesParams);
 
-        // Process top causes sequentially
-        const tblTopCauseData = [];
-        for (const cause of topCausesResults) {
-            const internalCheckQuery = `
-                SELECT COUNT(1) AS InternalCount
-                FROM Tbl_Events_Main
-                WHERE ParentID = ?
-            `;
-            const internalCheckParams = [cause.EventID];
-            const internalCheckResults = await dbConnection.query(internalCheckQuery, internalCheckParams);
-
-            const hasInternalData = internalCheckResults[0].InternalCount > 0;
-
-            tblTopCauseData.push({
-                EventID: cause.EventID,
-                ModelID: cause.ModelID,
-                ParentID: cause.ParentID,
-                IsParent: cause.IsParent,
-                CreatedOn: cause.CreatedOn,
-                UpdatedOn: cause.UpdatedOn,
-                IsActive: cause.IsActive,
-                TopCauseName: cause.EventName,
-                ProbabilityPercentage: cause.ProbabilityPercentage,
-                CreatedBy: cause.CreatedBy,
-                UpdatedBy: cause.UpdatedBy,
-                internalCause: hasInternalData, // Add internalCause property
-            });
-        }
+        const tblTopCauseData = topCausesResults.map(cause => ({
+            EventID: cause.EventID,
+            ModelID: cause.ModelID,
+            ParentID: cause.ParentID,
+            IsParent: cause.IsParent,
+            CreatedOn: cause.CreatedOn,
+            UpdatedOn: cause.UpdatedOn,
+            IsActive: cause.IsActive,
+            TopCauseName: cause.EventName,
+            ProbabilityPercentage: cause.ProbabilityPercentage,
+            CreatedBy: cause.CreatedBy,
+            UpdatedBy: cause.UpdatedBy,
+        }));
 
         // Fetch event hierarchy using stored procedure
-        const eventHierarchyQuery = `EXEC Usp_GetEventHierarchy ?`;
+        const eventHierarchyQuery = `
+            EXEC Usp_GetEventHierarchy ?
+        `;
         const eventHierarchyParams = [mainData.EventID];
         const eventHierarchyResults = await dbConnection.query(eventHierarchyQuery, eventHierarchyParams);
 
+        // Map the stored procedure response, excluding items with null ActionName
         const eventObject = eventHierarchyResults
-            .filter(item => item.ActionName !== null)
+            .filter(item => item.ActionName !== null) // Filter out null ActionName
             .map(item => ({
                 EventID: item.EventID,
                 RootID: item.RootID,
@@ -131,11 +132,13 @@ router.get('/', async (req, res) => {
             eventObject,
         };
 
+        // Write the data to a JSON file
         const filePath = './events_data_sent_back.json';
         await fs.promises.writeFile(filePath, JSON.stringify(dataToWrite, null, 2));
 
         console.log('Event data saved to JSON file:', dataToWrite);
 
+        // Send the data back in the response
         res.status(200).json({
             message: 'Data retrieved successfully',
             mainData,
@@ -155,7 +158,6 @@ router.get('/', async (req, res) => {
         }
     }
 });
-
 
 // Export the router
 module.exports = router;

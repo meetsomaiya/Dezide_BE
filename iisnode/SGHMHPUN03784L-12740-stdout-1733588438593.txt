@@ -1,7 +1,6 @@
-checkAdmin route module loaded
-Server is listening on port \\.\pipe\3f9c1272-148b-4805-a80c-e8d6346151de
-Connected to the database.
-Connected to the database.
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
 Test query result: [
   { test: 1 },
   statement: 'SELECT 1 AS test',
@@ -19,6 +18,9 @@ Test query result: [
     }
   ]
 ]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5' ]
 Test query result: [
   { test: 1 },
   statement: 'SELECT 1 AS test',
@@ -36,7 +38,9 @@ Test query result: [
     }
   ]
 ]
-Connected to the database.
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty 10F1' ]
 Test query result: [
   { test: 1 },
   statement: 'SELECT 1 AS test',
@@ -54,12 +58,9 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_subquestion_for_event?questionName=Is%20any%20of%20the%20following%20circuit%20breaker%20tripped%3F 200 422 - 22.045 ms
-GET /api/fetch_question_for_events?modalName= 400 33 - 1.142 ms
-GET /api/fetch_question_for_events?modalName= 400 33 - 0.608 ms
-GET /api/fetch_question_for_events?modalName= 400 33 - 0.236 ms
-GET /api/fetch_question_for_events?modalName= 400 33 - 0.222 ms
-Connected to the database.
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty 10F1' ]
 Test query result: [
   { test: 1 },
   statement: 'SELECT 1 AS test',
@@ -77,9 +78,170 @@ Test query result: [
     }
   ]
 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 108 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 105 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 103 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 103 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 108, 108, 108, 108 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 108, 108, 108, 108 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched QuestionAnswers: [
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.',
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%2019K1%20relay-Emergency%20stop%2F95%20degree%20switch 200 537 - 29586.603 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 29586.260 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%20cable%20(%2BTOW-W10)%20from%20CB)%3AX5%20to%20CTO%3AX5 200 611 - 29584.916 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%2010F1 200 545 - 29583.664 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%2010F1 200 545 - 29584.178 ms
 Event data saved to JSON file: {
   eventName: 'FM283 Pitch_EmergencyRun',
-  timestamp: '2024-12-06 15:12:52',
+  timestamp: '2024-12-07 21:50:40',
   mainData: {
     EventID: 102,
     ModelID: 1,
@@ -88,9 +250,9 @@ Event data saved to JSON file: {
     CreatedOn: '2024-11-21 13:16:08.2733333',
     UpdatedOn: '2024-11-21 13:16:08.2733333',
     IsActive: '1',
-    EventName: 'FM283 Pitch_EmergencyRun',
     CreatedBy: '41064',
-    UpdatedBy: '41064'
+    UpdatedBy: '41064',
+    EventName: 'FM283 Pitch_EmergencyRun'
   },
   tblTopCauseData: [
     {
@@ -104,7 +266,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Faulty 10F1',
       ProbabilityPercentage: 0.3,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: false
     },
     {
       EventID: 104,
@@ -117,7 +280,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to 2Q1 trip',
       ProbabilityPercentage: 0.7,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 105,
@@ -130,7 +294,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5',
       ProbabilityPercentage: 0.5,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: false
     },
     {
       EventID: 106,
@@ -143,7 +308,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Nacelle to hub 230V AC supply issue',
       ProbabilityPercentage: 2.1,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 107,
@@ -156,7 +322,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer',
       ProbabilityPercentage: 4.7,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 108,
@@ -169,7 +336,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to 19K1 relay-Emergency stop/95 degree switch',
       ProbabilityPercentage: 5,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 109,
@@ -182,7 +350,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Frequency converter faulty',
       ProbabilityPercentage: 0.1,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: false
     },
     {
       EventID: 110,
@@ -195,7 +364,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to 16K1 problem',
       ProbabilityPercentage: 5.9,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 111,
@@ -208,7 +378,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to battery surveillence',
       ProbabilityPercentage: 2,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 112,
@@ -221,7 +392,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to -5 degree switch',
       ProbabilityPercentage: 2,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 113,
@@ -234,7 +406,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to nacelle supply missing to hub',
       ProbabilityPercentage: 74.7,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 114,
@@ -247,23 +420,11 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to DC-DC converter',
       ProbabilityPercentage: 2,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     }
   ],
   eventObject: [
-    {
-      EventID: 102,
-      RootID: 102,
-      EventName: 'FM283 Pitch_EmergencyRun',
-      ProbabilityPercentage: null,
-      IsParent: '1',
-      ParentID: 0,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 0
-    },
     {
       EventID: 103,
       RootID: 102,
@@ -275,19 +436,6 @@ Event data saved to JSON file: {
       ActionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
       ActionTime: '00:20:00',
       ActionCost: 0,
-      Level: 1
-    },
-    {
-      EventID: 104,
-      RootID: 102,
-      EventName: 'Due to 2Q1 trip',
-      ProbabilityPercentage: 0.7,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
       Level: 1
     },
     {
@@ -304,45 +452,6 @@ Event data saved to JSON file: {
       Level: 1
     },
     {
-      EventID: 106,
-      RootID: 102,
-      EventName: 'Nacelle to hub 230V AC supply issue',
-      ProbabilityPercentage: 2.1,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 107,
-      RootID: 102,
-      EventName: 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer',
-      ProbabilityPercentage: 4.7,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 108,
-      RootID: 102,
-      EventName: 'Due to 19K1 relay-Emergency stop/95 degree switch',
-      ProbabilityPercentage: 5,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
       EventID: 109,
       RootID: 102,
       EventName: 'Frequency converter faulty',
@@ -353,71 +462,6 @@ Event data saved to JSON file: {
       ActionName: 'Check the functionality of frequency converter (-2A1, -4A1 and -6A1) digital input X2:15 (ISD00). Replace the frequency converter if required.',
       ActionTime: '01:00:00',
       ActionCost: 144985,
-      Level: 1
-    },
-    {
-      EventID: 110,
-      RootID: 102,
-      EventName: 'Due to 16K1 problem',
-      ProbabilityPercentage: 5.9,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 111,
-      RootID: 102,
-      EventName: 'Due to battery surveillence',
-      ProbabilityPercentage: 2,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 112,
-      RootID: 102,
-      EventName: 'Due to -5 degree switch',
-      ProbabilityPercentage: 2,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 113,
-      RootID: 102,
-      EventName: 'Due to nacelle supply missing to hub',
-      ProbabilityPercentage: 74.7,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 114,
-      RootID: 102,
-      EventName: 'Due to DC-DC converter',
-      ProbabilityPercentage: 2,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
       Level: 1
     },
     {
@@ -916,7 +960,7 @@ Event data saved to JSON file: {
     }
   ]
 }
-GET /api/fetch_event_causes_actions?eventName=FM283%20Pitch_EmergencyRun 304 - - 42.031 ms
+GET /api/fetch_event_causes_actions?eventName=FM283%20Pitch_EmergencyRun 304 - - 12892.583 ms
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -935,7 +979,8 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 17.888 ms
+GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 317.827 ms
+Decoded cause: Faulty 10F1
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -954,66 +999,43 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_subquestion_for_event?questionName=Is%20any%20of%20the%20following%20circuit%20breaker%20tripped%3F 304 - - 23.452 ms
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty 10F1' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 103 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
 ]
-GET /api/fetch_subquestion_for_event?questionName=Is%20any%20of%20the%20following%20circuit%20breaker%20tripped%3F 304 - - 68.092 ms
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-GET /api/fetch_subquestion_for_event?questionName=From%20EVT%20logs%2C%20check%20which%20DIi_PitX_EmergencyRun%20is%20recorded%20as%20true%20(%2B)%20status%20before%20pitch%20emergency%20run%20fault%20recorded%3F 200 405 - 17.831 ms
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 14.780 ms
-GET /api/fetch_question_for_events?modalName= 400 33 - 0.242 ms
-GET /api/fetch_question_for_events?modalName= 400 33 - 0.234 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%2010F1 200 545 - 857.459 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.303 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.289 ms
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -1034,7 +1056,7 @@ Test query result: [
 ]
 Event data saved to JSON file: {
   eventName: 'FM283 Pitch_EmergencyRun',
-  timestamp: '2024-12-06 15:23:28',
+  timestamp: '2024-12-07 21:51:42',
   mainData: {
     EventID: 102,
     ModelID: 1,
@@ -1043,9 +1065,9 @@ Event data saved to JSON file: {
     CreatedOn: '2024-11-21 13:16:08.2733333',
     UpdatedOn: '2024-11-21 13:16:08.2733333',
     IsActive: '1',
-    EventName: 'FM283 Pitch_EmergencyRun',
     CreatedBy: '41064',
-    UpdatedBy: '41064'
+    UpdatedBy: '41064',
+    EventName: 'FM283 Pitch_EmergencyRun'
   },
   tblTopCauseData: [
     {
@@ -1059,7 +1081,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Faulty 10F1',
       ProbabilityPercentage: 0.3,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: false
     },
     {
       EventID: 104,
@@ -1072,7 +1095,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to 2Q1 trip',
       ProbabilityPercentage: 0.7,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 105,
@@ -1085,7 +1109,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5',
       ProbabilityPercentage: 0.5,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: false
     },
     {
       EventID: 106,
@@ -1098,7 +1123,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Nacelle to hub 230V AC supply issue',
       ProbabilityPercentage: 2.1,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 107,
@@ -1111,7 +1137,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer',
       ProbabilityPercentage: 4.7,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 108,
@@ -1124,7 +1151,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to 19K1 relay-Emergency stop/95 degree switch',
       ProbabilityPercentage: 5,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 109,
@@ -1137,7 +1165,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Frequency converter faulty',
       ProbabilityPercentage: 0.1,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: false
     },
     {
       EventID: 110,
@@ -1150,7 +1179,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to 16K1 problem',
       ProbabilityPercentage: 5.9,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 111,
@@ -1163,7 +1193,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to battery surveillence',
       ProbabilityPercentage: 2,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 112,
@@ -1176,7 +1207,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to -5 degree switch',
       ProbabilityPercentage: 2,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 113,
@@ -1189,7 +1221,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to nacelle supply missing to hub',
       ProbabilityPercentage: 74.7,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 114,
@@ -1202,23 +1235,11 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to DC-DC converter',
       ProbabilityPercentage: 2,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     }
   ],
   eventObject: [
-    {
-      EventID: 102,
-      RootID: 102,
-      EventName: 'FM283 Pitch_EmergencyRun',
-      ProbabilityPercentage: null,
-      IsParent: '1',
-      ParentID: 0,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 0
-    },
     {
       EventID: 103,
       RootID: 102,
@@ -1230,19 +1251,6 @@ Event data saved to JSON file: {
       ActionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
       ActionTime: '00:20:00',
       ActionCost: 0,
-      Level: 1
-    },
-    {
-      EventID: 104,
-      RootID: 102,
-      EventName: 'Due to 2Q1 trip',
-      ProbabilityPercentage: 0.7,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
       Level: 1
     },
     {
@@ -1259,45 +1267,6 @@ Event data saved to JSON file: {
       Level: 1
     },
     {
-      EventID: 106,
-      RootID: 102,
-      EventName: 'Nacelle to hub 230V AC supply issue',
-      ProbabilityPercentage: 2.1,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 107,
-      RootID: 102,
-      EventName: 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer',
-      ProbabilityPercentage: 4.7,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 108,
-      RootID: 102,
-      EventName: 'Due to 19K1 relay-Emergency stop/95 degree switch',
-      ProbabilityPercentage: 5,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
       EventID: 109,
       RootID: 102,
       EventName: 'Frequency converter faulty',
@@ -1308,71 +1277,6 @@ Event data saved to JSON file: {
       ActionName: 'Check the functionality of frequency converter (-2A1, -4A1 and -6A1) digital input X2:15 (ISD00). Replace the frequency converter if required.',
       ActionTime: '01:00:00',
       ActionCost: 144985,
-      Level: 1
-    },
-    {
-      EventID: 110,
-      RootID: 102,
-      EventName: 'Due to 16K1 problem',
-      ProbabilityPercentage: 5.9,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 111,
-      RootID: 102,
-      EventName: 'Due to battery surveillence',
-      ProbabilityPercentage: 2,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 112,
-      RootID: 102,
-      EventName: 'Due to -5 degree switch',
-      ProbabilityPercentage: 2,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 113,
-      RootID: 102,
-      EventName: 'Due to nacelle supply missing to hub',
-      ProbabilityPercentage: 74.7,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 114,
-      RootID: 102,
-      EventName: 'Due to DC-DC converter',
-      ProbabilityPercentage: 2,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
       Level: 1
     },
     {
@@ -1871,7 +1775,9 @@ Event data saved to JSON file: {
     }
   ]
 }
-GET /api/fetch_event_causes_actions?eventName=FM283%20Pitch_EmergencyRun 304 - - 29.915 ms
+GET /api/fetch_event_causes_actions?eventName=FM283%20Pitch_EmergencyRun 304 - - 922.177 ms
+Decoded cause: Faulty 10F1
+Connected to the database.
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -1890,7 +1796,66 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 11.840 ms
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty 10F1' ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 103 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 507.632 ms
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%2010F1 200 545 - 709.223 ms
+Decoded cause: Faulty 10F1
+Decoded cause: Due to 2Q1 trip
+Decoded cause: Faulty cable (+TOW-W10) from CB):X5 to CTO:X5
+Decoded cause: Nacelle to hub 230V AC supply issue
+Connected to the database.
+Decoded cause: Due to 19K3 voltage surveillence nacelle supply and LVRT timer
+Connected to the database.
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -1909,7 +1874,9 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 15.545 ms
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -1928,7 +1895,9 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 29.869 ms
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty 10F1' ]
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -1947,7 +1916,218 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 23.988 ms
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5' ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Nacelle to hub 230V AC supply issue' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 103 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 105 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 106 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 107 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 107, 107, 107, 107 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 107, 107, 107, 107 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.'
+]
+Fetched QuestionAnswers: [
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.',
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 3996.865 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%2010F1 200 545 - 4013.839 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%20cable%20(%2BTOW-W10)%20from%20CB)%3AX5%20to%20CTO%3AX5 200 611 - 3981.300 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Nacelle%20to%20hub%20230V%20AC%20supply%20issue 200 679 - 3964.942 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%2019K3%20voltage%20surveillence%20nacelle%20supply%20and%20LVRT%20timer 200 770 - 3949.876 ms
+Decoded cause: Nacelle to hub 230V AC supply issue
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -1966,7 +2146,46 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 11.614 ms
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Nacelle to hub 230V AC supply issue' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 106 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Nacelle%20to%20hub%20230V%20AC%20supply%20issue 200 679 - 829.692 ms
+Decoded cause: Faulty cable (+TOW-W10) from CB):X5 to CTO:X5
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -1985,7 +2204,44 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 31.745 ms
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 105 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%20cable%20(%2BTOW-W10)%20from%20CB)%3AX5%20to%20CTO%3AX5 200 611 - 699.084 ms
+Decoded cause: Due to 2Q1 trip
+Decoded cause: Faulty 10F1
+Connected to the database.
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -2004,8 +2260,9 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 13.648 ms
-Connected to the database.
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
 Test query result: [
   { test: 1 },
   statement: 'SELECT 1 AS test',
@@ -2023,278 +2280,75 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 16.022 ms
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty 10F1' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 103 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
 ]
-GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 26.471 ms
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
 ]
-GET /api/fetch_subquestion_for_event?questionName=Is%20any%20of%20the%20following%20circuit%20breaker%20tripped%3F 304 - - 123.787 ms
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-GET /api/fetch_subquestion_for_event?questionName=From%20EVT%20logs%2C%20check%20which%20DIi_PitX_EmergencyRun%20is%20recorded%20as%20true%20(%2B)%20status%20before%20pitch%20emergency%20run%20fault%20recorded%3F 304 - - 126.489 ms
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Data written to ./event_related_data.json.
-GET /api/fetch_cause_from_top_cause?topCauseName=Due%20to%202Q1%20trip 200 687 - 13.227 ms
-Received CauseName: 2Q1 faulty
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Retrieved EventID: 115
-Fetched Child Event Data: [
-  statement: '\n' +
-    '            SELECT \n' +
-    '                [EventID], \n' +
-    '                [ModelID], \n' +
-    '                [ParentID], \n' +
-    '                [IsParent], \n' +
-    '                [CreatedOn], \n' +
-    '                [UpdatedOn], \n' +
-    '                [IsActive], \n' +
-    '                [ProbabilityPercentage],\n' +
-    '                [EventName],\n' +
-    '                [CreatedBy],\n' +
-    '                [UpdatedBy]\n' +
-    '            FROM [Tbl_Events_Main]\n' +
-    '            WHERE [ParentID] = ? AND [IsActive] = 1\n' +
-    '        ',
-  parameters: [ 115 ],
-  return: undefined,
-  count: 0,
-  columns: [
-    {
-      name: 'EventID',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    },
-    {
-      name: 'ModelID',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    },
-    {
-      name: 'ParentID',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: true
-    },
-    {
-      name: 'IsParent',
-      dataType: -7,
-      dataTypeName: 'SQL_BIT',
-      columnSize: 1,
-      decimalDigits: 0,
-      nullable: true
-    },
-    {
-      name: 'CreatedOn',
-      dataType: 93,
-      dataTypeName: 'SQL_TYPE_TIMESTAMP',
-      columnSize: 27,
-      decimalDigits: 7,
-      nullable: true
-    },
-    {
-      name: 'UpdatedOn',
-      dataType: 93,
-      dataTypeName: 'SQL_TYPE_TIMESTAMP',
-      columnSize: 27,
-      decimalDigits: 7,
-      nullable: true
-    },
-    {
-      name: 'IsActive',
-      dataType: -7,
-      dataTypeName: 'SQL_BIT',
-      columnSize: 1,
-      decimalDigits: 0,
-      nullable: true
-    },
-    {
-      name: 'ProbabilityPercentage',
-      dataType: 3,
-      dataTypeName: 'SQL_DECIMAL',
-      columnSize: 5,
-      decimalDigits: 2,
-      nullable: true
-    },
-    {
-      name: 'EventName',
-      dataType: 12,
-      dataTypeName: 'SQL_VARCHAR',
-      columnSize: 255,
-      decimalDigits: 0,
-      nullable: false
-    },
-    {
-      name: 'CreatedBy',
-      dataType: 12,
-      dataTypeName: 'SQL_VARCHAR',
-      columnSize: 100,
-      decimalDigits: 0,
-      nullable: false
-    },
-    {
-      name: 'UpdatedBy',
-      dataType: 12,
-      dataTypeName: 'SQL_VARCHAR',
-      columnSize: 100,
-      decimalDigits: 0,
-      nullable: true
-    }
-  ]
-]
-Data successfully saved to event_data_sent_back.json
-GET /api/fetch_sub_cause_based_on_cause?CauseName=2Q1%20faulty 304 - - 16.645 ms
-Database connection closed.
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Data written to ./event_related_data.json.
-GET /api/fetch_cause_from_top_cause?topCauseName=Due%20to%202Q1%20trip 200 687 - 24.004 ms
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Data written to ./event_related_data.json.
-GET /api/fetch_cause_from_top_cause?topCauseName=Faulty%2010F1 200 161 - 12.701 ms
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Data written to ./event_related_data.json.
-GET /api/fetch_cause_from_top_cause?topCauseName=Due%20to%202Q1%20trip 200 687 - 15.716 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 901.195 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%2010F1 200 545 - 886.170 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.796 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.214 ms
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -2315,7 +2369,7 @@ Test query result: [
 ]
 Event data saved to JSON file: {
   eventName: 'FM283 Pitch_EmergencyRun',
-  timestamp: '2024-12-06 15:57:13',
+  timestamp: '2024-12-07 21:55:09',
   mainData: {
     EventID: 102,
     ModelID: 1,
@@ -2324,9 +2378,9 @@ Event data saved to JSON file: {
     CreatedOn: '2024-11-21 13:16:08.2733333',
     UpdatedOn: '2024-11-21 13:16:08.2733333',
     IsActive: '1',
-    EventName: 'FM283 Pitch_EmergencyRun',
     CreatedBy: '41064',
-    UpdatedBy: '41064'
+    UpdatedBy: '41064',
+    EventName: 'FM283 Pitch_EmergencyRun'
   },
   tblTopCauseData: [
     {
@@ -2340,7 +2394,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Faulty 10F1',
       ProbabilityPercentage: 0.3,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: false
     },
     {
       EventID: 104,
@@ -2353,7 +2408,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to 2Q1 trip',
       ProbabilityPercentage: 0.7,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 105,
@@ -2366,7 +2422,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5',
       ProbabilityPercentage: 0.5,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: false
     },
     {
       EventID: 106,
@@ -2379,7 +2436,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Nacelle to hub 230V AC supply issue',
       ProbabilityPercentage: 2.1,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 107,
@@ -2392,7 +2450,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer',
       ProbabilityPercentage: 4.7,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 108,
@@ -2405,7 +2464,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to 19K1 relay-Emergency stop/95 degree switch',
       ProbabilityPercentage: 5,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 109,
@@ -2418,7 +2478,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Frequency converter faulty',
       ProbabilityPercentage: 0.1,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: false
     },
     {
       EventID: 110,
@@ -2431,7 +2492,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to 16K1 problem',
       ProbabilityPercentage: 5.9,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 111,
@@ -2444,7 +2506,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to battery surveillence',
       ProbabilityPercentage: 2,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 112,
@@ -2457,7 +2520,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to -5 degree switch',
       ProbabilityPercentage: 2,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 113,
@@ -2470,7 +2534,8 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to nacelle supply missing to hub',
       ProbabilityPercentage: 74.7,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     },
     {
       EventID: 114,
@@ -2483,23 +2548,11 @@ Event data saved to JSON file: {
       TopCauseName: 'Due to DC-DC converter',
       ProbabilityPercentage: 2,
       CreatedBy: '41064',
-      UpdatedBy: '41064'
+      UpdatedBy: '41064',
+      internalCause: true
     }
   ],
   eventObject: [
-    {
-      EventID: 102,
-      RootID: 102,
-      EventName: 'FM283 Pitch_EmergencyRun',
-      ProbabilityPercentage: null,
-      IsParent: '1',
-      ParentID: 0,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 0
-    },
     {
       EventID: 103,
       RootID: 102,
@@ -2511,19 +2564,6 @@ Event data saved to JSON file: {
       ActionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
       ActionTime: '00:20:00',
       ActionCost: 0,
-      Level: 1
-    },
-    {
-      EventID: 104,
-      RootID: 102,
-      EventName: 'Due to 2Q1 trip',
-      ProbabilityPercentage: 0.7,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
       Level: 1
     },
     {
@@ -2540,45 +2580,6 @@ Event data saved to JSON file: {
       Level: 1
     },
     {
-      EventID: 106,
-      RootID: 102,
-      EventName: 'Nacelle to hub 230V AC supply issue',
-      ProbabilityPercentage: 2.1,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 107,
-      RootID: 102,
-      EventName: 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer',
-      ProbabilityPercentage: 4.7,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 108,
-      RootID: 102,
-      EventName: 'Due to 19K1 relay-Emergency stop/95 degree switch',
-      ProbabilityPercentage: 5,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
       EventID: 109,
       RootID: 102,
       EventName: 'Frequency converter faulty',
@@ -2589,71 +2590,6 @@ Event data saved to JSON file: {
       ActionName: 'Check the functionality of frequency converter (-2A1, -4A1 and -6A1) digital input X2:15 (ISD00). Replace the frequency converter if required.',
       ActionTime: '01:00:00',
       ActionCost: 144985,
-      Level: 1
-    },
-    {
-      EventID: 110,
-      RootID: 102,
-      EventName: 'Due to 16K1 problem',
-      ProbabilityPercentage: 5.9,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 111,
-      RootID: 102,
-      EventName: 'Due to battery surveillence',
-      ProbabilityPercentage: 2,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 112,
-      RootID: 102,
-      EventName: 'Due to -5 degree switch',
-      ProbabilityPercentage: 2,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 113,
-      RootID: 102,
-      EventName: 'Due to nacelle supply missing to hub',
-      ProbabilityPercentage: 74.7,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
-      Level: 1
-    },
-    {
-      EventID: 114,
-      RootID: 102,
-      EventName: 'Due to DC-DC converter',
-      ProbabilityPercentage: 2,
-      IsParent: '1',
-      ParentID: 102,
-      ActionID: null,
-      ActionName: null,
-      ActionTime: null,
-      ActionCost: null,
       Level: 1
     },
     {
@@ -3152,4 +3088,767 @@ Event data saved to JSON file: {
     }
   ]
 }
-GET /api/fetch_event_causes_actions?eventName=FM283%20Pitch_EmergencyRun 304 - - 36.954 ms
+GET /api/fetch_event_causes_actions?eventName=FM283%20Pitch_EmergencyRun 304 - - 4123.356 ms
+Decoded cause: Faulty 10F1
+Decoded cause: Due to 2Q1 trip
+Connected to the database.
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty 10F1' ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 103 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 2418.984 ms
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%2010F1 200 545 - 3479.217 ms
+Decoded cause: Faulty 10F1
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+Connected to the database.
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 4669.928 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty 10F1' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 103 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Decoded cause: Untitled Cause
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Untitled Cause' ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%2010F1 200 545 - 4499.078 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Untitled%20Cause 404 50 - 1924.211 ms
+Decoded cause: Untitled Cause
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Untitled Cause' ]
+Decoded cause: Faulty 10F1
+Connected to the database.
+GET /api/fetch_hovering_items_for_topcause?cause=Untitled%20Cause 404 50 - 2347.681 ms
+Decoded cause: Untitled Cause
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty 10F1' ]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Untitled Cause' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 103 ]
+GET /api/fetch_hovering_items_for_topcause?cause=Untitled%20Cause 404 50 - 1587.281 ms
+Decoded cause: Untitled Cause
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Untitled Cause' ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+GET /api/fetch_hovering_items_for_topcause?cause=Untitled%20Cause 404 50 - 2101.101 ms
+Decoded cause: Untitled Cause
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+Connected to the database.
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%2010F1 200 545 - 5765.251 ms
+Decoded cause: Faulty 10F1
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Untitled Cause' ]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty 10F1' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 103 ]
+GET /api/fetch_hovering_items_for_topcause?cause=Untitled%20Cause 404 50 - 1828.580 ms
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%2010F1 200 545 - 1380.263 ms
+Decoded cause: Untitled Cause
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Untitled Cause' ]
+GET /api/fetch_hovering_items_for_topcause?cause=Untitled%20Cause 404 50 - 502.913 ms
+Decoded cause: Due to 2Q1 trip
+Decoded cause: Faulty cable (+TOW-W10) from CB):X5 to CTO:X5
+Decoded cause: Nacelle to hub 230V AC supply issue
+Decoded cause: Due to 19K3 voltage surveillence nacelle supply and LVRT timer
+Decoded cause: Due to 19K1 relay-Emergency stop/95 degree switch
+Decoded cause: Frequency converter faulty
+Connected to the database.
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
+Connected to the database.
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer' ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5' ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Nacelle to hub 230V AC supply issue' ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 19K1 relay-Emergency stop/95 degree switch' ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Frequency converter faulty' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 107 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 106 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 105 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 108 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 109 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 107, 107, 107, 107 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 108, 108, 108, 108 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 109, 109, 109, 109 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 107, 107, 107, 107 ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 108, 108, 108, 108 ]
+Fetched Questions: [
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 109, 109, 109, 109 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+Fetched QuestionAnswers: [
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.',
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.'
+]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+Fetched QuestionAnswers: [
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.',
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+Fetched QuestionAnswers: [
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Nacelle%20to%20hub%20230V%20AC%20supply%20issue 200 679 - 10004.203 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%2019K3%20voltage%20surveillence%20nacelle%20supply%20and%20LVRT%20timer 200 770 - 9920.291 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%20cable%20(%2BTOW-W10)%20from%20CB)%3AX5%20to%20CTO%3AX5 200 611 - 10021.135 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%2019K1%20relay-Emergency%20stop%2F95%20degree%20switch 200 537 - 9904.629 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 10037.964 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Frequency%20converter%20faulty 200 542 - 9873.456 ms
+Decoded cause: Frequency converter faulty
+Decoded cause: Due to 19K1 relay-Emergency stop/95 degree switch
+Decoded cause: Due to 19K3 voltage surveillence nacelle supply and LVRT timer
+Decoded cause: Nacelle to hub 230V AC supply issue
