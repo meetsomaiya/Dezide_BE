@@ -1,0 +1,63 @@
+checkAdmin route module loaded
+Server is listening on port \\.\pipe\0aab6618-24c7-421f-a0ee-4e72f56b43ad
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Action data written to file: {
+  actionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required',
+  timestamp: '2024-12-09T16:28:35+05:30'
+}
+GET /api/fetch_action_explanation?actionName=Check%20the%20functionality%20of%2010F1%20MCB%20in%20bottom%20cabinet.%20Replace%20it%20if%20required 200 199 - 6.042 ms
+Action data written to file: {
+  actionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
+  timestamp: '2024-12-09T16:28:41+05:30'
+}
+GET /api/fetch_action_explanation?actionName=Check%20the%20functionality%20of%2010F1%20MCB%20in%20bottom%20cabinet.%20Replace%20it%20if%20required. 200 200 - 2.776 ms
+Action data written to file: {
+  actionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
+  timestamp: '2024-12-09T16:28:41+05:30'
+}
+GET /api/fetch_action_explanation?actionName=Check%20the%20functionality%20of%2010F1%20MCB%20in%20bottom%20cabinet.%20Replace%20it%20if%20required. 304 - - 1.978 ms
+Action data written to file: {
+  actionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
+  timestamp: '2024-12-09T16:28:59+05:30'
+}
+GET /api/fetch_action_explanation?actionName=Check%20the%20functionality%20of%2010F1%20MCB%20in%20bottom%20cabinet.%20Replace%20it%20if%20required. 200 200 - 2.979 ms
+Action data written to file: {
+  actionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
+  timestamp: '2024-12-09T16:28:59+05:30'
+}
+GET /api/fetch_action_explanation?actionName=Check%20the%20functionality%20of%2010F1%20MCB%20in%20bottom%20cabinet.%20Replace%20it%20if%20required. 304 - - 2.540 ms

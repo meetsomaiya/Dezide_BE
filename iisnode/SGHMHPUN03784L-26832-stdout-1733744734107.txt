@@ -1,0 +1,2625 @@
+GET /api/fetch_action_explanation?actionName=Check%20the%20functionality%20of%2010F1%20MCB%20in%20bottom%20cabinet.%20Replace%20it%20if%20required. 304 - - 15.300 ms
+GET /api/fetch_image_gallery 404 162 - 0.213 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Fetched Action Explanation: When 10F1 is ON and 10F1:2,4,6 is having 230V AC available, 10F1:1,3,5 should also have 230V AC available. If 230V AC is missing at�10F1:1,3,5 then replace the 10F1.
+If 10F1 is keep tripping then disconnect the connections from 10F1:1,3,5 and turn it ON again.�If it trips again then replace the 10F1.
+Image successfully read and encoded.
+Action explanation written to file: {
+  actionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
+  actionExplanation: 'When 10F1 is ON and 10F1:2,4,6 is having 230V AC available, 10F1:1,3,5 should also have 230V AC available. If 230V AC is missing at�10F1:1,3,5 then replace the 10F1.\n' +
+    'If 10F1 is keep tripping then disconnect the connections from 10F1:1,3,5 and turn it ON again.�If it trips again then replace the 10F1.',
+  actionID: 25,
+  image: 'data:image/png;base64,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'... 77422 more characters,
+  timestamp: '2024-12-09T17:15:55+05:30'
+}
+GET /api/fetch_action_explanation?actionName=Check%20the%20functionality%20of%2010F1%20MCB%20in%20bottom%20cabinet.%20Replace%20it%20if%20required. 200 87976 - 18.630 ms
+GET /api/fetch_image_gallery 404 162 - 0.165 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Fetched Action Explanation: When 10F1 is ON and 10F1:2,4,6 is having 230V AC available, 10F1:1,3,5 should also have 230V AC available. If 230V AC is missing at�10F1:1,3,5 then replace the 10F1.
+If 10F1 is keep tripping then disconnect the connections from 10F1:1,3,5 and turn it ON again.�If it trips again then replace the 10F1.
+Image successfully read and encoded.
+Action explanation written to file: {
+  actionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
+  actionExplanation: 'When 10F1 is ON and 10F1:2,4,6 is having 230V AC available, 10F1:1,3,5 should also have 230V AC available. If 230V AC is missing at�10F1:1,3,5 then replace the 10F1.\n' +
+    'If 10F1 is keep tripping then disconnect the connections from 10F1:1,3,5 and turn it ON again.�If it trips again then replace the 10F1.',
+  actionID: 25,
+  image: 'data:image/png;base64,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'... 77422 more characters,
+  timestamp: '2024-12-09T17:17:42+05:30'
+}
+GET /api/fetch_action_explanation?actionName=Check%20the%20functionality%20of%2010F1%20MCB%20in%20bottom%20cabinet.%20Replace%20it%20if%20required. 200 87976 - 16.813 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.169 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.184 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'FM283 Pitch_EmergencyRun',
+  timestamp: '2024-12-09 17:19:27',
+  mainData: {
+    EventID: 102,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-11-21 13:16:08.2733333',
+    UpdatedOn: '2024-11-21 13:16:08.2733333',
+    IsActive: '1',
+    CreatedBy: '41064',
+    UpdatedBy: '41064',
+    EventName: 'FM283 Pitch_EmergencyRun'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 103,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Faulty 10F1',
+      ProbabilityPercentage: 0.3,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 104,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 2Q1 trip',
+      ProbabilityPercentage: 0.7,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 105,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5',
+      ProbabilityPercentage: 0.5,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 106,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Nacelle to hub 230V AC supply issue',
+      ProbabilityPercentage: 2.1,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 107,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer',
+      ProbabilityPercentage: 4.7,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 108,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 19K1 relay-Emergency stop/95 degree switch',
+      ProbabilityPercentage: 5,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 109,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Frequency converter faulty',
+      ProbabilityPercentage: 0.1,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 110,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 16K1 problem',
+      ProbabilityPercentage: 5.9,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 111,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to battery surveillence',
+      ProbabilityPercentage: 2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 112,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to -5 degree switch',
+      ProbabilityPercentage: 2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 113,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to nacelle supply missing to hub',
+      ProbabilityPercentage: 74.7,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 114,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to DC-DC converter',
+      ProbabilityPercentage: 2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    }
+  ],
+  eventObject: [
+    {
+      EventID: 103,
+      RootID: 102,
+      EventName: 'Faulty 10F1',
+      ProbabilityPercentage: 0.3,
+      IsParent: '0',
+      ParentID: 102,
+      ActionID: 25,
+      ActionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 1
+    },
+    {
+      EventID: 105,
+      RootID: 102,
+      EventName: 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5',
+      ProbabilityPercentage: 0.5,
+      IsParent: '0',
+      ParentID: 102,
+      ActionID: 28,
+      ActionName: 'Check resistance between wires X5:1,2,3 and cable insulation of +TOW-W10 wire no. 1,2,3 in the bottom cabinet.',
+      ActionTime: '00:05:00',
+      ActionCost: 0,
+      Level: 1
+    },
+    {
+      EventID: 109,
+      RootID: 102,
+      EventName: 'Frequency converter faulty',
+      ProbabilityPercentage: 0.1,
+      IsParent: '0',
+      ParentID: 102,
+      ActionID: 133,
+      ActionName: 'Check the functionality of frequency converter (-2A1, -4A1 and -6A1) digital input X2:15 (ISD00). Replace the frequency converter if required.',
+      ActionTime: '01:00:00',
+      ActionCost: 144985,
+      Level: 1
+    },
+    {
+      EventID: 115,
+      RootID: 102,
+      EventName: '2Q1 faulty',
+      ProbabilityPercentage: 51.2,
+      IsParent: '0',
+      ParentID: 104,
+      ActionID: 26,
+      ActionName: 'Check the functionality of 2Q1 MPCB in top cabinet. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 4228,
+      Level: 2
+    },
+    {
+      EventID: 116,
+      RootID: 102,
+      EventName: 'Due to loose connections at 2Q1',
+      ProbabilityPercentage: 48.8,
+      IsParent: '0',
+      ParentID: 104,
+      ActionID: 27,
+      ActionName: 'Check connection tightness and settings at 3 phase 230V AC pitch supply MPCB (2Q1) in the top cabinet.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 117,
+      RootID: 102,
+      EventName: 'Faulty 33F1',
+      ProbabilityPercentage: 0.3,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 29,
+      ActionName: 'Check the functionality of 33F1 MCB in bottom cabinet. Replace it if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 118,
+      RootID: 102,
+      EventName: 'Faulty 2F3',
+      ProbabilityPercentage: 1,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 30,
+      ActionName: 'Check the functionality of 2F3 MCB in top cabinet. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 119,
+      RootID: 102,
+      EventName: 'Loose connections at X7:3,4,5 in top cabinet',
+      ProbabilityPercentage: 3.5,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 31,
+      ActionName: 'Check connection tightness at X7:3,4,5 at top cabinet.',
+      ActionTime: '00:05:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 120,
+      RootID: 102,
+      EventName: 'Loose connections at X7:3,4,5 in bottom cabinet',
+      ProbabilityPercentage: 3.4,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 32,
+      ActionName: 'Check connection tightness at X7:3,4,5 at bottom cabinet.',
+      ActionTime: '00:05:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 121,
+      RootID: 102,
+      EventName: 'Due to heater failure',
+      ProbabilityPercentage: 56.8,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 33,
+      ActionName: 'Check the functionality of heater (28E1) in hub cabinet. Replace the heater if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 2163,
+      Level: 2
+    },
+    {
+      EventID: 122,
+      RootID: 102,
+      EventName: 'Due to hub cooling fan failure',
+      ProbabilityPercentage: 35,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 34,
+      ActionName: 'Check the functionality of all hub cabinet cooling fans (28M1, 28M2, 28M3, 28M4).',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 123,
+      RootID: 102,
+      EventName: '19K3 3 seconds timer relay',
+      ProbabilityPercentage: 23.8,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 35,
+      ActionName: 'Check LVRT off delay timer relay (19K3) functionality and connection tightness. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 4718,
+      Level: 2
+    },
+    {
+      EventID: 124,
+      RootID: 102,
+      EventName: '19K2 300 VDC battery charger monitoring',
+      ProbabilityPercentage: 23.8,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 36,
+      ActionName: 'Check battery charger 300V DC monitoring relay (-19K2) connection tightness and functionality. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 125,
+      RootID: 102,
+      EventName: '18K2 230 VAC fan and heating monitoring relay',
+      ProbabilityPercentage: 23.8,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 37,
+      ActionName: 'Check 230V AC monitoring relay (18K2) connection tightness and functionality. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 614,
+      Level: 2
+    },
+    {
+      EventID: 126,
+      RootID: 102,
+      EventName: '18K1 230 VAC 3 phase monitoring realy',
+      ProbabilityPercentage: 28.6,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 38,
+      ActionName: 'Check nacelle 230V AC 3 phase supply monitoring relay connection tightness and functionality of relay (18K1). Replace it if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 1993,
+      Level: 2
+    },
+    {
+      EventID: 127,
+      RootID: 102,
+      EventName: '22S1 FC1 Emer stop 3',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 124,
+      ActionName: 'Check emergency button (22S1) NC connection tightness and functionality of NC contacts.',
+      ActionTime: '00:15:00',
+      ActionCost: 150,
+      Level: 2
+    },
+    {
+      EventID: 128,
+      RootID: 102,
+      EventName: '21S1 FC1 Emer stop 2',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 122,
+      ActionName: 'Check emergency button (21S1) connection tightness and functionality of NC contacts.',
+      ActionTime: '00:15:00',
+      ActionCost: 150,
+      Level: 2
+    },
+    {
+      EventID: 129,
+      RootID: 102,
+      EventName: '20S1 FC1 Emer stop 1',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 120,
+      ActionName: 'Check emergency button (20S1) NC connection tightness and functionality of NC contacts.',
+      ActionTime: '00:15:00',
+      ActionCost: 150,
+      Level: 2
+    },
+    {
+      EventID: 130,
+      RootID: 102,
+      EventName: '20K3 realy FC3 95 degree',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 121,
+      ActionName: 'Check position 95° and 100° monitoring relay (22K1) connection tightness and functionality of NO contacts.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 131,
+      RootID: 102,
+      EventName: '20K2 realy FC2 95 degree',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 123,
+      ActionName: 'Check position 95° and 100° monitoring relay (21K1) connection tightness and functionality of NO contacts.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 132,
+      RootID: 102,
+      EventName: '20K1 realy FC1 95 degree',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 125,
+      ActionName: 'Check position 95° and 100° monitoring relay (20K1) connection tightness and functionality of NO contacts.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 133,
+      RootID: 102,
+      EventName: 'Loose connection in FC circuit ISD00 at FC',
+      ProbabilityPercentage: 52.3,
+      IsParent: '0',
+      ParentID: 110,
+      ActionID: 135,
+      ActionName: 'Check connection tightness at safety relay (-16K1) NO contacts and frequency converters (-2A1, -4A1, -6A1) digital input safety speed at X2:15 (ISD00).',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 134,
+      RootID: 102,
+      EventName: 'Faulty safety relay 16K1',
+      ProbabilityPercentage: 47.7,
+      IsParent: '0',
+      ParentID: 110,
+      ActionID: 134,
+      ActionName: 'Check the functionality of safety relay (-16K1).',
+      ActionTime: '00:20:00',
+      ActionCost: 6823,
+      Level: 2
+    },
+    {
+      EventID: 135,
+      RootID: 102,
+      EventName: '17A3 Batt. surveillence relay',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 111,
+      ActionID: 39,
+      ActionName: 'Check battery surveillance monitoring relay (17A3) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 136,
+      RootID: 102,
+      EventName: '17A2 Batt. surveillence relay',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 111,
+      ActionID: 40,
+      ActionName: 'Check battery surveillance monitoring relay (17A2) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 137,
+      RootID: 102,
+      EventName: '17A1 Batt. surveillence relay',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 111,
+      ActionID: 41,
+      ActionName: 'Check battery surveillance monitoring relay (17A1) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 138,
+      RootID: 102,
+      EventName: '14K1 -5 degree relay FC3',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 112,
+      ActionID: 42,
+      ActionName: 'Check the position -5° relay (14K1) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 139,
+      RootID: 102,
+      EventName: '13K1 -5 degree relay FC2',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 112,
+      ActionID: 43,
+      ActionName: 'Check the position -5° relay (13K1) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 140,
+      RootID: 102,
+      EventName: '12K1 -5 degree relay FC1',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 112,
+      ActionID: 44,
+      ActionName: 'Check the position -5° relays (12K1) connection tightness and functionality NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 141,
+      RootID: 102,
+      EventName: 'Slip ring cables from CTO to slipring',
+      ProbabilityPercentage: 2.4,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 45,
+      ActionName: 'Check slipring cable continuity from top cabinet slip ring supply terminal blocks to internal terminal block of slip ring.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 142,
+      RootID: 102,
+      EventName: 'Safety chain relay (8K2)',
+      ProbabilityPercentage: 10.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 46,
+      ActionName: 'Check connection tightness and functionality of safety chain relay (8K2).',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 143,
+      RootID: 102,
+      EventName: 'Slipring maintenance issue',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 127,
+      ActionName: 'Check the condition of brushes and tracks of hub slip ring.',
+      ActionTime: '00:30:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 144,
+      RootID: 102,
+      EventName: 'Faulty hub slipring SR',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 128,
+      ActionName: 'Check the continuity of slip ring cable between slip ring terminals at nacelle side and in hub cabinet.',
+      ActionTime: '03:00:00',
+      ActionCost: 276316,
+      Level: 2
+    },
+    {
+      EventID: 145,
+      RootID: 102,
+      EventName: 'Loose connection at slipring in nacelle',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 129,
+      ActionName: 'Check hub slip ring connection tightness inside slipring terminal box.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 146,
+      RootID: 102,
+      EventName: 'DIO module faulty',
+      ProbabilityPercentage: 0.1,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 130,
+      ActionName: 'Check the functionality of DIO280 (50A2) module. Replace the module if required.',
+      ActionTime: '00:30:00',
+      ActionCost: 22697,
+      Level: 2
+    },
+    {
+      EventID: 147,
+      RootID: 102,
+      EventName: 'Loose connection at X10A TB in top cabinet (safety speed)',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 131,
+      ActionName: 'Check the safety speed signal from TB X10A:3 to DIO280 module.',
+      ActionTime: '00:20:00',
+      ActionCost: 50,
+      Level: 2
+    },
+    {
+      EventID: 148,
+      RootID: 102,
+      EventName: 'Safety chain contatctor (3K1)',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 132,
+      ActionName: 'Check the functionality and connection tightness of safety chain contactor (-3K1) in top cabinet.',
+      ActionTime: '00:30:00',
+      ActionCost: 1020,
+      Level: 2
+    },
+    {
+      EventID: 149,
+      RootID: 102,
+      EventName: 'safety speed relay (8K1)',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 126,
+      ActionName: 'Check the safety speed relay (8K1) connection tightness and functionality.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 150,
+      RootID: 102,
+      EventName: '16K4 (5A1) DC-DC converter FC2',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 114,
+      ActionID: 47,
+      ActionName: 'Check DC-DC converter monitoring relay (16K4) connection tightness and functionality.',
+      ActionTime: '00:05:00',
+      ActionCost: 437,
+      Level: 2
+    },
+    {
+      EventID: 151,
+      RootID: 102,
+      EventName: '16K3 (5A1) DC-DC converter FC2',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 114,
+      ActionID: 48,
+      ActionName: 'Check DC-DC converter monitoring relay (16K3) connection tightness and functionality.',
+      ActionTime: '00:05:00',
+      ActionCost: 437,
+      Level: 2
+    },
+    {
+      EventID: 152,
+      RootID: 102,
+      EventName: '16K2 (3A1) DC-DC converter FC1',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 114,
+      ActionID: 49,
+      ActionName: 'Check DC-DC converter monitoring relay (16K2) connection tightness and functionality.',
+      ActionTime: '00:05:00',
+      ActionCost: 437,
+      Level: 2
+    }
+  ]
+}
+GET /api/fetch_event_causes_actions?eventName=FM283%20Pitch_EmergencyRun 304 - - 38.494 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 10.034 ms
+Decoded cause: Faulty 10F1
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty 10F1' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 103 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%2010F1 200 545 - 22.495 ms
+Decoded cause: Due to 2Q1 trip
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 22.581 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Data written to ./event_related_data.json.
+GET /api/fetch_cause_from_top_cause?topCauseName=Due%20to%202Q1%20trip 200 737 - 22.148 ms
+Decoded cause: Due to 2Q1 trip
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 29.652 ms
+Decoded cause: Due to 2Q1 trip
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 21.037 ms
+Decoded cause: Due to 2Q1 trip
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 304 - - 21.523 ms
+GET /api/fetch_image_gallery 404 162 - 0.348 ms
+GET /api/fetch_image_gallery 404 162 - 0.584 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Fetched Action Explanation: When 10F1 is ON and 10F1:2,4,6 is having 230V AC available, 10F1:1,3,5 should also have 230V AC available. If 230V AC is missing at�10F1:1,3,5 then replace the 10F1.
+If 10F1 is keep tripping then disconnect the connections from 10F1:1,3,5 and turn it ON again.�If it trips again then replace the 10F1.
+Image successfully read and encoded.
+Action explanation written to file: {
+  actionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
+  actionExplanation: 'When 10F1 is ON and 10F1:2,4,6 is having 230V AC available, 10F1:1,3,5 should also have 230V AC available. If 230V AC is missing at�10F1:1,3,5 then replace the 10F1.\n' +
+    'If 10F1 is keep tripping then disconnect the connections from 10F1:1,3,5 and turn it ON again.�If it trips again then replace the 10F1.',
+  actionID: 25,
+  image: 'data:image/png;base64,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'... 77422 more characters,
+  timestamp: '2024-12-09T17:19:55+05:30'
+}
+GET /api/fetch_action_explanation?actionName=Check%20the%20functionality%20of%2010F1%20MCB%20in%20bottom%20cabinet.%20Replace%20it%20if%20required. 200 87976 - 19.747 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Fetched Action Explanation: When 10F1 is ON and 10F1:2,4,6 is having 230V AC available, 10F1:1,3,5 should also have 230V AC available. If 230V AC is missing at�10F1:1,3,5 then replace the 10F1.
+If 10F1 is keep tripping then disconnect the connections from 10F1:1,3,5 and turn it ON again.�If it trips again then replace the 10F1.
+Image successfully read and encoded.
+Action explanation written to file: {
+  actionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
+  actionExplanation: 'When 10F1 is ON and 10F1:2,4,6 is having 230V AC available, 10F1:1,3,5 should also have 230V AC available. If 230V AC is missing at�10F1:1,3,5 then replace the 10F1.\n' +
+    'If 10F1 is keep tripping then disconnect the connections from 10F1:1,3,5 and turn it ON again.�If it trips again then replace the 10F1.',
+  actionID: 25,
+  image: 'data:image/png;base64,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'... 77422 more characters,
+  timestamp: '2024-12-09T17:19:55+05:30'
+}
+GET /api/fetch_action_explanation?actionName=Check%20the%20functionality%20of%2010F1%20MCB%20in%20bottom%20cabinet.%20Replace%20it%20if%20required. 304 - - 22.316 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.285 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.193 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'FM283 Pitch_EmergencyRun',
+  timestamp: '2024-12-09 17:20:09',
+  mainData: {
+    EventID: 102,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-11-21 13:16:08.2733333',
+    UpdatedOn: '2024-11-21 13:16:08.2733333',
+    IsActive: '1',
+    CreatedBy: '41064',
+    UpdatedBy: '41064',
+    EventName: 'FM283 Pitch_EmergencyRun'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 103,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Faulty 10F1',
+      ProbabilityPercentage: 0.3,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 104,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 2Q1 trip',
+      ProbabilityPercentage: 0.7,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 105,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5',
+      ProbabilityPercentage: 0.5,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 106,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Nacelle to hub 230V AC supply issue',
+      ProbabilityPercentage: 2.1,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 107,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer',
+      ProbabilityPercentage: 4.7,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 108,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 19K1 relay-Emergency stop/95 degree switch',
+      ProbabilityPercentage: 5,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 109,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Frequency converter faulty',
+      ProbabilityPercentage: 0.1,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 110,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 16K1 problem',
+      ProbabilityPercentage: 5.9,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 111,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to battery surveillence',
+      ProbabilityPercentage: 2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 112,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to -5 degree switch',
+      ProbabilityPercentage: 2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 113,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to nacelle supply missing to hub',
+      ProbabilityPercentage: 74.7,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 114,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to DC-DC converter',
+      ProbabilityPercentage: 2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    }
+  ],
+  eventObject: [
+    {
+      EventID: 103,
+      RootID: 102,
+      EventName: 'Faulty 10F1',
+      ProbabilityPercentage: 0.3,
+      IsParent: '0',
+      ParentID: 102,
+      ActionID: 25,
+      ActionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 1
+    },
+    {
+      EventID: 105,
+      RootID: 102,
+      EventName: 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5',
+      ProbabilityPercentage: 0.5,
+      IsParent: '0',
+      ParentID: 102,
+      ActionID: 28,
+      ActionName: 'Check resistance between wires X5:1,2,3 and cable insulation of +TOW-W10 wire no. 1,2,3 in the bottom cabinet.',
+      ActionTime: '00:05:00',
+      ActionCost: 0,
+      Level: 1
+    },
+    {
+      EventID: 109,
+      RootID: 102,
+      EventName: 'Frequency converter faulty',
+      ProbabilityPercentage: 0.1,
+      IsParent: '0',
+      ParentID: 102,
+      ActionID: 133,
+      ActionName: 'Check the functionality of frequency converter (-2A1, -4A1 and -6A1) digital input X2:15 (ISD00). Replace the frequency converter if required.',
+      ActionTime: '01:00:00',
+      ActionCost: 144985,
+      Level: 1
+    },
+    {
+      EventID: 115,
+      RootID: 102,
+      EventName: '2Q1 faulty',
+      ProbabilityPercentage: 51.2,
+      IsParent: '0',
+      ParentID: 104,
+      ActionID: 26,
+      ActionName: 'Check the functionality of 2Q1 MPCB in top cabinet. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 4228,
+      Level: 2
+    },
+    {
+      EventID: 116,
+      RootID: 102,
+      EventName: 'Due to loose connections at 2Q1',
+      ProbabilityPercentage: 48.8,
+      IsParent: '0',
+      ParentID: 104,
+      ActionID: 27,
+      ActionName: 'Check connection tightness and settings at 3 phase 230V AC pitch supply MPCB (2Q1) in the top cabinet.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 117,
+      RootID: 102,
+      EventName: 'Faulty 33F1',
+      ProbabilityPercentage: 0.3,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 29,
+      ActionName: 'Check the functionality of 33F1 MCB in bottom cabinet. Replace it if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 118,
+      RootID: 102,
+      EventName: 'Faulty 2F3',
+      ProbabilityPercentage: 1,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 30,
+      ActionName: 'Check the functionality of 2F3 MCB in top cabinet. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 119,
+      RootID: 102,
+      EventName: 'Loose connections at X7:3,4,5 in top cabinet',
+      ProbabilityPercentage: 3.5,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 31,
+      ActionName: 'Check connection tightness at X7:3,4,5 at top cabinet.',
+      ActionTime: '00:05:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 120,
+      RootID: 102,
+      EventName: 'Loose connections at X7:3,4,5 in bottom cabinet',
+      ProbabilityPercentage: 3.4,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 32,
+      ActionName: 'Check connection tightness at X7:3,4,5 at bottom cabinet.',
+      ActionTime: '00:05:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 121,
+      RootID: 102,
+      EventName: 'Due to heater failure',
+      ProbabilityPercentage: 56.8,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 33,
+      ActionName: 'Check the functionality of heater (28E1) in hub cabinet. Replace the heater if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 2163,
+      Level: 2
+    },
+    {
+      EventID: 122,
+      RootID: 102,
+      EventName: 'Due to hub cooling fan failure',
+      ProbabilityPercentage: 35,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 34,
+      ActionName: 'Check the functionality of all hub cabinet cooling fans (28M1, 28M2, 28M3, 28M4).',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 123,
+      RootID: 102,
+      EventName: '19K3 3 seconds timer relay',
+      ProbabilityPercentage: 23.8,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 35,
+      ActionName: 'Check LVRT off delay timer relay (19K3) functionality and connection tightness. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 4718,
+      Level: 2
+    },
+    {
+      EventID: 124,
+      RootID: 102,
+      EventName: '19K2 300 VDC battery charger monitoring',
+      ProbabilityPercentage: 23.8,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 36,
+      ActionName: 'Check battery charger 300V DC monitoring relay (-19K2) connection tightness and functionality. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 125,
+      RootID: 102,
+      EventName: '18K2 230 VAC fan and heating monitoring relay',
+      ProbabilityPercentage: 23.8,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 37,
+      ActionName: 'Check 230V AC monitoring relay (18K2) connection tightness and functionality. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 614,
+      Level: 2
+    },
+    {
+      EventID: 126,
+      RootID: 102,
+      EventName: '18K1 230 VAC 3 phase monitoring realy',
+      ProbabilityPercentage: 28.6,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 38,
+      ActionName: 'Check nacelle 230V AC 3 phase supply monitoring relay connection tightness and functionality of relay (18K1). Replace it if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 1993,
+      Level: 2
+    },
+    {
+      EventID: 127,
+      RootID: 102,
+      EventName: '22S1 FC1 Emer stop 3',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 124,
+      ActionName: 'Check emergency button (22S1) NC connection tightness and functionality of NC contacts.',
+      ActionTime: '00:15:00',
+      ActionCost: 150,
+      Level: 2
+    },
+    {
+      EventID: 128,
+      RootID: 102,
+      EventName: '21S1 FC1 Emer stop 2',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 122,
+      ActionName: 'Check emergency button (21S1) connection tightness and functionality of NC contacts.',
+      ActionTime: '00:15:00',
+      ActionCost: 150,
+      Level: 2
+    },
+    {
+      EventID: 129,
+      RootID: 102,
+      EventName: '20S1 FC1 Emer stop 1',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 120,
+      ActionName: 'Check emergency button (20S1) NC connection tightness and functionality of NC contacts.',
+      ActionTime: '00:15:00',
+      ActionCost: 150,
+      Level: 2
+    },
+    {
+      EventID: 130,
+      RootID: 102,
+      EventName: '20K3 realy FC3 95 degree',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 121,
+      ActionName: 'Check position 95° and 100° monitoring relay (22K1) connection tightness and functionality of NO contacts.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 131,
+      RootID: 102,
+      EventName: '20K2 realy FC2 95 degree',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 123,
+      ActionName: 'Check position 95° and 100° monitoring relay (21K1) connection tightness and functionality of NO contacts.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 132,
+      RootID: 102,
+      EventName: '20K1 realy FC1 95 degree',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 125,
+      ActionName: 'Check position 95° and 100° monitoring relay (20K1) connection tightness and functionality of NO contacts.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 133,
+      RootID: 102,
+      EventName: 'Loose connection in FC circuit ISD00 at FC',
+      ProbabilityPercentage: 52.3,
+      IsParent: '0',
+      ParentID: 110,
+      ActionID: 135,
+      ActionName: 'Check connection tightness at safety relay (-16K1) NO contacts and frequency converters (-2A1, -4A1, -6A1) digital input safety speed at X2:15 (ISD00).',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 134,
+      RootID: 102,
+      EventName: 'Faulty safety relay 16K1',
+      ProbabilityPercentage: 47.7,
+      IsParent: '0',
+      ParentID: 110,
+      ActionID: 134,
+      ActionName: 'Check the functionality of safety relay (-16K1).',
+      ActionTime: '00:20:00',
+      ActionCost: 6823,
+      Level: 2
+    },
+    {
+      EventID: 135,
+      RootID: 102,
+      EventName: '17A3 Batt. surveillence relay',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 111,
+      ActionID: 39,
+      ActionName: 'Check battery surveillance monitoring relay (17A3) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 136,
+      RootID: 102,
+      EventName: '17A2 Batt. surveillence relay',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 111,
+      ActionID: 40,
+      ActionName: 'Check battery surveillance monitoring relay (17A2) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 137,
+      RootID: 102,
+      EventName: '17A1 Batt. surveillence relay',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 111,
+      ActionID: 41,
+      ActionName: 'Check battery surveillance monitoring relay (17A1) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 138,
+      RootID: 102,
+      EventName: '14K1 -5 degree relay FC3',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 112,
+      ActionID: 42,
+      ActionName: 'Check the position -5° relay (14K1) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 139,
+      RootID: 102,
+      EventName: '13K1 -5 degree relay FC2',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 112,
+      ActionID: 43,
+      ActionName: 'Check the position -5° relay (13K1) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 140,
+      RootID: 102,
+      EventName: '12K1 -5 degree relay FC1',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 112,
+      ActionID: 44,
+      ActionName: 'Check the position -5° relays (12K1) connection tightness and functionality NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 141,
+      RootID: 102,
+      EventName: 'Slip ring cables from CTO to slipring',
+      ProbabilityPercentage: 2.4,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 45,
+      ActionName: 'Check slipring cable continuity from top cabinet slip ring supply terminal blocks to internal terminal block of slip ring.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 142,
+      RootID: 102,
+      EventName: 'Safety chain relay (8K2)',
+      ProbabilityPercentage: 10.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 46,
+      ActionName: 'Check connection tightness and functionality of safety chain relay (8K2).',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 143,
+      RootID: 102,
+      EventName: 'Slipring maintenance issue',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 127,
+      ActionName: 'Check the condition of brushes and tracks of hub slip ring.',
+      ActionTime: '00:30:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 144,
+      RootID: 102,
+      EventName: 'Faulty hub slipring SR',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 128,
+      ActionName: 'Check the continuity of slip ring cable between slip ring terminals at nacelle side and in hub cabinet.',
+      ActionTime: '03:00:00',
+      ActionCost: 276316,
+      Level: 2
+    },
+    {
+      EventID: 145,
+      RootID: 102,
+      EventName: 'Loose connection at slipring in nacelle',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 129,
+      ActionName: 'Check hub slip ring connection tightness inside slipring terminal box.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 146,
+      RootID: 102,
+      EventName: 'DIO module faulty',
+      ProbabilityPercentage: 0.1,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 130,
+      ActionName: 'Check the functionality of DIO280 (50A2) module. Replace the module if required.',
+      ActionTime: '00:30:00',
+      ActionCost: 22697,
+      Level: 2
+    },
+    {
+      EventID: 147,
+      RootID: 102,
+      EventName: 'Loose connection at X10A TB in top cabinet (safety speed)',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 131,
+      ActionName: 'Check the safety speed signal from TB X10A:3 to DIO280 module.',
+      ActionTime: '00:20:00',
+      ActionCost: 50,
+      Level: 2
+    },
+    {
+      EventID: 148,
+      RootID: 102,
+      EventName: 'Safety chain contatctor (3K1)',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 132,
+      ActionName: 'Check the functionality and connection tightness of safety chain contactor (-3K1) in top cabinet.',
+      ActionTime: '00:30:00',
+      ActionCost: 1020,
+      Level: 2
+    },
+    {
+      EventID: 149,
+      RootID: 102,
+      EventName: 'safety speed relay (8K1)',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 126,
+      ActionName: 'Check the safety speed relay (8K1) connection tightness and functionality.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 150,
+      RootID: 102,
+      EventName: '16K4 (5A1) DC-DC converter FC2',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 114,
+      ActionID: 47,
+      ActionName: 'Check DC-DC converter monitoring relay (16K4) connection tightness and functionality.',
+      ActionTime: '00:05:00',
+      ActionCost: 437,
+      Level: 2
+    },
+    {
+      EventID: 151,
+      RootID: 102,
+      EventName: '16K3 (5A1) DC-DC converter FC2',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 114,
+      ActionID: 48,
+      ActionName: 'Check DC-DC converter monitoring relay (16K3) connection tightness and functionality.',
+      ActionTime: '00:05:00',
+      ActionCost: 437,
+      Level: 2
+    },
+    {
+      EventID: 152,
+      RootID: 102,
+      EventName: '16K2 (3A1) DC-DC converter FC1',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 114,
+      ActionID: 49,
+      ActionName: 'Check DC-DC converter monitoring relay (16K2) connection tightness and functionality.',
+      ActionTime: '00:05:00',
+      ActionCost: 437,
+      Level: 2
+    }
+  ]
+}
+GET /api/fetch_event_causes_actions?eventName=FM283%20Pitch_EmergencyRun 304 - - 41.385 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 14.061 ms
+Decoded cause: Faulty 10F1
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty 10F1' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 103 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 103, 103, 103, 103 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%2010F1 200 545 - 22.078 ms
+Decoded cause: Due to 2Q1 trip
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 21.982 ms
+Decoded cause: Faulty cable (+TOW-W10) from CB):X5 to CTO:X5
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 105 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%20cable%20(%2BTOW-W10)%20from%20CB)%3AX5%20to%20CTO%3AX5 200 611 - 22.738 ms
+Decoded cause: Nacelle to hub 230V AC supply issue
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Nacelle to hub 230V AC supply issue' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 106 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Nacelle%20to%20hub%20230V%20AC%20supply%20issue 200 679 - 20.923 ms
+Decoded cause: Due to 19K3 voltage surveillence nacelle supply and LVRT timer
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 107 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 107, 107, 107, 107 ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 107, 107, 107, 107 ]
+Fetched QuestionAnswers: [
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.',
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%2019K3%20voltage%20surveillence%20nacelle%20supply%20and%20LVRT%20timer 200 770 - 24.017 ms
+Decoded cause: Nacelle to hub 230V AC supply issue
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Nacelle to hub 230V AC supply issue' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 106 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Nacelle%20to%20hub%20230V%20AC%20supply%20issue 200 679 - 21.334 ms
+Decoded cause: Faulty cable (+TOW-W10) from CB):X5 to CTO:X5
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 105 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%20cable%20(%2BTOW-W10)%20from%20CB)%3AX5%20to%20CTO%3AX5 200 611 - 27.875 ms
+Decoded cause: Due to 2Q1 trip
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
+Decoded cause: Faulty cable (+TOW-W10) from CB):X5 to CTO:X5
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+Connected to the database.
+Decoded cause: Nacelle to hub 230V AC supply issue
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5' ]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Nacelle to hub 230V AC supply issue' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 105 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 106 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 30.672 ms
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%20cable%20(%2BTOW-W10)%20from%20CB)%3AX5%20to%20CTO%3AX5 200 611 - 25.759 ms
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Nacelle%20to%20hub%20230V%20AC%20supply%20issue 200 679 - 21.106 ms
+Decoded cause: Due to 19K3 voltage surveillence nacelle supply and LVRT timer
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 107 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 107, 107, 107, 107 ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 107, 107, 107, 107 ]
+Fetched QuestionAnswers: [
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.',
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%2019K3%20voltage%20surveillence%20nacelle%20supply%20and%20LVRT%20timer 200 770 - 20.763 ms
+Decoded cause: Due to 19K1 relay-Emergency stop/95 degree switch
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 19K1 relay-Emergency stop/95 degree switch' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 108 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 108, 108, 108, 108 ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 108, 108, 108, 108 ]
+Fetched QuestionAnswers: [
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.',
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+Decoded cause: Frequency converter faulty
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%2019K1%20relay-Emergency%20stop%2F95%20degree%20switch 200 537 - 17.990 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
