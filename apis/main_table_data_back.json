@@ -1,0 +1,74 @@
+{
+    "eventModelMap": [
+        {
+            "EventName": "FM103 Elec_SafetyChainStop",
+            "ModelNames": [
+                "S88 (SFS)"
+            ],
+            "language": [
+                "us"
+            ],
+            "lastChange": "Dec 13, 2024, 22:41",
+            "lastChangeBy": "Meet Somaiya",
+            "published": "Dec 13, 2024, 22:41",
+            "createdBy": "Meet Somaiya",
+            "version": 1
+        },
+        {
+            "EventName": "FM200  Elec_CurrentAverageHighStop",
+            "ModelNames": [
+                "S88 (SFS)"
+            ],
+            "language": [
+                "us"
+            ],
+            "lastChange": "Dec 13, 2024, 22:41",
+            "lastChangeBy": "Meet Somaiya",
+            "published": "Dec 13, 2024, 22:41",
+            "createdBy": "Meet Somaiya",
+            "version": 1
+        },
+        {
+            "EventName": "FM204 Pitch_Angle1_SPDifferenceStop",
+            "ModelNames": [
+                "S88 (SFS)"
+            ],
+            "language": [
+                "us"
+            ],
+            "lastChange": "Dec 13, 2024, 22:41",
+            "lastChangeBy": "Meet Somaiya",
+            "published": "Dec 13, 2024, 22:41",
+            "createdBy": "Meet Somaiya",
+            "version": 1
+        },
+        {
+            "EventName": "FM283 Pitch_EmergencyRun",
+            "ModelNames": [
+                "S88 (SFS)"
+            ],
+            "language": [
+                "us"
+            ],
+            "lastChange": "Dec 13, 2024, 22:41",
+            "lastChangeBy": "Meet Somaiya",
+            "published": "Dec 13, 2024, 22:41",
+            "createdBy": "Meet Somaiya",
+            "version": 1
+        },
+        {
+            "EventName": "FM91 Elec_FB_NacelleFan_Err",
+            "ModelNames": [
+                "S88 (SFS)"
+            ],
+            "language": [
+                "us"
+            ],
+            "lastChange": "Dec 13, 2024, 22:41",
+            "lastChangeBy": "Meet Somaiya",
+            "published": "Dec 13, 2024, 22:41",
+            "createdBy": "Meet Somaiya",
+            "version": 1
+        }
+    ]
+}

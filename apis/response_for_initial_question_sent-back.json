@@ -1,4 +1,7 @@
 {
-  "actionId": "94",
-  "actionName": "Ensure correct parameter setting of MFR."
+  "actionId": "22",
+  "actionName": "Ensure that 24V DC is available at 75K5:33.",
+  "infoName": [
+    "Safety chain activated. If DI08 *DI_SafetyChain_Activated* .\nTroubleshooting guide built on the basis of below mention drawing version and software version.\nBottom Cabinet Drawing Version: E.05.1.1.2.101A Rev.001.\nTop Cabinet Drawing Version: E.05.1.2.2.101A Rev.000.\nHub Cabinet Drawing Version: E.05.1.3.2.101A Rev.001_Improved.\nSoftware Version: CSM6321X5SX1XXR007."
+  ]
 }

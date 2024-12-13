@@ -15,12 +15,6 @@ router.use((req, res, next) => {
     next();
 });
 
-// Function to clean up corrupted characters
-function cleanString(str) {
-    // Replace corrupted characters (�) and non-breaking spaces with proper characters
-    return str.replace(/�/g, '').replace(/\u00A0/g, ' ').trim();
-}
-
 // GET endpoint to retrieve and save actionName and fetch corresponding data
 router.get('/', async (req, res) => {
     let actionName = req.query.actionName; // Retrieve the actionName from query parameters
@@ -94,16 +88,13 @@ router.get('/', async (req, res) => {
         }
 
         // If no image found in both locations
-        // if (!imageBase64) {
-        //     return res.status(404).json({ error: 'Image not found for the specified action.' });
-        // }
-
-        // Clean the actionExplanation text to remove corrupted characters
-        const cleanedExplanation = cleanString(record.ActionExplaination);
+        if (!imageBase64) {
+            return res.status(404).json({ error: 'Image not found for the specified action.' });
+        }
 
         // Prepare the response data
         data.record = {
-            actionExplaination: cleanedExplanation,
+            actionExplaination: record.ActionExplaination,
             actionImage: `data:image/png;base64,${imageBase64}`, // Embed the image as Base64
             isActive: record.IsActive,
         };
@@ -120,7 +111,7 @@ router.get('/', async (req, res) => {
             // Respond with the fetched record
             res.json({
                 message: 'Action data retrieved successfully.',
-                actionExplaination: cleanedExplanation,
+                actionExplaination: record.ActionExplaination,
                 actionImage: `data:image/png;base64,${imageBase64}`, // Send Base64 image
                 isActive: record.IsActive,
             });

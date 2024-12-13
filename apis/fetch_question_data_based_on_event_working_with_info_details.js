@@ -15,7 +15,7 @@ router.use((req, res, next) => {
     next();
 });
 
-// GET route to fetch EventID and related ActionName
+// GET route to fetch EventID, related ActionName, and InfoDetails
 router.get('/', async (req, res) => {
     const eventName = req.query.event;
 
@@ -60,7 +60,7 @@ router.get('/', async (req, res) => {
             actionName: actionResult[0].ActionName,
         };
 
-        // Fetch InfoName using the EventID
+        // Fetch InfoDetails using EventID
         const infoQuery = `
             SELECT [InfoName]
             FROM [Dezide_UAT].[dbo].[Tbl_EventsInfo]
@@ -68,17 +68,18 @@ router.get('/', async (req, res) => {
         `;
         const infoResult = await dbConnection.query(infoQuery, [eventId]);
 
-        if (infoResult.length > 0) {
-            actionData.infoName = infoResult.map((info) => info.InfoName);
-        } else {
-            actionData.infoName = [];
-        }
+        const infoDetails = infoResult.map(row => row.InfoName);
+
+        const responseData = {
+            actionData,
+            infoDetails,
+        };
 
         // Define the path to the JSON file
         const filePath = path.join(__dirname, 'response_for_initial_question_sent-back.json');
 
         // Write the response data to the JSON file
-        fs.writeFile(filePath, JSON.stringify(actionData, null, 2), (err) => {
+        fs.writeFile(filePath, JSON.stringify(responseData, null, 2), (err) => {
             if (err) {
                 console.error('Error writing to file:', err);
                 return res.status(500).json({ error: 'Failed to save response data to file' });
@@ -90,7 +91,7 @@ router.get('/', async (req, res) => {
         await dbConnection.close();
 
         // Send the response data to the client
-        res.status(200).json(actionData);
+        res.status(200).json(responseData);
     } catch (error) {
         console.error('Error processing request:', error);
         res.status(500).json({ error: 'An error occurred while processing the request' });

@@ -60,20 +60,6 @@ router.get('/', async (req, res) => {
             actionName: actionResult[0].ActionName,
         };
 
-        // Fetch InfoName using the EventID
-        const infoQuery = `
-            SELECT [InfoName]
-            FROM [Dezide_UAT].[dbo].[Tbl_EventsInfo]
-            WHERE [EventID] = ?
-        `;
-        const infoResult = await dbConnection.query(infoQuery, [eventId]);
-
-        if (infoResult.length > 0) {
-            actionData.infoName = infoResult.map((info) => info.InfoName);
-        } else {
-            actionData.infoName = [];
-        }
-
         // Define the path to the JSON file
         const filePath = path.join(__dirname, 'response_for_initial_question_sent-back.json');
 

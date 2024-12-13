@@ -1,0 +1,1291 @@
+GET /api/fetch_event_causes_actions?eventName=FM103%20Elec_SafetyChainStop 304 - - 24.305 ms
+Decoded cause: Control Circuit Top
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Control Circuit Top' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 77 ]
+GET /api/fetch_question_for_events?modalName=FM103%20Elec_SafetyChainStop 404 44 - 46.002 ms
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 77, 77, 77, 77 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 77, 77, 77, 77 ]
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=Control%20Circuit%20Top 200 172 - 51.251 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.171 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.242 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 22.132 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 15.332 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'FM103 Elec_SafetyChainStop',
+  timestamp: '2024-12-13 15:23:35',
+  mainData: {
+    EventID: 76,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-11-21 12:53:56.5300000',
+    UpdatedOn: '2024-11-21 12:53:56.5300000',
+    IsActive: '1',
+    CreatedBy: '41064',
+    UpdatedBy: '41064',
+    EventName: 'FM103 Elec_SafetyChainStop'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 77,
+      ModelID: 1,
+      ParentID: 76,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 12:56:10.4766667',
+      UpdatedOn: '2024-11-21 12:56:10.4766667',
+      IsActive: '1',
+      TopCauseName: 'Control Circuit Top',
+      ProbabilityPercentage: 31.5,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 78,
+      ModelID: 1,
+      ParentID: 76,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 12:56:10.4766667',
+      UpdatedOn: '2024-11-21 12:56:10.4766667',
+      IsActive: '1',
+      TopCauseName: 'Control Bottom Cabinet',
+      ProbabilityPercentage: 31.5,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 79,
+      ModelID: 1,
+      ParentID: 76,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 12:56:10.4766667',
+      UpdatedOn: '2024-11-21 12:56:10.4766667',
+      IsActive: '1',
+      TopCauseName: '24V Feedback Problem',
+      ProbabilityPercentage: 36.9,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    }
+  ],
+  eventObject: [
+    {
+      EventID: 80,
+      RootID: 76,
+      EventName: 'Connection issue at X21:36',
+      ProbabilityPercentage: 7.1,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 1,
+      ActionName: 'Check the connection between X21:36 and FR module in top cabinet.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 81,
+      RootID: 76,
+      EventName: '-83A1 FR-1 monitor connection and operation',
+      ProbabilityPercentage: 6.6,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 2,
+      ActionName: 'Check the functionality of FR module (83A1).',
+      ActionTime: '00:20:00',
+      ActionCost: 5155,
+      Level: 2
+    },
+    {
+      EventID: 82,
+      RootID: 76,
+      EventName: 'Yaw limit switch -100S4',
+      ProbabilityPercentage: 4.1,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 3,
+      ActionName: 'Check the functionality and connections of yaw limit switch 100S4.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 83,
+      RootID: 76,
+      EventName: 'Mechanical Vibration switch -100S3',
+      ProbabilityPercentage: 6.1,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 4,
+      ActionName: 'Check the functionality and connection of mechanical vibration switch -100S3.',
+      ActionTime: '00:20:00',
+      ActionCost: 1223,
+      Level: 2
+    },
+    {
+      EventID: 84,
+      RootID: 76,
+      EventName: 'SFS panel K3 relay',
+      ProbabilityPercentage: 8.8,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 5,
+      ActionName: 'Check the functionality of K3 PLC relay in SFS cabinet if TCI192 is implemented.',
+      ActionTime: '00:20:00',
+      ActionCost: 3575,
+      Level: 2
+    },
+    {
+      EventID: 85,
+      RootID: 76,
+      EventName: 'Mechanical Brake Unit Emergency Switch 100S7 ',
+      ProbabilityPercentage: 9.6,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 6,
+      ActionName: 'Check the functionality and connections of mechanical brake unit emergency switch 100S7.',
+      ActionTime: '00:20:00',
+      ActionCost: 134,
+      Level: 2
+    },
+    {
+      EventID: 86,
+      RootID: 76,
+      EventName: 'Nacelle Top emergency 100S2',
+      ProbabilityPercentage: 10.6,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 7,
+      ActionName: 'Check functionality and connections of nacelle top emergency switch 100S2.',
+      ActionTime: '00:20:00',
+      ActionCost: 134,
+      Level: 2
+    },
+    {
+      EventID: 87,
+      RootID: 76,
+      EventName: 'Panel Emergency Switch 100S1',
+      ProbabilityPercentage: 16.6,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 8,
+      ActionName: 'Check the functionality and connection of top cabinet door emergency switch 100S1.',
+      ActionTime: '00:20:00',
+      ActionCost: 134,
+      Level: 2
+    },
+    {
+      EventID: 88,
+      RootID: 76,
+      EventName: '7X2.5 Sqmm control cable issue from bottom to top cabinet',
+      ProbabilityPercentage: 30.4,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 9,
+      ActionName: 'Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 89,
+      RootID: 76,
+      EventName: '-75K2 timer connection and operation',
+      ProbabilityPercentage: 2.4,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 10,
+      ActionName: 'Check the functionality of timer relay 75K2.',
+      ActionTime: '00:20:00',
+      ActionCost: 1845,
+      Level: 2
+    },
+    {
+      EventID: 90,
+      RootID: 76,
+      EventName: 'Contactor -75K4 connection and operation',
+      ProbabilityPercentage: 4.8,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 11,
+      ActionName: 'Check the functionality of contactor 75K4.',
+      ActionTime: '00:20:00',
+      ActionCost: 346,
+      Level: 2
+    },
+    {
+      EventID: 91,
+      RootID: 76,
+      EventName: 'Contactor -75K3 connection and operation',
+      ProbabilityPercentage: 5.8,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 12,
+      ActionName: 'Check the functionality of contactor 75K3.',
+      ActionTime: '00:20:00',
+      ActionCost: 346,
+      Level: 2
+    },
+    {
+      EventID: 92,
+      RootID: 76,
+      EventName: '-75K5 safety chain relay  connection and operation',
+      ProbabilityPercentage: 7.6,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 13,
+      ActionName: 'Check the functionality of safety chain relay 75K5.',
+      ActionTime: '00:20:00',
+      ActionCost: 6809,
+      Level: 2
+    },
+    {
+      EventID: 93,
+      RootID: 76,
+      EventName: 'Cable 481 connection',
+      ProbabilityPercentage: 7.8,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 14,
+      ActionName: 'Check the connection of wire 481 in the bottom cabinet.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 94,
+      RootID: 76,
+      EventName: 'Door Auxillary Switch -9Q2',
+      ProbabilityPercentage: 10.9,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 15,
+      ActionName: 'Check the functionality of door auxiliary switch -9Q2.',
+      ActionTime: '00:20:00',
+      ActionCost: 240,
+      Level: 2
+    },
+    {
+      EventID: 95,
+      RootID: 76,
+      EventName: 'ACB -2Q1 auxillary X6 (S1) connection',
+      ProbabilityPercentage: 11.6,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 16,
+      ActionName: 'Check ACB -2Q1 auxiliary X6 connection 11 and 12 (S1).',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 96,
+      RootID: 76,
+      EventName: 'Emergency Switch -75S3 capacitor panel',
+      ProbabilityPercentage: 17,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 17,
+      ActionName: 'Check the functionality of emergency switch 75S3.',
+      ActionTime: '00:20:00',
+      ActionCost: 134,
+      Level: 2
+    },
+    {
+      EventID: 97,
+      RootID: 76,
+      EventName: 'Emergency Switch -75S1 control panel',
+      ProbabilityPercentage: 19.9,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 18,
+      ActionName: 'Check functionality of emergency switch 75S1.',
+      ActionTime: '00:20:00',
+      ActionCost: 134,
+      Level: 2
+    },
+    {
+      EventID: 98,
+      RootID: 76,
+      EventName: 'MCB -75F1 connection and operation',
+      ProbabilityPercentage: 12.2,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 19,
+      ActionName: 'Check the functionality of MCB -75F1.',
+      ActionTime: '00:20:00',
+      ActionCost: 399,
+      Level: 2
+    },
+    {
+      EventID: 99,
+      RootID: 76,
+      EventName: 'DIO264 (-50A3) operation',
+      ProbabilityPercentage: 5,
+      IsParent: '0',
+      ParentID: 79,
+      ActionID: 20,
+      ActionName: 'Check the functionality of DIO264 (50A3) module. Replace the module if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 20729,
+      Level: 2
+    },
+    {
+      EventID: 100,
+      RootID: 76,
+      EventName: 'Check NO contact -75K5',
+      ProbabilityPercentage: 21.4,
+      IsParent: '0',
+      ParentID: 79,
+      ActionID: 21,
+      ActionName: 'Check safety chain contactor -75K5 for NO contact operation.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 101,
+      RootID: 76,
+      EventName: 'Check 24V supply at 023',
+      ProbabilityPercentage: 73.6,
+      IsParent: '0',
+      ParentID: 79,
+      ActionID: 22,
+      ActionName: 'Ensure that 24V DC is available at 75K5:33.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    }
+  ]
+}
+GET /api/fetch_event_causes_actions?eventName=FM103%20Elec_SafetyChainStop 304 - - 24.959 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Decoded cause: Control Circuit Top
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Control Circuit Top' ]
+GET /api/fetch_question_for_events?modalName=FM103%20Elec_SafetyChainStop 404 44 - 16.979 ms
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 77 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 77, 77, 77, 77 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 77, 77, 77, 77 ]
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=Control%20Circuit%20Top 200 172 - 19.938 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM103%20Elec_SafetyChainStop 404 44 - 14.769 ms
+GET /api/fetch_main_table_data 200 1232 - 21.465 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM103%20Elec_SafetyChainStop 404 44 - 21.451 ms
+GET /api/fetch_main_table_data 304 - - 32.558 ms
+Decoded cause: 24V Feedback Problem
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ '24V Feedback Problem' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 79 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 79, 79, 79, 79 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 79, 79, 79, 79 ]
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=24V%20Feedback%20Problem 200 173 - 24.514 ms
+Decoded cause: Control Bottom Cabinet
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Control Bottom Cabinet' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 78 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 78, 78, 78, 78 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 78, 78, 78, 78 ]
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=Control%20Bottom%20Cabinet 200 175 - 39.530 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.301 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.354 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1232 - 23.220 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 16.240 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'FM103 Elec_SafetyChainStop',
+  timestamp: '2024-12-13 15:39:36',
+  mainData: {
+    EventID: 76,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-11-21 12:53:56.5300000',
+    UpdatedOn: '2024-11-21 12:53:56.5300000',
+    IsActive: '1',
+    CreatedBy: '41064',
+    UpdatedBy: '41064',
+    EventName: 'FM103 Elec_SafetyChainStop'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 77,
+      ModelID: 1,
+      ParentID: 76,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 12:56:10.4766667',
+      UpdatedOn: '2024-11-21 12:56:10.4766667',
+      IsActive: '1',
+      TopCauseName: 'Control Circuit Top',
+      ProbabilityPercentage: 31.5,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 78,
+      ModelID: 1,
+      ParentID: 76,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 12:56:10.4766667',
+      UpdatedOn: '2024-11-21 12:56:10.4766667',
+      IsActive: '1',
+      TopCauseName: 'Control Bottom Cabinet',
+      ProbabilityPercentage: 31.5,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 79,
+      ModelID: 1,
+      ParentID: 76,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 12:56:10.4766667',
+      UpdatedOn: '2024-11-21 12:56:10.4766667',
+      IsActive: '1',
+      TopCauseName: '24V Feedback Problem',
+      ProbabilityPercentage: 36.9,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    }
+  ],
+  eventObject: [
+    {
+      EventID: 80,
+      RootID: 76,
+      EventName: 'Connection issue at X21:36',
+      ProbabilityPercentage: 7.1,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 1,
+      ActionName: 'Check the connection between X21:36 and FR module in top cabinet.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 81,
+      RootID: 76,
+      EventName: '-83A1 FR-1 monitor connection and operation',
+      ProbabilityPercentage: 6.6,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 2,
+      ActionName: 'Check the functionality of FR module (83A1).',
+      ActionTime: '00:20:00',
+      ActionCost: 5155,
+      Level: 2
+    },
+    {
+      EventID: 82,
+      RootID: 76,
+      EventName: 'Yaw limit switch -100S4',
+      ProbabilityPercentage: 4.1,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 3,
+      ActionName: 'Check the functionality and connections of yaw limit switch 100S4.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 83,
+      RootID: 76,
+      EventName: 'Mechanical Vibration switch -100S3',
+      ProbabilityPercentage: 6.1,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 4,
+      ActionName: 'Check the functionality and connection of mechanical vibration switch -100S3.',
+      ActionTime: '00:20:00',
+      ActionCost: 1223,
+      Level: 2
+    },
+    {
+      EventID: 84,
+      RootID: 76,
+      EventName: 'SFS panel K3 relay',
+      ProbabilityPercentage: 8.8,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 5,
+      ActionName: 'Check the functionality of K3 PLC relay in SFS cabinet if TCI192 is implemented.',
+      ActionTime: '00:20:00',
+      ActionCost: 3575,
+      Level: 2
+    },
+    {
+      EventID: 85,
+      RootID: 76,
+      EventName: 'Mechanical Brake Unit Emergency Switch 100S7 ',
+      ProbabilityPercentage: 9.6,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 6,
+      ActionName: 'Check the functionality and connections of mechanical brake unit emergency switch 100S7.',
+      ActionTime: '00:20:00',
+      ActionCost: 134,
+      Level: 2
+    },
+    {
+      EventID: 86,
+      RootID: 76,
+      EventName: 'Nacelle Top emergency 100S2',
+      ProbabilityPercentage: 10.6,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 7,
+      ActionName: 'Check functionality and connections of nacelle top emergency switch 100S2.',
+      ActionTime: '00:20:00',
+      ActionCost: 134,
+      Level: 2
+    },
+    {
+      EventID: 87,
+      RootID: 76,
+      EventName: 'Panel Emergency Switch 100S1',
+      ProbabilityPercentage: 16.6,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 8,
+      ActionName: 'Check the functionality and connection of top cabinet door emergency switch 100S1.',
+      ActionTime: '00:20:00',
+      ActionCost: 134,
+      Level: 2
+    },
+    {
+      EventID: 88,
+      RootID: 76,
+      EventName: '7X2.5 Sqmm control cable issue from bottom to top cabinet',
+      ProbabilityPercentage: 30.4,
+      IsParent: '0',
+      ParentID: 77,
+      ActionID: 9,
+      ActionName: 'Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 89,
+      RootID: 76,
+      EventName: '-75K2 timer connection and operation',
+      ProbabilityPercentage: 2.4,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 10,
+      ActionName: 'Check the functionality of timer relay 75K2.',
+      ActionTime: '00:20:00',
+      ActionCost: 1845,
+      Level: 2
+    },
+    {
+      EventID: 90,
+      RootID: 76,
+      EventName: 'Contactor -75K4 connection and operation',
+      ProbabilityPercentage: 4.8,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 11,
+      ActionName: 'Check the functionality of contactor 75K4.',
+      ActionTime: '00:20:00',
+      ActionCost: 346,
+      Level: 2
+    },
+    {
+      EventID: 91,
+      RootID: 76,
+      EventName: 'Contactor -75K3 connection and operation',
+      ProbabilityPercentage: 5.8,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 12,
+      ActionName: 'Check the functionality of contactor 75K3.',
+      ActionTime: '00:20:00',
+      ActionCost: 346,
+      Level: 2
+    },
+    {
+      EventID: 92,
+      RootID: 76,
+      EventName: '-75K5 safety chain relay  connection and operation',
+      ProbabilityPercentage: 7.6,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 13,
+      ActionName: 'Check the functionality of safety chain relay 75K5.',
+      ActionTime: '00:20:00',
+      ActionCost: 6809,
+      Level: 2
+    },
+    {
+      EventID: 93,
+      RootID: 76,
+      EventName: 'Cable 481 connection',
+      ProbabilityPercentage: 7.8,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 14,
+      ActionName: 'Check the connection of wire 481 in the bottom cabinet.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 94,
+      RootID: 76,
+      EventName: 'Door Auxillary Switch -9Q2',
+      ProbabilityPercentage: 10.9,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 15,
+      ActionName: 'Check the functionality of door auxiliary switch -9Q2.',
+      ActionTime: '00:20:00',
+      ActionCost: 240,
+      Level: 2
+    },
+    {
+      EventID: 95,
+      RootID: 76,
+      EventName: 'ACB -2Q1 auxillary X6 (S1) connection',
+      ProbabilityPercentage: 11.6,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 16,
+      ActionName: 'Check ACB -2Q1 auxiliary X6 connection 11 and 12 (S1).',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 96,
+      RootID: 76,
+      EventName: 'Emergency Switch -75S3 capacitor panel',
+      ProbabilityPercentage: 17,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 17,
+      ActionName: 'Check the functionality of emergency switch 75S3.',
+      ActionTime: '00:20:00',
+      ActionCost: 134,
+      Level: 2
+    },
+    {
+      EventID: 97,
+      RootID: 76,
+      EventName: 'Emergency Switch -75S1 control panel',
+      ProbabilityPercentage: 19.9,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 18,
+      ActionName: 'Check functionality of emergency switch 75S1.',
+      ActionTime: '00:20:00',
+      ActionCost: 134,
+      Level: 2
+    },
+    {
+      EventID: 98,
+      RootID: 76,
+      EventName: 'MCB -75F1 connection and operation',
+      ProbabilityPercentage: 12.2,
+      IsParent: '0',
+      ParentID: 78,
+      ActionID: 19,
+      ActionName: 'Check the functionality of MCB -75F1.',
+      ActionTime: '00:20:00',
+      ActionCost: 399,
+      Level: 2
+    },
+    {
+      EventID: 99,
+      RootID: 76,
+      EventName: 'DIO264 (-50A3) operation',
+      ProbabilityPercentage: 5,
+      IsParent: '0',
+      ParentID: 79,
+      ActionID: 20,
+      ActionName: 'Check the functionality of DIO264 (50A3) module. Replace the module if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 20729,
+      Level: 2
+    },
+    {
+      EventID: 100,
+      RootID: 76,
+      EventName: 'Check NO contact -75K5',
+      ProbabilityPercentage: 21.4,
+      IsParent: '0',
+      ParentID: 79,
+      ActionID: 21,
+      ActionName: 'Check safety chain contactor -75K5 for NO contact operation.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 101,
+      RootID: 76,
+      EventName: 'Check 24V supply at 023',
+      ProbabilityPercentage: 73.6,
+      IsParent: '0',
+      ParentID: 79,
+      ActionID: 22,
+      ActionName: 'Ensure that 24V DC is available at 75K5:33.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    }
+  ]
+}
+GET /api/fetch_event_causes_actions?eventName=FM103%20Elec_SafetyChainStop 304 - - 23.327 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM103%20Elec_SafetyChainStop 404 44 - 11.672 ms
+Decoded cause: Control Bottom Cabinet
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Control Bottom Cabinet' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 78 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 78, 78, 78, 78 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 78, 78, 78, 78 ]
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=Control%20Bottom%20Cabinet 200 175 - 23.434 ms
+Decoded cause: 24V Feedback Problem
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ '24V Feedback Problem' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 79 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 79, 79, 79, 79 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 79, 79, 79, 79 ]
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=24V%20Feedback%20Problem 200 173 - 22.820 ms
+Decoded cause: Control Bottom Cabinet
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Control Bottom Cabinet' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 78 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 78, 78, 78, 78 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 78, 78, 78, 78 ]
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=Control%20Bottom%20Cabinet 200 175 - 21.978 ms

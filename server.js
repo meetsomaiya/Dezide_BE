@@ -41,6 +41,11 @@ const api16 = require('./apis/fetch_hovering_items_for_topcause');
 const api17 = require('./apis/fetch_action_explanation');
 
 
+/* admin side scripts pt 2 */
+
+const api18 = require('./apis/fetch_main_table_data');
+
+
 
 
 
@@ -76,6 +81,11 @@ app.use('/api/fetch_subquestion_for_event', api15);
 app.use('/api/fetch_hovering_items_for_topcause', api16);
 
 app.use('/api/fetch_action_explanation', api17);
+
+
+/* admin side scripts pt 2 */
+
+app.use('/api/fetch_main_table_data', api18);
 
 
 app.listen(port, () => {

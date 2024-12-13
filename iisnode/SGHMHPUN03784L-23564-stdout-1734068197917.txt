@@ -1,5 +1,5 @@
 checkAdmin route module loaded
-Server is listening on port \\.\pipe\55c49322-04bf-4028-a143-21accdf1ab07
+Server is listening on port \\.\pipe\9053610e-9a67-4c63-a41d-c1e2c996f410
 Connected to the database.
 Connected to the database.
 Test query result: [
@@ -54,4 +54,23 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_action_explanation?actionName=Check%20the%20functionality%20of%2010F1%20MCB%20in%20bottom%20cabinet.%20Replace%20it%20if%20required 404 57 - 23.840 ms
+GET /api/fetch_turbine_data 304 - - 20.863 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_turbine_data 304 - - 16.930 ms

@@ -1,0 +1,4465 @@
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 213.555 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 149.010 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 150.009 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 222.441 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 169.113 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 226.427 ms
+Received data: { trackerCount: 3, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check ACB -2Q1 auxiliary X6 connection 11 and 12 (S1).
+GET /api/fetch_consecutive_question_for_event?trackerCount=3&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 204.225 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check ACB -2Q1 auxiliary X6 connection 11 and 12 (S1)" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20ACB%20-2Q1%20auxiliary%20X6%20connection%2011%20and%2012%20(S1). 304 - - 367.988 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check ACB -2Q1 auxiliary X6 connection 11 and 12 (S1)" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20ACB%20-2Q1%20auxiliary%20X6%20connection%2011%20and%2012%20(S1). 304 - - 129.239 ms
+Received data: { trackerCount: 3, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check ACB -2Q1 auxiliary X6 connection 11 and 12 (S1).
+GET /api/fetch_consecutive_question_for_event?trackerCount=3&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 248.207 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check ACB -2Q1 auxiliary X6 connection 11 and 12 (S1)" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20ACB%20-2Q1%20auxiliary%20X6%20connection%2011%20and%2012%20(S1). 304 - - 146.604 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 186.552 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 133.171 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 216.855 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 229.092 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 164.123 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 203.853 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 152.902 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 396.731 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Received data: { trackerCount: 0, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+EventID: 76
+Returning ActionName: Ensure that 24V DC is available at 75K5:33.
+GET /api/fetch_consecutive_question_for_event?trackerCount=0&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 515.861 ms
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+Connected to the database.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 1873.917 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 300.939 ms
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 161.847 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 225.805 ms
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 226.051 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 680.047 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 169.827 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 193.120 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 131.282 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 134.142 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 243.525 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 144.215 ms
+Received data: { trackerCount: 0, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Ensure that 24V DC is available at 75K5:33.
+GET /api/fetch_consecutive_question_for_event?trackerCount=0&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 185.568 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 385.252 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 148.812 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 186.560 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 149.806 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 287.405 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 192.588 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 163.006 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 140.113 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 165.426 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 123.789 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 133.701 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 201.522 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 150.592 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 174.064 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 140.606 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 165.364 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 228.268 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 158.365 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 130.060 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 135.191 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 121.245 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 160.413 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 139.081 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 117.206 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 230.200 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 133.458 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 140.004 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 171.495 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 366.232 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 193.990 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 230.105 ms
+Received data: { trackerCount: 3, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check ACB -2Q1 auxiliary X6 connection 11 and 12 (S1).
+GET /api/fetch_consecutive_question_for_event?trackerCount=3&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 202.183 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check ACB -2Q1 auxiliary X6 connection 11 and 12 (S1)" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20ACB%20-2Q1%20auxiliary%20X6%20connection%2011%20and%2012%20(S1). 304 - - 155.565 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check ACB -2Q1 auxiliary X6 connection 11 and 12 (S1)" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20ACB%20-2Q1%20auxiliary%20X6%20connection%2011%20and%2012%20(S1). 304 - - 149.114 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check ACB -2Q1 auxiliary X6 connection 11 and 12 (S1)" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20ACB%20-2Q1%20auxiliary%20X6%20connection%2011%20and%2012%20(S1). 304 - - 249.302 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 136.583 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 156.984 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 253.898 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 165.100 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 180.742 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 235.121 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 269.330 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 142.870 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 221.373 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 362.197 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 405.841 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 472.589 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 268.846 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 476.342 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 154.447 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 168.575 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 519.026 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 555.705 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 268.705 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 152.845 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 200.784 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 263.503 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 217.876 ms
+Received data: { trackerCount: 0, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Ensure that 24V DC is available at 75K5:33.
+GET /api/fetch_consecutive_question_for_event?trackerCount=0&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 198.407 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 133.181 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 134.033 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 395.527 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 182.976 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 215.419 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 191.563 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 181.624 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 424.849 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 150.891 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 489.910 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 227.317 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 206.369 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 187.840 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 154.107 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 169.039 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 165.965 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 127.027 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 200.643 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 167.462 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 128.329 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 134.349 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 152.624 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 335.004 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 232.598 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 231.682 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 226.848 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 431.278 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 149.828 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 306.203 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 227.494 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 201.698 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 130.158 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 153.490 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 837.894 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 229.828 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 269.773 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 372.568 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 408.698 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 716.360 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 559.305 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 140.800 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 141.319 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 766.837 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 646.416 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 172.058 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 120.177 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 196.335 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 344.120 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 273.230 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 232.139 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 342.566 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 128.587 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 147.419 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 175.820 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 209.279 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 710.365 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 196.909 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 184.711 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 144.107 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 130.088 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 133.270 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 133.615 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 168.113 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 126.943 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 130.233 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 189.319 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 141.575 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 512.071 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 234.463 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 177.629 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 275.242 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 169.906 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 180.852 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 148.094 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 149.098 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 401.868 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 157.159 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 169.718 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 360.209 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 450.051 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 705.392 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 201.055 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 555.809 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 223.637 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 207.550 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 219.050 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 154.131 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 129.898 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 133.203 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 118.850 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 469.083 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 643.720 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 341.669 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 122.342 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 170.073 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 343.737 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 116.328 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 1047.068 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 1293.882 ms
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+Connected to the database.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 1595.176 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 808.456 ms
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+Connected to the database.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 608.652 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 895.990 ms
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+Connected to the database.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 887.656 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 425.251 ms
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+Connected to the database.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 405.921 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 312.374 ms
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+Connected to the database.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 363.529 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 349.724 ms
+Received data: { trackerCount: 0, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 942.273 ms
+Returning ActionName: Ensure that 24V DC is available at 75K5:33.
+GET /api/fetch_consecutive_question_for_event?trackerCount=0&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 991.380 ms
+Received data: { trackerCount: 0, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 676.182 ms
+Returning ActionName: Ensure that 24V DC is available at 75K5:33.
+Connected to the database.
+GET /api/fetch_consecutive_question_for_event?trackerCount=0&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 1015.105 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 496.689 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 458.504 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 387.455 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 5686.876 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 345.765 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 248.723 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 162.818 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 122.803 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 192.259 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 133.035 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 171.155 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 163.832 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
