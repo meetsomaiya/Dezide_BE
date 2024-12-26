@@ -45,6 +45,27 @@ const api17 = require('./apis/fetch_action_explanation');
 
 const api18 = require('./apis/fetch_main_table_data');
 
+/* user side scripts pt 3 */
+
+const api19 = require('./apis/performed_steps_question_fetch');
+
+const api20 = require('./apis/pause_session');
+
+const api21 = require('./apis/fetch_resume_data');
+
+/* admin side scripts pt 4 */
+
+const api22 = require('./apis/fetch_internal_turbine_model_and_temperature_variant');
+
+const api23 = require('./apis/create_dynamic_guide');
+
+const api24 = require('./apis/submit-causes');
+
+const api25 = require('./apis/edited_top_cause_data');
+
+const api26 = require('./apis/sub_cause_edited_data');
+
+
 
 
 
@@ -86,6 +107,25 @@ app.use('/api/fetch_action_explanation', api17);
 /* admin side scripts pt 2 */
 
 app.use('/api/fetch_main_table_data', api18);
+
+/* user side scripts pt 3 */
+
+app.use('/api/performed_steps_question_fetch', api19);
+
+app.use('/api/pause_session', api20);
+
+app.use('/api/fetch_resume_data', api21);
+
+app.use('/api/fetch_internal_turbine_model_and_temperature_variant', api22);
+
+app.use('/api/create_dynamic_guide', api23);
+
+app.use('/api/submit-causes', api24);
+
+app.use('/api/edited_top_cause_data', api25);
+
+app.use('/api/sub_cause_edited_data', api26);
+
 
 
 app.listen(port, () => {

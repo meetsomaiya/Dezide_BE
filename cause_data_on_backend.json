@@ -1,0 +1,10 @@
+{
+  "mainEvent": "demo",
+  "causes": [
+    {
+      "causeName": "Untitled Cause",
+      "probability": 0,
+      "subcauses": []
+    }
+  ]
+}

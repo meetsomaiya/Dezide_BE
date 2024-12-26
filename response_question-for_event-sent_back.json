@@ -1,10 +1,10 @@
 {
-  "modalName": "FM204 Pitch_Angle1_SPDifferenceStop",
-  "eventID": 1,
+  "modalName": "FM91 Elec_FB_NacelleFan_Err",
+  "eventID": 50,
   "questions": [
     {
-      "questionName": "Is this error active for all three blades ?",
-      "questionTime": "00:01:00",
+      "questionName": "Is MPCB 7Q2 tripped ?",
+      "questionTime": "00:05:00",
       "questionCost": 0
     }
   ]

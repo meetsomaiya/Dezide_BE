@@ -1,0 +1,14 @@
+(node:16144) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Application has thrown an uncaught exception and is terminated:
+TypeError: Cannot destructure property 'parentCauseName' of 'req.body' as it is undefined.
+    at D:\Dezide_node\Dezide_BE\apis\sub_cause_edited_data.js:9:13
+    at Layer.handle [as handle_request] (D:\Dezide_node\Dezide_BE\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Dezide_node\Dezide_BE\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\Dezide_node\Dezide_BE\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\Dezide_node\Dezide_BE\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Dezide_node\Dezide_BE\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\Dezide_node\Dezide_BE\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Dezide_node\Dezide_BE\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\Dezide_node\Dezide_BE\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\Dezide_node\Dezide_BE\node_modules\express\lib\router\index.js:47:12)

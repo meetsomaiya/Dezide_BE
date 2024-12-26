@@ -1,0 +1,3032 @@
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 18.185 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:12',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:12.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 20.052 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:12',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:12.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 18.657 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:12',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:12.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 24.838 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:12',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:12.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 22.019 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:12',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:12.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 18.384 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:12',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:12.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 19.483 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:12',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:12.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 39.039 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:12',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:12.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 25.955 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:12',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:12.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 18.682 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:12',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:12.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 19.412 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:12',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:12.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 19.728 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:13',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 200 580 - 17.972 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:13',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 18.825 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:13',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 19.929 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:13',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 21.223 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:13',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 21.431 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:13',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 18.035 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:13',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 33.446 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:13',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 21.388 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:13',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 18.526 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:13',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 37.201 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:13',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 78.893 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:13',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 44.571 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:14',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:13.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 34.213 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:14',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:14.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 200 580 - 32.142 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:14',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:14.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 121.533 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:14',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:14.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 127.697 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:14',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:14.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 18.523 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:14',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:14.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 90.846 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:14',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:14.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 28.616 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:15',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:15.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 200 580 - 40.413 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:15',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:15.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 19.319 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:15',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:15.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 24.107 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:15',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:15.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 18.770 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:15',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:15.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 20.197 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:15',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:15.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 18.787 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:15',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:15.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 18.967 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:15',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:15.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 76.871 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:07:15',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 181,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:06:45.0000000',
+      UpdatedOn: '2024-12-26 12:07:15.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 19.877 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.169 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.287 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1436 - 26.214 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 22.077 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.302 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.289 ms
+GET /api/fetch_main_table_data 200 1436 - 63.001 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 25.913 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.160 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.291 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 41.393 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 31.390 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:09:17',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 200 304 - 22.960 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=meet 404 44 - 13.666 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:09:20',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 182,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:09:20.0000000',
+      UpdatedOn: '2024-12-26 12:09:20.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 200 580 - 18.741 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=meet 404 44 - 21.293 ms
+GET /api/fetch_main_table_data 200 1436 - 37.239 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.160 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.223 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1436 - 27.963 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 21.570 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.283 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.386 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1436 - 28.708 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 27.623 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.409 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.187 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1436 - 33.806 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 33.351 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.299 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 30.489 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.171 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 40.255 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.502 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.223 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1436 - 33.660 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 29.315 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:23:05',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 182,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:09:20.0000000',
+      UpdatedOn: '2024-12-26 12:09:20.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 27.492 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=meet 404 44 - 12.385 ms
+OPTIONS /api/edited_cause_data 404 164 - 1.714 ms
+OPTIONS /api/submit-causes 200 4 - 1.011 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Received data: {
+  mainEvent: 'meet',
+  causes: [
+    { causeName: 'Untitled Cause', probability: 0, subcauses: [] },
+    { causeName: 'good', probability: 0, subcauses: [] }
+  ]
+}
+Received data: {
+  mainEvent: 'meet',
+  causes: [
+    { causeName: 'Untitled Cause', probability: 0, subcauses: [] },
+    { causeName: 'good', probability: 0, subcauses: [] }
+  ]
+}
+POST /api/submit-causes 200 68 - 34.355 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:23:45',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 182,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:09:20.0000000',
+      UpdatedOn: '2024-12-26 12:23:45.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    },
+    {
+      EventID: 183,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:23:45.0000000',
+      UpdatedOn: '2024-12-26 12:23:45.0000000',
+      IsActive: '1',
+      TopCauseName: 'good',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 200 847 - 23.310 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.377 ms
+Connected to the database.
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.179 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1436 - 27.875 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 26.829 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.207 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.197 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 29.182 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 47.662 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.256 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.255 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 30.321 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 23.993 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.267 ms
+Connected to the database.
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.309 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1436 - 43.325 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 44.644 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:26:21',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 182,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:09:20.0000000',
+      UpdatedOn: '2024-12-26 12:23:45.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    },
+    {
+      EventID: 183,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:23:45.0000000',
+      UpdatedOn: '2024-12-26 12:23:45.0000000',
+      IsActive: '1',
+      TopCauseName: 'good',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 304 - - 24.982 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=meet 404 44 - 30.703 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Received data: {
+  mainEvent: 'meet',
+  causes: [
+    { causeName: 'Untitled Cause 2', probability: 0, subcauses: [] },
+    { causeName: 'Untitled Cause', probability: 0, subcauses: [] },
+    { causeName: 'good', probability: 0, subcauses: [] }
+  ]
+}
+Received data: {
+  mainEvent: 'meet',
+  causes: [
+    { causeName: 'Untitled Cause 2', probability: 0, subcauses: [] },
+    { causeName: 'Untitled Cause', probability: 0, subcauses: [] },
+    { causeName: 'good', probability: 0, subcauses: [] }
+  ]
+}
+POST /api/submit-causes 200 68 - 90.103 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'meet',
+  timestamp: '2024-12-26 12:26:24',
+  mainData: {
+    EventID: 179,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-26 11:54:22.0000000',
+    UpdatedOn: '2024-12-26 11:54:22.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'meet'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 182,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:09:20.0000000',
+      UpdatedOn: '2024-12-26 12:26:24.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    },
+    {
+      EventID: 184,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:26:24.0000000',
+      UpdatedOn: '2024-12-26 12:26:24.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause 2',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    },
+    {
+      EventID: 183,
+      ModelID: 1,
+      ParentID: 179,
+      IsParent: '0',
+      CreatedOn: '2024-12-26 12:23:45.0000000',
+      UpdatedOn: '2024-12-26 12:26:24.0000000',
+      IsActive: '1',
+      TopCauseName: 'good',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=meet 200 1126 - 27.903 ms
+OPTIONS /api/edited_cause_data 404 164 - 0.676 ms
+OPTIONS /api/edited_cause_data 404 164 - 0.525 ms
+OPTIONS /api/edited_cause_data 404 164 - 0.501 ms
+OPTIONS /api/edited_cause_data 404 164 - 0.736 ms
+OPTIONS /api/edited_cause_data 404 164 - 0.535 ms

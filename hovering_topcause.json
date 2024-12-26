@@ -1,8 +1,22 @@
 {
-  "cause": "Control Circuit Top",
-  "eventId": 77,
-  "actions": [],
-  "questions": [],
-  "questionAnswers": [],
-  "timestamp": "2024-12-13 17:11:20"
+  "cause": "Pitching is not functional due to safety speed input is missing",
+  "eventId": 2,
+  "actions": [
+    "Check the status of safety speed."
+  ],
+  "questions": [
+    "Is this error active for all three blades ?",
+    "Is MPCB 7Q2 tripped ?"
+  ],
+  "questionAnswers": [
+    "No",
+    "Yes",
+    "Yes",
+    "230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).",
+    "3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).",
+    "3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).",
+    "One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.",
+    "All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time."
+  ],
+  "timestamp": "2024-12-20 16:00:20"
 }
