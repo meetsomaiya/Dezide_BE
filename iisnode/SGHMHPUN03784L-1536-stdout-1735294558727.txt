@@ -1,0 +1,437 @@
+checkAdmin route module loaded
+Server is listening on port \\.\pipe\51ffbd2b-afeb-4193-8597-5e2a0e0b25e1
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainevent 404 44 - 79.028 ms
+GET /api/fetch_main_table_data 200 1441 - 129.059 ms
+OPTIONS /api/topcause_data_change 200 4 - 0.901 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 98
+}
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 90
+}
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 84
+}
+Data successfully saved to file
+Data successfully saved to file
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 78
+}
+POST /api/topcause_data_change 200 50 - 21.891 ms
+POST /api/topcause_data_change 200 50 - 7.397 ms
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 7.791 ms
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 4.500 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 69
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.403 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 64
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 3.086 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 56
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.989 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 52
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.783 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 48
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 3.607 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 44
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 3.299 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 41
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 3.139 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 39
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.035 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 36
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.347 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 35
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.711 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 33
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.534 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 31
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 1.911 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 28
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 1.920 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 25
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.063 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 24
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.399 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 23
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.290 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 21
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 3.017 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 20
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.410 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 19
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.402 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 17
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 6.967 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 98
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 3.257 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 98
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.460 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 97
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.332 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 95
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 1.851 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 94
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.029 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 93
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.767 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 90
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 3.238 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 89
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 1.880 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 85
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.139 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 80
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 1.875 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 76
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.488 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 69
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.074 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 60
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.092 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 51
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.662 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 41
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.227 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 33
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.370 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 25
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 1.924 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 19
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.171 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 10
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 1.883 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 3
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.599 ms
+Received payload: {
+  modalName: 'mainevent',
+  causeName: 'topcause1',
+  previousValue: 100,
+  currentValue: 0
+}
+Data successfully saved to file
+POST /api/topcause_data_change 200 50 - 2.248 ms

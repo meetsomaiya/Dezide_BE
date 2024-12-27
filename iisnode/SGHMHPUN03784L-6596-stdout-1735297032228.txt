@@ -1,0 +1,1524 @@
+checkAdmin route module loaded
+Server is listening on port \\.\pipe\595c57c8-7f95-4932-8060-9fa72f4848c5
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Received CauseName: cause
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved EventID: 306
+Fetched Child Event Data: [
+  {
+    EventID: 307,
+    ModelID: 1,
+    ParentID: 306,
+    IsParent: '0',
+    CreatedOn: '2024-12-27 15:40:40.0000000',
+    UpdatedOn: '2024-12-27 15:40:40.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  {
+    EventID: 308,
+    ModelID: 1,
+    ParentID: 306,
+    IsParent: '0',
+    CreatedOn: '2024-12-27 15:40:40.0000000',
+    UpdatedOn: '2024-12-27 15:40:40.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  statement: '\n' +
+    '            SELECT \n' +
+    '                [EventID], \n' +
+    '                [ModelID], \n' +
+    '                [ParentID], \n' +
+    '                [IsParent], \n' +
+    '                [CreatedOn], \n' +
+    '                [UpdatedOn], \n' +
+    '                [IsActive], \n' +
+    '                [ProbabilityPercentage],\n' +
+    '                [EventName],\n' +
+    '                [CreatedBy],\n' +
+    '                [UpdatedBy]\n' +
+    '            FROM [Tbl_Events_Main]\n' +
+    '            WHERE [ParentID] = ? AND [IsActive] = 1\n' +
+    '        ',
+  parameters: [ 306 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ParentID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'IsParent',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'CreatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'UpdatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'IsActive',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'ProbabilityPercentage',
+      dataType: 3,
+      dataTypeName: 'SQL_DECIMAL',
+      columnSize: 5,
+      decimalDigits: 2,
+      nullable: true
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'CreatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'UpdatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: true
+    }
+  ]
+]
+Data successfully saved to event_data_sent_back.json
+GET /api/fetch_sub_cause_based_on_cause?CauseName=cause 304 - - 90.734 ms
+Database connection closed.
+OPTIONS /api/edited_cause_data 404 164 - 2.233 ms
+Received CauseName: cause
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved EventID: 306
+Fetched Child Event Data: [
+  {
+    EventID: 307,
+    ModelID: 1,
+    ParentID: 306,
+    IsParent: '0',
+    CreatedOn: '2024-12-27 15:40:40.0000000',
+    UpdatedOn: '2024-12-27 15:40:40.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  {
+    EventID: 308,
+    ModelID: 1,
+    ParentID: 306,
+    IsParent: '0',
+    CreatedOn: '2024-12-27 15:40:40.0000000',
+    UpdatedOn: '2024-12-27 15:40:40.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  statement: '\n' +
+    '            SELECT \n' +
+    '                [EventID], \n' +
+    '                [ModelID], \n' +
+    '                [ParentID], \n' +
+    '                [IsParent], \n' +
+    '                [CreatedOn], \n' +
+    '                [UpdatedOn], \n' +
+    '                [IsActive], \n' +
+    '                [ProbabilityPercentage],\n' +
+    '                [EventName],\n' +
+    '                [CreatedBy],\n' +
+    '                [UpdatedBy]\n' +
+    '            FROM [Tbl_Events_Main]\n' +
+    '            WHERE [ParentID] = ? AND [IsActive] = 1\n' +
+    '        ',
+  parameters: [ 306 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ParentID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'IsParent',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'CreatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'UpdatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'IsActive',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'ProbabilityPercentage',
+      dataType: 3,
+      dataTypeName: 'SQL_DECIMAL',
+      columnSize: 5,
+      decimalDigits: 2,
+      nullable: true
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'CreatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'UpdatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: true
+    }
+  ]
+]
+Data successfully saved to event_data_sent_back.json
+GET /api/fetch_sub_cause_based_on_cause?CauseName=cause 304 - - 54.150 ms
+Database connection closed.
+OPTIONS /api/edited_cause_data 404 164 - 1.121 ms
+OPTIONS /api/edited_cause_data 404 164 - 0.354 ms
+GET /api/edited_cause_data 404 160 - 0.258 ms
+OPTIONS /api/nested_subcause_data_change 200 4 - 0.958 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 0,
+  currentValue: 100
+}
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_subcause_data_change 404 43 - 129.194 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 2
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 6
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 9
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 11
+}
+Connected to the database.
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 15
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 18
+}
+Connected to the database.
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_subcause_data_change 404 43 - 148.831 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 21
+}
+POST /api/nested_subcause_data_change 404 43 - 130.985 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 22
+}
+POST /api/nested_subcause_data_change 404 43 - 146.764 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 25
+}
+Connected to the database.
+POST /api/nested_subcause_data_change 404 43 - 160.696 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 26
+}
+POST /api/nested_subcause_data_change 404 43 - 148.538 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 29
+}
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_subcause_data_change 404 43 - 224.864 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 30
+}
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_subcause_data_change 404 43 - 139.415 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 31
+}
+POST /api/nested_subcause_data_change 404 43 - 136.350 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 33
+}
+POST /api/nested_subcause_data_change 404 43 - 138.788 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause2',
+  previousValue: 100,
+  currentValue: 34
+}
+Connected to the database.
+Connected to the database.
+POST /api/nested_subcause_data_change 404 43 - 124.291 ms
+Connected to the database.
+POST /api/nested_subcause_data_change 404 43 - 113.928 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_subcause_data_change 404 43 - 179.169 ms
+POST /api/nested_subcause_data_change 404 43 - 197.002 ms
+POST /api/nested_subcause_data_change 404 43 - 197.889 ms
+POST /api/nested_subcause_data_change 404 43 - 171.638 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 0,
+  currentValue: 6
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 6,
+  currentValue: 10
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 10,
+  currentValue: 13
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 13,
+  currentValue: 17
+}
+Connected to the database.
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 17,
+  currentValue: 21
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 21,
+  currentValue: 23
+}
+Connected to the database.
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_subcause_data_change 404 43 - 193.766 ms
+POST /api/nested_subcause_data_change 404 43 - 215.575 ms
+POST /api/nested_subcause_data_change 404 43 - 216.466 ms
+POST /api/nested_subcause_data_change 404 43 - 204.988 ms
+POST /api/nested_subcause_data_change 404 43 - 203.726 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 26,
+  currentValue: 29
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 23,
+  currentValue: 26
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 29,
+  currentValue: 30
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 30,
+  currentValue: 33
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 33,
+  currentValue: 34
+}
+Connected to the database.
+Connected to the database.
+POST /api/nested_subcause_data_change 404 43 - 293.431 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 34,
+  currentValue: 35
+}
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_subcause_data_change 404 43 - 185.374 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 35,
+  currentValue: 37
+}
+POST /api/nested_subcause_data_change 404 43 - 117.680 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 37,
+  currentValue: 38
+}
+POST /api/nested_subcause_data_change 404 43 - 197.609 ms
+POST /api/nested_subcause_data_change 404 43 - 123.856 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 38,
+  currentValue: 39
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 39,
+  currentValue: 40
+}
+POST /api/nested_subcause_data_change 404 43 - 126.801 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 40,
+  currentValue: 42
+}
+Connected to the database.
+POST /api/nested_subcause_data_change 404 43 - 141.518 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 42,
+  currentValue: 43
+}
+Connected to the database.
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_subcause_data_change 404 43 - 125.592 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 43,
+  currentValue: 44
+}
+POST /api/nested_subcause_data_change 404 43 - 111.597 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 44,
+  currentValue: 46
+}
+POST /api/nested_subcause_data_change 404 43 - 113.675 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 46,
+  currentValue: 47
+}
+Connected to the database.
+POST /api/nested_subcause_data_change 404 43 - 129.657 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 47,
+  currentValue: 50
+}
+POST /api/nested_subcause_data_change 404 43 - 135.690 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 50,
+  currentValue: 51
+}
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_subcause_data_change 404 43 - 162.495 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 51,
+  currentValue: 52
+}
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_subcause_data_change 404 43 - 137.229 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 52,
+  currentValue: 54
+}
+POST /api/nested_subcause_data_change 404 43 - 127.701 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 54,
+  currentValue: 55
+}
+Connected to the database.
+POST /api/nested_subcause_data_change 404 43 - 146.006 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  parentSubCauseName: 'cause',
+  nestedSubCauseName: 'cause3',
+  previousValue: 55,
+  currentValue: 56
+}
+POST /api/nested_subcause_data_change 404 43 - 120.698 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_subcause_data_change 404 43 - 143.892 ms
+POST /api/nested_subcause_data_change 404 43 - 123.153 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_subcause_data_change 404 43 - 99.961 ms
+POST /api/nested_subcause_data_change 404 43 - 79.249 ms
+POST /api/nested_subcause_data_change 404 43 - 53.082 ms

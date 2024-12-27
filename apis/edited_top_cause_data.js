@@ -42,26 +42,21 @@ router.post('/', async (req, res) => {
 
     const eventId = eventResult[0].EventID;
 
-    // Step 2: Use the EventID to query the parent row (ParentID)
-    const parentQuery = `SELECT EventID, EventName FROM Tbl_Events_Main WHERE ParentID = ? AND IsActive = 1`;
-    const parentResult = await dbConnection.query(parentQuery, [eventId]);
+    // Step 2: Use the EventID to query the parent row (ParentID) and compare EventName with previousValue
+    const parentQuery = `SELECT EventID, EventName FROM Tbl_Events_Main WHERE ParentID = ? AND EventName = ? AND IsActive = 1`;
+    const parentResult = await dbConnection.query(parentQuery, [eventId, previousValue]);
 
     if (parentResult.length === 0) {
-      return res.status(404).json({ error: 'Parent event not found.' });
+      return res.status(404).json({ error: 'Parent event not found or does not match previousValue.' });
     }
 
     const parentEvent = parentResult[0];
 
-    // Step 3: Compare the previousValue with the EventName
-    if (parentEvent.EventName !== previousValue) {
-      return res.status(400).json({ error: 'Previous value does not match the current EventName.' });
-    }
-
-    // Step 4: Update the EventName with the currentValue
+    // Step 3: Update the EventName with the currentValue
     const updateQuery = `UPDATE Tbl_Events_Main SET EventName = ? WHERE EventID = ?`;
     await dbConnection.query(updateQuery, [currentValue, parentEvent.EventID]);
 
-    // Step 5: Save the changes to editing_top_cause.json file
+    // Step 4: Save the changes to editing_top_cause.json file
     const editedData = {
       modalName,
       fieldName,

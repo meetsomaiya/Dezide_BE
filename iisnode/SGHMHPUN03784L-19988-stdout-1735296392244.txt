@@ -1,5 +1,5 @@
 checkAdmin route module loaded
-Server is listening on port \\.\pipe\ba1386ab-09fd-42ef-9fa3-25f97253712a
+Server is listening on port \\.\pipe\be54407f-aef7-4125-a626-6c0f87320289
 Connected to the database.
 Connected to the database.
 Test query result: [
@@ -36,98 +36,37 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_question_for_events?modalName= 400 33 - 3.771 ms
-GET /api/fetch_question_for_events?modalName= 400 33 - 0.389 ms
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-GET /api/fetch_main_table_data 200 1436 - 85.113 ms
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-GET /api/fetch_main_table_data 304 - - 62.962 ms
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Event data saved to JSON file: {
-  eventName: 'demo',
-  timestamp: '2024-12-26 16:53:19',
-  mainData: {
-    EventID: 189,
-    ModelID: 1,
-    ParentID: 0,
-    IsParent: '1',
-    CreatedOn: '2024-12-26 16:04:21.0000000',
-    UpdatedOn: '2024-12-26 16:04:21.0000000',
-    IsActive: '1',
-    CreatedBy: '40139',
-    UpdatedBy: '40139',
-    EventName: 'demo'
-  },
-  tblTopCauseData: [
-    {
-      EventID: 190,
-      ModelID: 1,
-      ParentID: 189,
-      IsParent: '0',
-      CreatedOn: '2024-12-26 16:04:48.0000000',
-      UpdatedOn: '2024-12-26 16:04:48.0000000',
-      IsActive: '1',
-      TopCauseName: 'Untitled Cause',
-      ProbabilityPercentage: 0,
-      CreatedBy: '40139',
-      UpdatedBy: '40139',
-      internalCause: false
-    }
-  ],
-  eventObject: []
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  subCauseName: 'cause',
+  previousValue: 100,
+  currentValue: 53
 }
-GET /api/fetch_event_causes_actions?eventName=demo 304 - - 32.629 ms
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  subCauseName: 'cause',
+  previousValue: 100,
+  currentValue: 35
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  subCauseName: 'cause',
+  previousValue: 0,
+  currentValue: 12
+}
+Received payload: {
+  modalName: 'mainevent',
+  parentCauseName: 'topcause1',
+  subCauseName: 'cause',
+  previousValue: 100,
+  currentValue: 78
+}
+Connected to the database.
+Connected to the database.
+Connected to the database.
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -146,6 +85,62 @@ Test query result: [
     }
   ]
 ]
-GET /api/fetch_question_for_events?modalName=demo 404 44 - 53.360 ms
-POST /api/edited_top_cause_data 404 165 - 13.010 ms
-GET /api/edited_top_cause_data 404 164 - 2.259 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Data successfully saved to file and database updated.
+Data successfully saved to file and database updated.
+Data successfully saved to file and database updated.
+POST /api/cause_data_change 200 52 - 106.823 ms
+Data successfully saved to file and database updated.
+POST /api/cause_data_change 200 52 - 95.097 ms
+POST /api/cause_data_change 200 52 - 93.561 ms
+POST /api/cause_data_change 200 52 - 107.543 ms

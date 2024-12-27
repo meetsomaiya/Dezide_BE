@@ -1,6 +1,21 @@
 {
-  "topCauseName": "life",
-  "eventID": 190,
-  "causeObject": [],
-  "timestamp": "2024-12-26T17:15:36+05:30"
+  "topCauseName": "topcause1",
+  "eventID": 305,
+  "causeObject": [
+    {
+      "EventID": 306,
+      "ModelID": 1,
+      "ParentID": 305,
+      "IsParent": "1",
+      "CreatedOn": "2024-12-27 15:40:29.0000000",
+      "UpdatedOn": "2024-12-27 15:40:29.0000000",
+      "IsActive": "1",
+      "ProbabilityPercentage": 94,
+      "CauseName": "cause",
+      "CreatedBy": "40139",
+      "UpdatedBy": "40139",
+      "internalSubCause": true
+    }
+  ],
+  "timestamp": "2024-12-27T16:22:22+05:30"
 }

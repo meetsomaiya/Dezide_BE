@@ -1,0 +1,7 @@
+{
+  "modalName": "mainevent",
+  "parentCauseName": "topcause1",
+  "subCauseName": "cause",
+  "previousValue": 100,
+  "currentValue": 35
+}

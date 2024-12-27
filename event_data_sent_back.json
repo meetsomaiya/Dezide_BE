@@ -1,14 +1,27 @@
 [
   {
-    "EventID": 186,
+    "EventID": 307,
     "ModelID": 1,
-    "ParentID": 182,
+    "ParentID": 306,
     "IsParent": "0",
-    "CreatedOn": "2024-12-26 15:42:41.0000000",
-    "UpdatedOn": "2024-12-26 15:42:41.0000000",
+    "CreatedOn": "2024-12-27 15:40:40.0000000",
+    "UpdatedOn": "2024-12-27 15:40:40.0000000",
     "IsActive": "1",
-    "ProbabilityPercentage": 0,
-    "EventName": "good",
+    "ProbabilityPercentage": null,
+    "EventName": "Untitled Nested SubCause",
+    "CreatedBy": "40139",
+    "UpdatedBy": "40139"
+  },
+  {
+    "EventID": 308,
+    "ModelID": 1,
+    "ParentID": 306,
+    "IsParent": "0",
+    "CreatedOn": "2024-12-27 15:40:40.0000000",
+    "UpdatedOn": "2024-12-27 15:40:40.0000000",
+    "IsActive": "1",
+    "ProbabilityPercentage": null,
+    "EventName": "Untitled Nested SubCause",
     "CreatedBy": "40139",
     "UpdatedBy": "40139"
   }

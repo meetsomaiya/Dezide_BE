@@ -1,32 +1,32 @@
 {
-  "eventName": "demo",
-  "timestamp": "2024-12-26 17:26:38",
+  "eventName": "mainevent",
+  "timestamp": "2024-12-27 16:22:21",
   "mainData": {
-    "EventID": 189,
+    "EventID": 304,
     "ModelID": 1,
     "ParentID": 0,
     "IsParent": "1",
-    "CreatedOn": "2024-12-26 16:04:21.0000000",
-    "UpdatedOn": "2024-12-26 16:04:21.0000000",
+    "CreatedOn": "2024-12-27 15:38:02.0000000",
+    "UpdatedOn": "2024-12-27 15:38:02.0000000",
     "IsActive": "1",
     "CreatedBy": "40139",
     "UpdatedBy": "40139",
-    "EventName": "demo"
+    "EventName": "mainevent"
   },
   "tblTopCauseData": [
     {
-      "EventID": 190,
+      "EventID": 305,
       "ModelID": 1,
-      "ParentID": 189,
-      "IsParent": "0",
-      "CreatedOn": "2024-12-26 16:04:48.0000000",
-      "UpdatedOn": "2024-12-26 16:04:48.0000000",
+      "ParentID": 304,
+      "IsParent": "1",
+      "CreatedOn": "2024-12-27 15:38:05.0000000",
+      "UpdatedOn": "2024-12-27 15:38:05.0000000",
       "IsActive": "1",
-      "TopCauseName": "life",
-      "ProbabilityPercentage": 0,
+      "TopCauseName": "topcause1",
+      "ProbabilityPercentage": 78,
       "CreatedBy": "40139",
       "UpdatedBy": "40139",
-      "internalCause": false
+      "internalCause": true
     }
   ],
   "eventObject": []

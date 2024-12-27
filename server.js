@@ -65,6 +65,17 @@ const api25 = require('./apis/edited_top_cause_data');
 
 const api26 = require('./apis/sub_cause_edited_data');
 
+const api27 = require('./apis/sub_cause_creation_data');
+
+const api28 = require('./apis/nested_sub_cause_creation_data');
+
+const api29 = require('./apis/topcause_data_change');
+
+const api30 = require('./apis/cause_data_change');
+
+const api31 = require('./apis/nested_subcause_data_change');
+
+
 
 
 
@@ -125,6 +136,18 @@ app.use('/api/submit-causes', api24);
 app.use('/api/edited_top_cause_data', api25);
 
 app.use('/api/sub_cause_edited_data', api26);
+
+app.use('/api/sub_cause_creation_data', api27);
+
+app.use('/api/nested_sub_cause_creation_data', api28);
+
+
+app.use('/api/topcause_data_change', api29);
+
+app.use('/api/cause_data_change', api30);
+
+app.use('/api/nested_subcause_data_change', api31);
+
 
 
 
