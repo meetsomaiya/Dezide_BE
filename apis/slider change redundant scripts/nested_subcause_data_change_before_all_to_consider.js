@@ -16,6 +16,7 @@ router.use((req, res, next) => {
   next();
 });
 
+
 // Ensure express parses incoming JSON data in the request body
 router.use(express.json());
 
@@ -23,18 +24,11 @@ router.use(express.json());
 router.post('/', async (req, res) => {
   const payload = req.body;
 
-  // Validate the payload
-  if (
-    !payload ||
-    !payload.modalName ||
-    !payload.parentCauseName ||
-    !Array.isArray(payload.updatedSubCauses) ||
-    payload.updatedSubCauses.some(sub => sub.currentValue === undefined || !sub.name)
-  ) {
+  if (!payload || !payload.modalName || !payload.parentCauseName || !payload.parentSubCauseName || !payload.nestedSubCauseName || payload.currentValue === undefined) {
     return res.status(400).json({ error: 'Invalid payload' });
   }
 
-  console.log('Received payload:', JSON.stringify(payload, null, 2));
+  console.log('Received payload:', payload);
 
   let dbConnection;
 
@@ -51,36 +45,54 @@ router.post('/', async (req, res) => {
     if (modalNameResult.length === 0) {
       return res.status(404).json({ error: 'Modal name not found' });
     }
-    const parentEventID = modalNameResult[0].EventID;
+    const level1EventID = modalNameResult[0].EventID;
 
-    // Step 2: Retrieve Child EventID for parentCauseName
+    // Step 2: Retrieve EventID for parentCauseName
     const parentCauseQuery = `
       SELECT [EventID]
       FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
       WHERE [ParentID] = ? AND [EventName] = ?
     `;
-    const parentCauseResult = await dbConnection.query(parentCauseQuery, [parentEventID, payload.parentCauseName]);
+    const parentCauseResult = await dbConnection.query(parentCauseQuery, [level1EventID, payload.parentCauseName]);
     if (parentCauseResult.length === 0) {
       return res.status(404).json({ error: 'Parent cause name not found' });
     }
-    const parentCauseEventID = parentCauseResult[0].EventID;
+    const level2EventID = parentCauseResult[0].EventID;
 
-    // Step 3: Update ProbabilityPercentages for sub-causes one by one
+    // Step 3: Retrieve EventID for parentSubCauseName
+    const parentSubCauseQuery = `
+      SELECT [EventID]
+      FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+      WHERE [ParentID] = ? AND [EventName] = ?
+    `;
+    const parentSubCauseResult = await dbConnection.query(parentSubCauseQuery, [level2EventID, payload.parentSubCauseName]);
+    if (parentSubCauseResult.length === 0) {
+      return res.status(404).json({ error: 'Parent sub-cause name not found' });
+    }
+    const level3EventID = parentSubCauseResult[0].EventID;
+
+    // Step 4: Retrieve EventID for nestedSubCauseName
+    const nestedSubCauseQuery = `
+      SELECT [EventID]
+      FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+      WHERE [ParentID] = ? AND [EventName] = ?
+    `;
+    const nestedSubCauseResult = await dbConnection.query(nestedSubCauseQuery, [level3EventID, payload.nestedSubCauseName]);
+    if (nestedSubCauseResult.length === 0) {
+      return res.status(404).json({ error: 'Nested sub-cause name not found' });
+    }
+
+    // Step 5: Update ProbabilityPercentage for Nested Sub-Cause
     const updateQuery = `
       UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]
       SET [ProbabilityPercentage] = ?
-      WHERE [ParentID] = ? AND [EventName] = ?
+      WHERE [EventID] = ?
     `;
 
-    for (const subCause of payload.updatedSubCauses) {
-      await dbConnection.query(updateQuery, [
-        subCause.currentValue,
-        parentCauseEventID,
-        subCause.name,
-      ]);
-    }
+    // Perform update for the single nestedSubCauseName
+    await dbConnection.query(updateQuery, [payload.currentValue, nestedSubCauseResult[0].EventID]);
 
-    res.status(200).json({ message: 'Sub-cause probabilities updated successfully' });
+    res.status(200).json({ message: 'Probability percentage updated successfully' });
   } catch (error) {
     console.error('Error processing request:', error);
     res.status(500).json({ error: 'Internal server error' });

@@ -1,5 +1,5 @@
 checkAdmin route module loaded
-Server is listening on port \\.\pipe\89ec2f7a-d1ad-40f3-8498-e11ef9e65c1d
+Server is listening on port \\.\pipe\237cc3dc-cbf8-4a40-9954-eaa42522e6e2
 Connected to the database.
 Connected to the database.
 Test query result: [
@@ -19,220 +19,6 @@ Test query result: [
     }
   ]
 ]
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-OPTIONS /api/sub_cause_edited_data 200 4 - 5.010 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 92
-}
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 88
-}
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 84
-}
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 97
-}
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 80
-}
-Connected to the database.
-Connected to the database.
-Connected to the database.
-Connected to the database.
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-POST /api/cause_data_change 200 52 - 249.271 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 74
-}
-POST /api/cause_data_change 200 52 - 230.685 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 73
-}
-POST /api/cause_data_change 200 52 - 242.484 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 70
-}
-POST /api/cause_data_change 200 52 - 249.690 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 69
-}
-POST /api/cause_data_change 200 52 - 261.982 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 68
-}
-POST /api/sub_cause_edited_data 200 189 - 272.324 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 67
-}
 Connected to the database.
 Connected to the database.
 Connected to the database.
@@ -341,65 +127,6 @@ Test query result: [
     }
   ]
 ]
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-POST /api/cause_data_change 200 52 - 136.800 ms
-Data successfully saved to file and database updated.
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 65
-}
-POST /api/cause_data_change 200 52 - 148.810 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 64
-}
-POST /api/cause_data_change 200 52 - 144.822 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 63
-}
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-POST /api/cause_data_change 200 52 - 158.708 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 61
-}
-Connected to the database.
-Connected to the database.
-Connected to the database.
-POST /api/cause_data_change 200 52 - 193.069 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 60
-}
-POST /api/cause_data_change 200 52 - 208.250 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 60
-}
-Connected to the database.
-Connected to the database.
 Test query result: [
   { test: 1 },
   statement: 'SELECT 1 AS test',
@@ -417,23 +144,29 @@ Test query result: [
     }
   ]
 ]
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+POST /api/topcause_data_change 200 45 - 1095.644 ms
+POST /api/topcause_data_change 200 45 - 1149.810 ms
+POST /api/topcause_data_change 200 45 - 1112.540 ms
+POST /api/topcause_data_change 200 45 - 1111.818 ms
+POST /api/topcause_data_change 200 45 - 1110.272 ms
+POST /api/topcause_data_change 200 45 - 1112.802 ms
+Connected to the database.
+Connected to the database.
+Connected to the database.
+Connected to the database.
+Connected to the database.
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -503,64 +236,6 @@ Test query result: [
     }
   ]
 ]
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-POST /api/cause_data_change 200 52 - 116.608 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 59
-}
-POST /api/cause_data_change 200 52 - 118.339 ms
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 57
-}
-POST /api/cause_data_change 200 52 - 131.516 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 56
-}
-POST /api/cause_data_change 200 52 - 85.578 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 52
-}
-Connected to the database.
-POST /api/cause_data_change 200 52 - 102.727 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 48
-}
-POST /api/cause_data_change 200 52 - 110.339 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 44
-}
-Connected to the database.
-Connected to the database.
-Connected to the database.
 Test query result: [
   { test: 1 },
   statement: 'SELECT 1 AS test',
@@ -578,6 +253,45 @@ Test query result: [
     }
   ]
 ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+POST /api/topcause_data_change 200 45 - 1280.187 ms
+POST /api/topcause_data_change 200 45 - 1307.226 ms
+POST /api/topcause_data_change 200 45 - 1316.773 ms
+POST /api/topcause_data_change 200 45 - 1308.243 ms
+POST /api/topcause_data_change 200 45 - 1302.525 ms
+POST /api/topcause_data_change 200 45 - 1303.897 ms
+Connected to the database.
+Connected to the database.
+Connected to the database.
+Connected to the database.
 Test query result: [
   { test: 1 },
   statement: 'SELECT 1 AS test',
@@ -665,52 +379,43 @@ Test query result: [
     }
   ]
 ]
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-POST /api/cause_data_change 200 52 - 95.993 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 39
-}
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-POST /api/cause_data_change 200 52 - 121.481 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 33
-}
-POST /api/cause_data_change 200 52 - 98.132 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 27
-}
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+POST /api/topcause_data_change 200 45 - 1467.794 ms
+POST /api/topcause_data_change 200 45 - 1474.292 ms
+POST /api/topcause_data_change 200 45 - 1480.600 ms
+POST /api/topcause_data_change 200 45 - 1477.515 ms
+POST /api/topcause_data_change 200 45 - 1476.768 ms
+POST /api/topcause_data_change 200 45 - 1482.742 ms
 Connected to the database.
-POST /api/cause_data_change 200 52 - 118.704 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 20
-}
-POST /api/cause_data_change 200 52 - 124.440 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 14
-}
+Connected to the database.
 Connected to the database.
 Connected to the database.
 Test query result: [
@@ -730,51 +435,7 @@ Test query result: [
     }
   ]
 ]
-Data successfully saved to file and database updated.
 Connected to the database.
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-POST /api/cause_data_change 200 52 - 181.198 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 8
-}
 Test query result: [
   { test: 1 },
   statement: 'SELECT 1 AS test',
@@ -827,31 +488,61 @@ Test query result: [
     }
   ]
 ]
-Data successfully saved to file and database updated.
-POST /api/cause_data_change 200 52 - 120.695 ms
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 2
-}
-POST /api/cause_data_change 200 52 - 122.667 ms
-Received payload: {
-  modalName: 'mainevent',
-  parentCauseName: 'topcause1',
-  subCauseName: 'cause',
-  previousValue: 100,
-  currentValue: 0
-}
-POST /api/cause_data_change 200 52 - 99.938 ms
-POST /api/cause_data_change 200 52 - 102.458 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+POST /api/topcause_data_change 200 45 - 1326.594 ms
+POST /api/topcause_data_change 200 45 - 1339.687 ms
+POST /api/topcause_data_change 200 45 - 1364.367 ms
+POST /api/topcause_data_change 200 45 - 1359.197 ms
+POST /api/topcause_data_change 200 45 - 1354.110 ms
+POST /api/topcause_data_change 200 45 - 1364.856 ms
 Connected to the database.
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
+Connected to the database.
+Connected to the database.
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -870,8 +561,6 @@ Test query result: [
     }
   ]
 ]
-POST /api/cause_data_change 200 52 - 170.129 ms
-POST /api/cause_data_change 200 52 - 113.544 ms
 Test query result: [
   { test: 1 },
   statement: 'SELECT 1 AS test',
@@ -889,7 +578,87 @@ Test query result: [
     }
   ]
 ]
-Data successfully saved to file and database updated.
-Data successfully saved to file and database updated.
-POST /api/cause_data_change 200 52 - 68.965 ms
-POST /api/cause_data_change 200 52 - 52.511 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 318, Cause: topcause2
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+Updated ProbabilityPercentage for EventID: 324, Cause: topcause1
+POST /api/topcause_data_change 200 45 - 651.706 ms
+POST /api/topcause_data_change 200 45 - 659.448 ms
+POST /api/topcause_data_change 200 45 - 662.378 ms
+POST /api/topcause_data_change 200 45 - 674.434 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 341.335 ms
+GET /api/fetch_main_table_data 200 1441 - 560.269 ms

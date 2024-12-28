@@ -16,7 +16,6 @@ router.use((req, res, next) => {
   next();
 });
 
-
 // Ensure express parses incoming JSON data in the request body
 router.use(express.json());
 
@@ -24,7 +23,14 @@ router.use(express.json());
 router.post('/', async (req, res) => {
   const payload = req.body;
 
-  if (!payload || !payload.modalName || !payload.parentCauseName || !payload.parentSubCauseName || !payload.nestedSubCauseName || payload.currentValue === undefined) {
+  if (
+    !payload ||
+    !payload.modalName ||
+    !payload.parentCauseName ||
+    !payload.parentSubCauseName ||
+    !Array.isArray(payload.updatedNestedSubCauses) ||
+    payload.updatedNestedSubCauses.length === 0
+  ) {
     return res.status(400).json({ error: 'Invalid payload' });
   }
 
@@ -71,28 +77,26 @@ router.post('/', async (req, res) => {
     }
     const level3EventID = parentSubCauseResult[0].EventID;
 
-    // Step 4: Retrieve EventID for nestedSubCauseName
-    const nestedSubCauseQuery = `
-      SELECT [EventID]
-      FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
-      WHERE [ParentID] = ? AND [EventName] = ?
-    `;
-    const nestedSubCauseResult = await dbConnection.query(nestedSubCauseQuery, [level3EventID, payload.nestedSubCauseName]);
-    if (nestedSubCauseResult.length === 0) {
-      return res.status(404).json({ error: 'Nested sub-cause name not found' });
-    }
-
-    // Step 5: Update ProbabilityPercentage for Nested Sub-Cause
+    // Step 4: Iterate through updatedNestedSubCauses to update probabilities
     const updateQuery = `
       UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]
       SET [ProbabilityPercentage] = ?
-      WHERE [EventID] = ?
+      WHERE [ParentID] = ? AND [EventName] = ?
     `;
 
-    // Perform update for the single nestedSubCauseName
-    await dbConnection.query(updateQuery, [payload.currentValue, nestedSubCauseResult[0].EventID]);
+    for (const nestedSubCause of payload.updatedNestedSubCauses) {
+      if (!nestedSubCause.name || nestedSubCause.currentValue === undefined) {
+        return res.status(400).json({ error: 'Invalid nested sub-cause data in payload' });
+      }
 
-    res.status(200).json({ message: 'Probability percentage updated successfully' });
+      await dbConnection.query(updateQuery, [
+        nestedSubCause.currentValue,
+        level3EventID,
+        nestedSubCause.name,
+      ]);
+    }
+
+    res.status(200).json({ message: 'Probability percentages updated successfully' });
   } catch (error) {
     console.error('Error processing request:', error);
     res.status(500).json({ error: 'Internal server error' });

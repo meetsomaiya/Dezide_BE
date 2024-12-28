@@ -1,21 +1,63 @@
 {
   "topCauseName": "topcause1",
-  "eventID": 305,
+  "eventID": 330,
   "causeObject": [
     {
-      "EventID": 306,
-      "ModelID": 1,
-      "ParentID": 305,
+      "EventID": 334,
+      "ModelID": 8,
+      "ParentID": 330,
       "IsParent": "1",
-      "CreatedOn": "2024-12-27 15:40:29.0000000",
-      "UpdatedOn": "2024-12-27 15:40:29.0000000",
+      "CreatedOn": "2024-12-28 19:31:48.0000000",
+      "UpdatedOn": "2024-12-28 19:31:48.0000000",
       "IsActive": "1",
-      "ProbabilityPercentage": 94,
-      "CauseName": "cause",
+      "ProbabilityPercentage": 100,
+      "CauseName": "subcause1",
       "CreatedBy": "40139",
       "UpdatedBy": "40139",
       "internalSubCause": true
+    },
+    {
+      "EventID": 336,
+      "ModelID": 8,
+      "ParentID": 330,
+      "IsParent": "0",
+      "CreatedOn": "2024-12-28 19:32:40.0000000",
+      "UpdatedOn": "2024-12-28 19:32:40.0000000",
+      "IsActive": "1",
+      "ProbabilityPercentage": 0,
+      "CauseName": "subcause4",
+      "CreatedBy": "40139",
+      "UpdatedBy": "40139",
+      "internalSubCause": false
+    },
+    {
+      "EventID": 332,
+      "ModelID": 8,
+      "ParentID": 330,
+      "IsParent": "0",
+      "CreatedOn": "2024-12-28 19:30:45.0000000",
+      "UpdatedOn": "2024-12-28 19:30:45.0000000",
+      "IsActive": "1",
+      "ProbabilityPercentage": 0,
+      "CauseName": "subcause2",
+      "CreatedBy": "40139",
+      "UpdatedBy": "40139",
+      "internalSubCause": false
+    },
+    {
+      "EventID": 335,
+      "ModelID": 8,
+      "ParentID": 330,
+      "IsParent": "0",
+      "CreatedOn": "2024-12-28 19:32:23.0000000",
+      "UpdatedOn": "2024-12-28 19:32:23.0000000",
+      "IsActive": "1",
+      "ProbabilityPercentage": 0,
+      "CauseName": "subcause3",
+      "CreatedBy": "40139",
+      "UpdatedBy": "40139",
+      "internalSubCause": false
     }
   ],
-  "timestamp": "2024-12-27T16:22:22+05:30"
+  "timestamp": "2024-12-28T19:33:53+05:30"
 }

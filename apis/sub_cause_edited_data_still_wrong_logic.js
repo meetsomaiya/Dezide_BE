@@ -21,10 +21,10 @@ router.use(express.json());
 
 // POST route to handle sub-cause creation and updates
 router.post('/', async (req, res) => {
-    const { modalName, parentCauseName, currentValue, previousValue } = req.body;
+    const { modalName, parentCauseName, currentValue } = req.body; // Extract data from the request
 
     // Ensure required fields are provided in the request body
-    if (!modalName || !parentCauseName || !currentValue || !previousValue) {
+    if (!modalName || !parentCauseName || !currentValue) {
         return res.status(400).json({ message: 'Missing required fields in the request body' });
     }
 
@@ -37,13 +37,11 @@ router.post('/', async (req, res) => {
             FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
             WHERE ParentID = '0' AND EventName = ?
         `;
-        console.log('Executing firstQuery:', firstQuery);
         const firstResult = await dbConnection.query(firstQuery, [modalName]);
 
         if (firstResult.length === 0) {
             return res.status(404).json({ message: 'No data found for the provided modalName' });
         }
-        console.log('First Query Result:', firstResult);
 
         const { EventID: parentEventID } = firstResult[0];
 
@@ -53,13 +51,11 @@ router.post('/', async (req, res) => {
             FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
             WHERE ParentID = ? AND EventName = ?
         `;
-        console.log('Executing secondQuery:', secondQuery);
         const secondResult = await dbConnection.query(secondQuery, [parentEventID, parentCauseName]);
 
         if (secondResult.length === 0) {
             return res.status(404).json({ message: 'No data found for the provided parentCauseName' });
         }
-        console.log('Second Query Result:', secondResult);
 
         const { EventID: targetEventID } = secondResult[0];
 
@@ -69,29 +65,22 @@ router.post('/', async (req, res) => {
             FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
             WHERE ParentID = ?
         `;
-        console.log('Executing thirdQuery:', thirdQuery);
         const thirdResult = await dbConnection.query(thirdQuery, [targetEventID]);
 
         if (thirdResult.length === 0) {
             return res.status(404).json({ message: 'No data found for the targetEventID' });
         }
-        console.log('Third Query Result:', thirdResult);
 
-        // Loop through results to handle multiple updates
-        for (const row of thirdResult) {
-            const { EventID: finalEventID, EventName: finalEventName } = row;
+        // Here we get the EventID and EventName for the third query
+        const { EventID: finalEventID, EventName: finalEventName } = thirdResult[0];
 
-            // Update query: Modify EventName to the currentValue if previousValue matches EventName
-            const updateQuery = `
-                UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]
-                SET EventName = ?
-                WHERE EventID = ? AND EventName = ?
-            `;
-            console.log('Executing updateQuery:', updateQuery, [currentValue, finalEventID, previousValue]);
-            const updateResult = await dbConnection.query(updateQuery, [currentValue, finalEventID, previousValue]);
-
-            console.log('Update Result:', updateResult);
-        }
+        // Update query: Modify EventName to the currentValue and ParentID to the targetEventID
+        const updateQuery = `
+            UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            SET EventName = ?, ParentID = ?
+            WHERE EventID = ?
+        `;
+        await dbConnection.query(updateQuery, [currentValue, targetEventID, finalEventID]);
 
         // Save a verification log to JSON file
         const filePath = path.join(__dirname, 'subcause_data_verification.json');
@@ -100,9 +89,10 @@ router.post('/', async (req, res) => {
             modalName,
             parentCauseName,
             currentValue,
-            updatedEventIDs: thirdResult.map(row => row.EventID),
+            updatedEventID: finalEventID
         };
 
+        // Append to the file
         fs.readFile(filePath, 'utf8', (err, data) => {
             let existingData = [];
             if (!err && data) {
@@ -118,6 +108,7 @@ router.post('/', async (req, res) => {
             });
         });
 
+        // Respond with success
         res.status(200).json({ message: 'Data updated successfully', logData });
 
         // Close the database connection

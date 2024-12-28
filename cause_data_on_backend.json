@@ -1,8 +1,13 @@
 {
-  "mainEvent": "mainevent",
+  "mainEvent": "mainEvent",
   "causes": [
     {
       "causeName": "Untitled Cause",
+      "probability": 0,
+      "subcauses": []
+    },
+    {
+      "causeName": "topcause1",
       "probability": 0,
       "subcauses": []
     }

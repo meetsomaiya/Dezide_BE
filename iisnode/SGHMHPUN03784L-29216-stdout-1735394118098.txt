@@ -1,0 +1,78 @@
+checkAdmin route module loaded
+Server is listening on port \\.\pipe\947575bb-ca7d-4d3f-b1d2-14a1ed4a0027
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Received payload: {
+  "modalName": "mainEvent",
+  "parentCauseName": "newone",
+  "updatedSubCauses": [
+    {
+      "name": "cause1",
+      "previousValue": 0,
+      "currentValue": 8
+    },
+    {
+      "name": "deathcause",
+      "previousValue": 0,
+      "currentValue": 19
+    },
+    {
+      "name": "cause2",
+      "previousValue": 0,
+      "currentValue": 73
+    }
+  ]
+}
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/cause_data_change 500 33 - 308.253 ms
