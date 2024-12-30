@@ -1,40 +1,14 @@
 [
   {
-    "EventID": 368,
+    "EventID": 463,
     "ModelID": 1,
-    "ParentID": 364,
+    "ParentID": 449,
     "IsParent": "0",
-    "CreatedOn": "2024-12-28 21:45:37.0000000",
-    "UpdatedOn": "2024-12-28 21:45:37.0000000",
+    "CreatedOn": "2024-12-30 16:45:34.0000000",
+    "UpdatedOn": "2024-12-30 16:45:34.0000000",
     "IsActive": "1",
-    "ProbabilityPercentage": 17,
-    "EventName": "grat",
-    "CreatedBy": "40139",
-    "UpdatedBy": "40139"
-  },
-  {
-    "EventID": 369,
-    "ModelID": 1,
-    "ParentID": 364,
-    "IsParent": "0",
-    "CreatedOn": "2024-12-28 21:45:44.0000000",
-    "UpdatedOn": "2024-12-28 21:45:44.0000000",
-    "IsActive": "1",
-    "ProbabilityPercentage": 27,
-    "EventName": "chawal",
-    "CreatedBy": "40139",
-    "UpdatedBy": "40139"
-  },
-  {
-    "EventID": 370,
-    "ModelID": 1,
-    "ParentID": 364,
-    "IsParent": "0",
-    "CreatedOn": "2024-12-28 21:45:55.0000000",
-    "UpdatedOn": "2024-12-28 21:45:55.0000000",
-    "IsActive": "1",
-    "ProbabilityPercentage": 56,
-    "EventName": "mohini",
+    "ProbabilityPercentage": 42,
+    "EventName": "greatnice",
     "CreatedBy": "40139",
     "UpdatedBy": "40139"
   }

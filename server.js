@@ -77,6 +77,12 @@ const api31 = require('./apis/nested_subcause_data_change');
 
 const api32 = require('./apis/nested_subcause_edited_data');
 
+const api33 = require('./apis/deleted_top_cause');
+
+const api34 = require('./apis/deleted_cause');
+
+const api35 = require('./apis/deleted_subcause');
+
 
 
 
@@ -151,6 +157,12 @@ app.use('/api/cause_data_change', api30);
 app.use('/api/nested_subcause_data_change', api31);
 
 app.use('/api/nested_subcause_edited_data', api32);
+
+app.use('/api/deleted_top_cause', api33);
+
+app.use('/api/deleted_cause', api34);
+
+app.use('/api/deleted_subcause', api35);
 
 
 

@@ -1,0 +1,8 @@
+{
+  "modalName": "mainEvent",
+  "parentCauseName": "bauchand",
+  "parentSubCauseName": "raffle",
+  "nestedSubCauseName": "lifedeath",
+  "deletionFlag": true,
+  "timestamp": "2024-12-30 11:17:31"
+}

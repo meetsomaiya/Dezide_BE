@@ -1,7 +1,7 @@
 {
-  "actionName": "Check the status of safety speed.",
-  "actionExplanation": "Check the status of safety speed input of frequency converter (DI143 DIi_Pit1ExternSafetyRun). If it is found low then trouble shoot according to FM283.",
-  "actionID": 107,
+  "actionName": "Ensure correct parameter setting of MFR.",
+  "actionExplanation": "Check the MFR parameter and verify the CT ratio and�measurement limit parameter in analog values through SC-Commander.\nDifferent MFR version has different parameter file and some of the MFR parameter can be site specific so�ensure to upload correct parameter file if any deviation noticed in existing parameter file.�",
+  "actionID": 94,
   "image": null,
-  "timestamp": "2024-12-24T16:48:24+05:30"
+  "timestamp": "2024-12-29T12:26:01+05:30"
 }

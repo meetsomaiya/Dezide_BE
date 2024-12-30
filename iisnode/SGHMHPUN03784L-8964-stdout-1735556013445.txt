@@ -1,0 +1,77 @@
+checkAdmin route module loaded
+Server is listening on port \\.\pipe\96b2d318-6456-4014-98f8-63a6b25a6a50
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+OPTIONS /api/deleted_subcause 200 4 - 3.385 ms
+Data saved to file: {
+  modalName: 'mainEvent',
+  parentCauseName: 'nice',
+  parentSubCauseName: 'goodcause',
+  nestedSubCauseName: 'badinternalcause',
+  deletionFlag: true,
+  timestamp: '2024-12-30 10:53:33'
+}
+POST /api/deleted_subcause 200 222 - 13.157 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Data written to ./event_related_data.json.
+GET /api/fetch_cause_from_top_cause?topCauseName=bauchand 200 428 - 31.502 ms
+Data saved to file: {
+  modalName: 'mainEvent',
+  parentCauseName: 'bauchand',
+  parentSubCauseName: 'raffle',
+  nestedSubCauseName: 'insideraffle',
+  deletionFlag: true,
+  timestamp: '2024-12-30 10:56:16'
+}
+POST /api/deleted_subcause 200 219 - 2.703 ms

@@ -1,0 +1,128 @@
+[
+  {
+    "timestamp": "2024-12-29T14:34:37Z",
+    "modalName": "mainEvent",
+    "parentCauseName": null,
+    "subCauseName": "shankar",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-29T14:38:54Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "jokling",
+    "subCauseName": "shankar",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-29T14:39:34Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "bauchand",
+    "subCauseName": "bauchandinside",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T09:47:01Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "jokling",
+    "subCauseName": "no",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T09:47:24Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "jokling",
+    "subCauseName": "no",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T09:52:52Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "jokling",
+    "subCauseName": "no",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T10:00:51Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "nice",
+    "subCauseName": "cool",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T10:22:21Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "nice",
+    "subCauseName": "great",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T10:22:21Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "nice",
+    "subCauseName": "great2",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T10:24:29Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "nice",
+    "subCauseName": "doublecoolinside",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T10:24:29Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "nice",
+    "subCauseName": "doublecoolinside2",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T10:24:42Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "nice",
+    "subCauseName": "nicegood",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T10:40:43Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "bauchand",
+    "subCauseName": "smallbauchand",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T10:42:24Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "bauchand",
+    "subCauseName": "badone",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T10:45:49Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "bauchand",
+    "subCauseName": "newbauchdn",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T10:45:49Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "bauchand",
+    "subCauseName": "newbauchand",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T10:49:10Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "bauchand",
+    "subCauseName": "cockroach",
+    "deletionFlag": true
+  },
+  {
+    "timestamp": "2024-12-30T10:49:10Z",
+    "modalName": "mainEvent",
+    "parentCauseName": "bauchand",
+    "subCauseName": "insidebauchand",
+    "deletionFlag": true
+  }
+]

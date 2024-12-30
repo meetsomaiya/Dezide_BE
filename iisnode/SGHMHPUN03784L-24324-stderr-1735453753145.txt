@@ -1,12 +1,10 @@
-(node:29880) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:24324) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 Error occurred: ReferenceError: filePath is not defined
     at D:\Dezide_node\Dezide_BE\apis\sub_cause_creation_data.js:93:17
 Error occurred: ReferenceError: filePath is not defined
     at D:\Dezide_node\Dezide_BE\apis\sub_cause_creation_data.js:93:17
-Error occurred: ReferenceError: filePath is not defined
-    at D:\Dezide_node\Dezide_BE\apis\sub_cause_creation_data.js:93:17
-Error occurred: ReferenceError: filePath is not defined
-    at D:\Dezide_node\Dezide_BE\apis\sub_cause_creation_data.js:93:17
+Image not found: D:\OneDrive - Suzlon Energy Ltd\Pictures\DEZIDE_ACTION_IMAGES\DEZIDE\Explaination_Images\94\94.png
+Image not found: D:\OneDrive - Suzlon Energy Ltd\Pictures\DEZIDE_ACTION_IMAGES\DEZIDE\Explaination_Images\94\94.png
 Error occurred: ReferenceError: filePath is not defined
     at D:\Dezide_node\Dezide_BE\apis\sub_cause_creation_data.js:93:17

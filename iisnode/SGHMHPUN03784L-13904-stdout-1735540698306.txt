@@ -1,5 +1,5 @@
 checkAdmin route module loaded
-Server is listening on port \\.\pipe\c37413ef-3dcc-48a6-a2d8-c16e728ed123
+Server is listening on port \\.\pipe\ce497590-682d-459d-ab00-37b8dbe16d6a
 Connected to the database.
 Connected to the database.
 Test query result: [
@@ -36,45 +36,7 @@ Test query result: [
     }
   ]
 ]
-Connected to the database.
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 312.418 ms
-GET /api/fetch_main_table_data 200 1441 - 509.934 ms
-Received CauseName: subcause2
+Received CauseName: chopsitkcs
 Connected to the database.
 Test query result: [
   { test: 1 },
@@ -93,18 +55,31 @@ Test query result: [
     }
   ]
 ]
-Retrieved EventID: 362
+Retrieved EventID: 420
 Fetched Child Event Data: [
   {
-    EventID: 366,
+    EventID: 421,
     ModelID: 1,
-    ParentID: 362,
+    ParentID: 420,
     IsParent: '0',
-    CreatedOn: '2024-12-28 21:22:05.0000000',
-    UpdatedOn: '2024-12-28 21:22:05.0000000',
+    CreatedOn: '2024-12-29 19:55:38.0000000',
+    UpdatedOn: '2024-12-29 19:55:38.0000000',
     IsActive: '1',
-    ProbabilityPercentage: 100,
-    EventName: 'Untitled Nested SubCause 5345348346',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 5994737048',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  {
+    EventID: 422,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:42.0000000',
+    UpdatedOn: '2024-12-29 19:55:42.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 3915912632',
     CreatedBy: '40139',
     UpdatedBy: '40139'
   },
@@ -124,7 +99,7 @@ Fetched Child Event Data: [
     '            FROM [Tbl_Events_Main]\n' +
     '            WHERE [ParentID] = ? AND [IsActive] = 1\n' +
     '        ',
-  parameters: [ 362 ],
+  parameters: [ 420 ],
   return: undefined,
   count: -1,
   columns: [
@@ -219,71 +194,5 @@ Fetched Child Event Data: [
   ]
 ]
 Data successfully saved to event_data_sent_back.json
-GET /api/fetch_sub_cause_based_on_cause?CauseName=subcause2 304 - - 163.580 ms
+GET /api/fetch_sub_cause_based_on_cause?CauseName=chopsitkcs 304 - - 40.948 ms
 Database connection closed.
-Connected to the database.
-Test query result: [
-  { test: 1 },
-  statement: 'SELECT 1 AS test',
-  parameters: [],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'test',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-Executing Query for modalName: 
-SELECT [ModelID], [EventID], [EventName]
-FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
-WHERE ParentID = '0' AND EventName = ?
- [ 'mainEvent' ]
-eventResult: [
-  { ModelID: 1, EventID: 359, EventName: 'mainEvent' },
-  statement: '\n' +
-    'SELECT [ModelID], [EventID], [EventName]\n' +
-    'FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
-    "WHERE ParentID = '0' AND EventName = ?\n",
-  parameters: [ 'mainEvent' ],
-  return: undefined,
-  count: -1,
-  columns: [
-    {
-      name: 'ModelID',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    },
-    {
-      name: 'EventID',
-      dataType: 4,
-      dataTypeName: 'SQL_INTEGER',
-      columnSize: 10,
-      decimalDigits: 0,
-      nullable: false
-    },
-    {
-      name: 'EventName',
-      dataType: 12,
-      dataTypeName: 'SQL_VARCHAR',
-      columnSize: 255,
-      decimalDigits: 0,
-      nullable: false
-    }
-  ]
-]
-eventId: 359
-Executing Query for parentCauseName: 
-      SELECT [EventID], [EventName]
-      FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
-      WHERE ParentID = ? AND EventName = ?
-     [ 359, 'topcause1' ]
-POST /api/nested_subcause_edited_data 500 42 - 200.934 ms

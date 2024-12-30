@@ -1,13 +1,13 @@
 {
   "eventName": "mainEvent",
-  "timestamp": "2024-12-28 21:36:12",
+  "timestamp": "2024-12-30 16:12:51",
   "mainData": {
-    "EventID": 359,
+    "EventID": 405,
     "ModelID": 1,
     "ParentID": 0,
     "IsParent": "1",
-    "CreatedOn": "2024-12-28 20:42:24.0000000",
-    "UpdatedOn": "2024-12-28 20:42:24.0000000",
+    "CreatedOn": "2024-12-29 12:03:58.0000000",
+    "UpdatedOn": "2024-12-29 12:03:58.0000000",
     "IsActive": "1",
     "CreatedBy": "40139",
     "UpdatedBy": "40139",
@@ -15,32 +15,32 @@
   },
   "tblTopCauseData": [
     {
-      "EventID": 363,
+      "EventID": 425,
       "ModelID": 1,
-      "ParentID": 359,
+      "ParentID": 405,
       "IsParent": "1",
-      "CreatedOn": "2024-12-28 20:43:03.0000000",
-      "UpdatedOn": "2024-12-28 20:43:03.0000000",
+      "CreatedOn": "2024-12-30 15:30:12.0000000",
+      "UpdatedOn": "2024-12-30 15:30:12.0000000",
       "IsActive": "1",
-      "TopCauseName": "topcause2",
-      "ProbabilityPercentage": 34,
+      "TopCauseName": "nice",
+      "ProbabilityPercentage": 0,
       "CreatedBy": "40139",
       "UpdatedBy": "40139",
       "internalCause": true
     },
     {
-      "EventID": 360,
+      "EventID": 423,
       "ModelID": 1,
-      "ParentID": 359,
+      "ParentID": 405,
       "IsParent": "1",
-      "CreatedOn": "2024-12-28 20:42:27.0000000",
-      "UpdatedOn": "2024-12-28 20:43:03.0000000",
+      "CreatedOn": "2024-12-29 20:09:16.0000000",
+      "UpdatedOn": "2024-12-30 15:30:12.0000000",
       "IsActive": "1",
-      "TopCauseName": "topcause1",
-      "ProbabilityPercentage": 66,
+      "TopCauseName": "bauchand",
+      "ProbabilityPercentage": 0,
       "CreatedBy": "40139",
       "UpdatedBy": "40139",
-      "internalCause": true
+      "internalCause": false
     }
   ],
   "eventObject": []

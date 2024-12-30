@@ -1,0 +1,4217 @@
+checkAdmin route module loaded
+Server is listening on port \\.\pipe\72d840f1-8da0-482d-bee8-4cd6de73a58c
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Data written to ./event_related_data.json.
+GET /api/fetch_cause_from_top_cause?topCauseName=Untitled%20Cause 200 443 - 422.683 ms
+Deletion data logged: {
+  timestamp: '2024-12-29T14:06:46Z',
+  modalName: 'mainEvent',
+  parentCauseName: null,
+  subCauseName: 'Untitled Cause',
+  deletionFlag: true
+}
+POST /api/deleted_cause 200 194 - 46.427 ms
+POST /api/deleted_cause 500 56 - 17.481 ms
+Deletion data logged: {
+  timestamp: '2024-12-29T14:07:01Z',
+  modalName: 'mainEvent',
+  parentCauseName: null,
+  subCauseName: 'Untitled Cause',
+  deletionFlag: true
+}
+POST /api/deleted_cause 200 194 - 3.260 ms
+OPTIONS /api/edited_top_cause_data 200 4 - 1.177 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+POST /api/edited_top_cause_data 200 91 - 2670.288 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Data written to ./event_related_data.json.
+GET /api/fetch_cause_from_top_cause?topCauseName=jokling 200 436 - 1309.546 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Data written to ./event_related_data.json.
+GET /api/fetch_cause_from_top_cause?topCauseName=jokling 200 436 - 1146.685 ms
+OPTIONS /api/sub_cause_edited_data 200 4 - 0.560 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing firstQuery: 
+            SELECT [ModelID], [EventID], [EventName]
+            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            WHERE ParentID = '0' AND EventName = ?
+        
+First Query Result: [
+  { ModelID: 1, EventID: 405, EventName: 'mainEvent' },
+  statement: '\n' +
+    '            SELECT [ModelID], [EventID], [EventName]\n' +
+    '            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    "            WHERE ParentID = '0' AND EventName = ?\n" +
+    '        ',
+  parameters: [ 'mainEvent' ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing secondQuery: 
+            SELECT [EventID], [EventName]
+            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            WHERE ParentID = ? AND EventName = ?
+        
+Second Query Result: [
+  { EventID: 417, EventName: 'jokling' },
+  statement: '\n' +
+    '            SELECT [EventID], [EventName]\n' +
+    '            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '            WHERE ParentID = ? AND EventName = ?\n' +
+    '        ',
+  parameters: [ 405, 'jokling' ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing thirdQuery: 
+            SELECT [EventID], [EventName]
+            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            WHERE ParentID = ?
+        
+Third Query Result: [
+  { EventID: 418, EventName: 'Untitled Cause' },
+  statement: '\n' +
+    '            SELECT [EventID], [EventName]\n' +
+    '            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '            WHERE ParentID = ?\n' +
+    '        ',
+  parameters: [ 417 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing updateQuery: 
+                UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]
+                SET EventName = ?
+                WHERE EventID = ? AND EventName = ?
+             [ 'sckool', 418, 'Untitled Cause' ]
+Update Result: [
+  statement: '\n' +
+    '                UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '                SET EventName = ?\n' +
+    '                WHERE EventID = ? AND EventName = ?\n' +
+    '            ',
+  parameters: [ 'sckool', 418, 'Untitled Cause' ],
+  return: undefined,
+  count: 1,
+  columns: []
+]
+POST /api/sub_cause_edited_data 200 191 - 1173.997 ms
+Deletion data logged: {
+  timestamp: '2024-12-29T14:13:37Z',
+  modalName: 'mainEvent',
+  parentCauseName: null,
+  subCauseName: 'sckool',
+  deletionFlag: true
+}
+POST /api/deleted_cause 200 186 - 2.877 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 1171.869 ms
+GET /api/fetch_main_table_data 200 1441 - 3301.218 ms
+POST /api/deleted_cause 500 56 - 3.205 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing firstQuery: 
+            SELECT [ModelID], [EventID], [EventName]
+            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            WHERE ParentID = '0' AND EventName = ?
+        
+First Query Result: [
+  { ModelID: 1, EventID: 405, EventName: 'mainEvent' },
+  statement: '\n' +
+    '            SELECT [ModelID], [EventID], [EventName]\n' +
+    '            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    "            WHERE ParentID = '0' AND EventName = ?\n" +
+    '        ',
+  parameters: [ 'mainEvent' ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing secondQuery: 
+            SELECT [EventID], [EventName]
+            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            WHERE ParentID = ? AND EventName = ?
+        
+Second Query Result: [
+  { EventID: 417, EventName: 'jokling' },
+  statement: '\n' +
+    '            SELECT [EventID], [EventName]\n' +
+    '            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '            WHERE ParentID = ? AND EventName = ?\n' +
+    '        ',
+  parameters: [ 405, 'jokling' ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing thirdQuery: 
+            SELECT [EventID], [EventName]
+            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            WHERE ParentID = ?
+        
+Third Query Result: [
+  { EventID: 418, EventName: 'sckool' },
+  statement: '\n' +
+    '            SELECT [EventID], [EventName]\n' +
+    '            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '            WHERE ParentID = ?\n' +
+    '        ',
+  parameters: [ 417 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing updateQuery: 
+                UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]
+                SET EventName = ?
+                WHERE EventID = ? AND EventName = ?
+             [ 'no', 418, 'sckool' ]
+Update Result: [
+  statement: '\n' +
+    '                UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '                SET EventName = ?\n' +
+    '                WHERE EventID = ? AND EventName = ?\n' +
+    '            ',
+  parameters: [ 'no', 418, 'sckool' ],
+  return: undefined,
+  count: 1,
+  columns: []
+]
+POST /api/sub_cause_edited_data 200 187 - 372.359 ms
+Deletion data logged: {
+  timestamp: '2024-12-29T14:20:36Z',
+  modalName: 'mainEvent',
+  parentCauseName: null,
+  subCauseName: 'no',
+  deletionFlag: true
+}
+POST /api/deleted_cause 200 182 - 3.012 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 2532.049 ms
+Deletion data logged: {
+  timestamp: '2024-12-29T14:22:19Z',
+  modalName: 'mainEvent',
+  parentCauseName: 'Unknown Parent Cause',
+  subCauseName: 'no',
+  deletionFlag: true
+}
+POST /api/deleted_cause 200 200 - 1.993 ms
+GET /api/fetch_main_table_data 200 1441 - 5866.233 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 1091.589 ms
+GET /api/fetch_main_table_data 304 - - 1407.981 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.196 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.386 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1441 - 475.055 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 451.577 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'mainEvent',
+  timestamp: '2024-12-29 19:55:07',
+  mainData: {
+    EventID: 405,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-29 12:03:58.0000000',
+    UpdatedOn: '2024-12-29 12:03:58.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'mainEvent'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 417,
+      ModelID: 1,
+      ParentID: 405,
+      IsParent: '1',
+      CreatedOn: '2024-12-29 12:27:41.0000000',
+      UpdatedOn: '2024-12-29 12:27:41.0000000',
+      IsActive: '1',
+      TopCauseName: 'jokling',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: true
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=mainEvent 200 577 - 342.691 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 209.437 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Data written to ./event_related_data.json.
+GET /api/fetch_cause_from_top_cause?topCauseName=jokling 200 424 - 279.234 ms
+OPTIONS /api/submit-causes 200 4 - 0.346 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Received data: {
+  mainEvent: 'mainEvent',
+  causes: [
+    { causeName: 'Untitled Cause', probability: 0, subcauses: [] },
+    { causeName: 'jokling', probability: 0, subcauses: [Array] }
+  ]
+}
+Received data: {
+  mainEvent: 'mainEvent',
+  causes: [
+    { causeName: 'Untitled Cause', probability: 0, subcauses: [] },
+    { causeName: 'jokling', probability: 0, subcauses: [Array] }
+  ]
+}
+POST /api/submit-causes 200 68 - 422.378 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'mainEvent',
+  timestamp: '2024-12-29 19:55:11',
+  mainData: {
+    EventID: 405,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-29 12:03:58.0000000',
+    UpdatedOn: '2024-12-29 12:03:58.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'mainEvent'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 417,
+      ModelID: 1,
+      ParentID: 405,
+      IsParent: '1',
+      CreatedOn: '2024-12-29 12:27:41.0000000',
+      UpdatedOn: '2024-12-29 19:55:11.0000000',
+      IsActive: '1',
+      TopCauseName: 'jokling',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: true
+    },
+    {
+      EventID: 419,
+      ModelID: 1,
+      ParentID: 405,
+      IsParent: '0',
+      CreatedOn: '2024-12-29 19:55:10.0000000',
+      UpdatedOn: '2024-12-29 19:55:10.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=mainEvent 200 854 - 413.913 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/edited_top_cause_data 200 91 - 218.438 ms
+OPTIONS /api/topcause_data_change 200 4 - 0.445 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Updated ProbabilityPercentage for EventID: 417, Cause: jokling
+Updated ProbabilityPercentage for EventID: 419, Cause: new
+POST /api/topcause_data_change 200 45 - 341.171 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Updated ProbabilityPercentage for EventID: 417, Cause: jokling
+Updated ProbabilityPercentage for EventID: 419, Cause: new
+POST /api/topcause_data_change 200 45 - 285.032 ms
+OPTIONS /api/sub_cause_creation_data 200 4 - 0.591 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/sub_cause_creation_data 500 34 - 407.560 ms
+OPTIONS /api/nested_sub_cause_creation_data 200 4 - 0.567 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_sub_cause_creation_data 200 341 - 384.283 ms
+Received CauseName: Untitled Cause
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved EventID: 420
+Fetched Child Event Data: [
+  {
+    EventID: 421,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:38.0000000',
+    UpdatedOn: '2024-12-29 19:55:38.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 5994737048',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  statement: '\n' +
+    '            SELECT \n' +
+    '                [EventID], \n' +
+    '                [ModelID], \n' +
+    '                [ParentID], \n' +
+    '                [IsParent], \n' +
+    '                [CreatedOn], \n' +
+    '                [UpdatedOn], \n' +
+    '                [IsActive], \n' +
+    '                [ProbabilityPercentage],\n' +
+    '                [EventName],\n' +
+    '                [CreatedBy],\n' +
+    '                [UpdatedBy]\n' +
+    '            FROM [Tbl_Events_Main]\n' +
+    '            WHERE [ParentID] = ? AND [IsActive] = 1\n' +
+    '        ',
+  parameters: [ 420 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ParentID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'IsParent',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'CreatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'UpdatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'IsActive',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'ProbabilityPercentage',
+      dataType: 3,
+      dataTypeName: 'SQL_DECIMAL',
+      columnSize: 5,
+      decimalDigits: 2,
+      nullable: true
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'CreatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'UpdatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: true
+    }
+  ]
+]
+Data successfully saved to event_data_sent_back.json
+GET /api/fetch_sub_cause_based_on_cause?CauseName=Untitled%20Cause 200 351 - 222.296 ms
+Database connection closed.
+Received CauseName: Untitled Cause
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved EventID: 420
+Fetched Child Event Data: [
+  {
+    EventID: 421,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:38.0000000',
+    UpdatedOn: '2024-12-29 19:55:38.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 5994737048',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  statement: '\n' +
+    '            SELECT \n' +
+    '                [EventID], \n' +
+    '                [ModelID], \n' +
+    '                [ParentID], \n' +
+    '                [IsParent], \n' +
+    '                [CreatedOn], \n' +
+    '                [UpdatedOn], \n' +
+    '                [IsActive], \n' +
+    '                [ProbabilityPercentage],\n' +
+    '                [EventName],\n' +
+    '                [CreatedBy],\n' +
+    '                [UpdatedBy]\n' +
+    '            FROM [Tbl_Events_Main]\n' +
+    '            WHERE [ParentID] = ? AND [IsActive] = 1\n' +
+    '        ',
+  parameters: [ 420 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ParentID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'IsParent',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'CreatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'UpdatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'IsActive',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'ProbabilityPercentage',
+      dataType: 3,
+      dataTypeName: 'SQL_DECIMAL',
+      columnSize: 5,
+      decimalDigits: 2,
+      nullable: true
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'CreatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'UpdatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: true
+    }
+  ]
+]
+Data successfully saved to event_data_sent_back.json
+GET /api/fetch_sub_cause_based_on_cause?CauseName=Untitled%20Cause 304 - - 226.865 ms
+Database connection closed.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/nested_sub_cause_creation_data 200 341 - 447.694 ms
+Received CauseName: Untitled Cause
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved EventID: 420
+Fetched Child Event Data: [
+  {
+    EventID: 421,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:38.0000000',
+    UpdatedOn: '2024-12-29 19:55:38.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 5994737048',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  {
+    EventID: 422,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:42.0000000',
+    UpdatedOn: '2024-12-29 19:55:42.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 3915912632',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  statement: '\n' +
+    '            SELECT \n' +
+    '                [EventID], \n' +
+    '                [ModelID], \n' +
+    '                [ParentID], \n' +
+    '                [IsParent], \n' +
+    '                [CreatedOn], \n' +
+    '                [UpdatedOn], \n' +
+    '                [IsActive], \n' +
+    '                [ProbabilityPercentage],\n' +
+    '                [EventName],\n' +
+    '                [CreatedBy],\n' +
+    '                [UpdatedBy]\n' +
+    '            FROM [Tbl_Events_Main]\n' +
+    '            WHERE [ParentID] = ? AND [IsActive] = 1\n' +
+    '        ',
+  parameters: [ 420 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ParentID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'IsParent',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'CreatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'UpdatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'IsActive',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'ProbabilityPercentage',
+      dataType: 3,
+      dataTypeName: 'SQL_DECIMAL',
+      columnSize: 5,
+      decimalDigits: 2,
+      nullable: true
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'CreatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'UpdatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: true
+    }
+  ]
+]
+Data successfully saved to event_data_sent_back.json
+GET /api/fetch_sub_cause_based_on_cause?CauseName=Untitled%20Cause 200 627 - 241.721 ms
+Database connection closed.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing firstQuery: 
+            SELECT [ModelID], [EventID], [EventName]
+            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            WHERE ParentID = '0' AND EventName = ?
+        
+First Query Result: [
+  { ModelID: 1, EventID: 405, EventName: 'mainEvent' },
+  statement: '\n' +
+    '            SELECT [ModelID], [EventID], [EventName]\n' +
+    '            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    "            WHERE ParentID = '0' AND EventName = ?\n" +
+    '        ',
+  parameters: [ 'mainEvent' ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing secondQuery: 
+            SELECT [EventID], [EventName]
+            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            WHERE ParentID = ? AND EventName = ?
+        
+Second Query Result: [
+  { EventID: 417, EventName: 'jokling' },
+  statement: '\n' +
+    '            SELECT [EventID], [EventName]\n' +
+    '            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '            WHERE ParentID = ? AND EventName = ?\n' +
+    '        ',
+  parameters: [ 405, 'jokling' ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing thirdQuery: 
+            SELECT [EventID], [EventName]
+            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            WHERE ParentID = ?
+        
+Third Query Result: [
+  { EventID: 420, EventName: 'Untitled Cause' },
+  { EventID: 418, EventName: 'no' },
+  statement: '\n' +
+    '            SELECT [EventID], [EventName]\n' +
+    '            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '            WHERE ParentID = ?\n' +
+    '        ',
+  parameters: [ 417 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing updateQuery: 
+                UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]
+                SET EventName = ?
+                WHERE EventID = ? AND EventName = ?
+             [ 'shankar', 420, 'Untitled Cause' ]
+Update Result: [
+  statement: '\n' +
+    '                UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '                SET EventName = ?\n' +
+    '                WHERE EventID = ? AND EventName = ?\n' +
+    '            ',
+  parameters: [ 'shankar', 420, 'Untitled Cause' ],
+  return: undefined,
+  count: 1,
+  columns: []
+]
+Executing updateQuery: 
+                UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]
+                SET EventName = ?
+                WHERE EventID = ? AND EventName = ?
+             [ 'shankar', 418, 'Untitled Cause' ]
+Update Result: [
+  statement: '\n' +
+    '                UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '                SET EventName = ?\n' +
+    '                WHERE EventID = ? AND EventName = ?\n' +
+    '            ',
+  parameters: [ 'shankar', 418, 'Untitled Cause' ],
+  return: undefined,
+  count: 0,
+  columns: []
+]
+POST /api/sub_cause_edited_data 200 196 - 399.813 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Data written to ./event_related_data.json.
+GET /api/fetch_cause_from_top_cause?topCauseName=jokling 200 693 - 345.633 ms
+OPTIONS /api/cause_data_change 200 4 - 0.489 ms
+Received payload: {
+  "modalName": "mainEvent",
+  "parentCauseName": "jokling",
+  "updatedSubCauses": [
+    {
+      "name": "shankar",
+      "previousValue": 0,
+      "currentValue": 100
+    },
+    {
+      "name": "no",
+      "previousValue": 0,
+      "currentValue": 0
+    }
+  ]
+}
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/cause_data_change 200 58 - 380.754 ms
+Received payload: {
+  "modalName": "mainEvent",
+  "parentCauseName": "jokling",
+  "updatedSubCauses": [
+    {
+      "name": "shankar",
+      "previousValue": 0,
+      "currentValue": 72
+    },
+    {
+      "name": "no",
+      "previousValue": 0,
+      "currentValue": 28
+    }
+  ]
+}
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/cause_data_change 200 58 - 364.608 ms
+Received CauseName: shankar
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved EventID: 420
+Fetched Child Event Data: [
+  {
+    EventID: 421,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:38.0000000',
+    UpdatedOn: '2024-12-29 19:55:38.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 5994737048',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  {
+    EventID: 422,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:42.0000000',
+    UpdatedOn: '2024-12-29 19:55:42.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 3915912632',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  statement: '\n' +
+    '            SELECT \n' +
+    '                [EventID], \n' +
+    '                [ModelID], \n' +
+    '                [ParentID], \n' +
+    '                [IsParent], \n' +
+    '                [CreatedOn], \n' +
+    '                [UpdatedOn], \n' +
+    '                [IsActive], \n' +
+    '                [ProbabilityPercentage],\n' +
+    '                [EventName],\n' +
+    '                [CreatedBy],\n' +
+    '                [UpdatedBy]\n' +
+    '            FROM [Tbl_Events_Main]\n' +
+    '            WHERE [ParentID] = ? AND [IsActive] = 1\n' +
+    '        ',
+  parameters: [ 420 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ParentID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'IsParent',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'CreatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'UpdatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'IsActive',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'ProbabilityPercentage',
+      dataType: 3,
+      dataTypeName: 'SQL_DECIMAL',
+      columnSize: 5,
+      decimalDigits: 2,
+      nullable: true
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'CreatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'UpdatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: true
+    }
+  ]
+]
+Data successfully saved to event_data_sent_back.json
+GET /api/fetch_sub_cause_based_on_cause?CauseName=shankar 200 627 - 217.730 ms
+Database connection closed.
+Received CauseName: shankar
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved EventID: 420
+Fetched Child Event Data: [
+  {
+    EventID: 421,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:38.0000000',
+    UpdatedOn: '2024-12-29 19:55:38.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 5994737048',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  {
+    EventID: 422,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:42.0000000',
+    UpdatedOn: '2024-12-29 19:55:42.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 3915912632',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  statement: '\n' +
+    '            SELECT \n' +
+    '                [EventID], \n' +
+    '                [ModelID], \n' +
+    '                [ParentID], \n' +
+    '                [IsParent], \n' +
+    '                [CreatedOn], \n' +
+    '                [UpdatedOn], \n' +
+    '                [IsActive], \n' +
+    '                [ProbabilityPercentage],\n' +
+    '                [EventName],\n' +
+    '                [CreatedBy],\n' +
+    '                [UpdatedBy]\n' +
+    '            FROM [Tbl_Events_Main]\n' +
+    '            WHERE [ParentID] = ? AND [IsActive] = 1\n' +
+    '        ',
+  parameters: [ 420 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ParentID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'IsParent',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'CreatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'UpdatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'IsActive',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'ProbabilityPercentage',
+      dataType: 3,
+      dataTypeName: 'SQL_DECIMAL',
+      columnSize: 5,
+      decimalDigits: 2,
+      nullable: true
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'CreatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'UpdatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: true
+    }
+  ]
+]
+Data successfully saved to event_data_sent_back.json
+GET /api/fetch_sub_cause_based_on_cause?CauseName=shankar 304 - - 269.313 ms
+Database connection closed.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_turbine_data 304 - - 1115.826 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_turbine_data 304 - - 761.008 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved ModelID: 1
+GET /api/fetch_fm_data?turbineModel=S%2088 200 198 - 629.005 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved ModelID: 1
+GET /api/fetch_fm_data?turbineModel=S%2088 304 - - 1426.806 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved ModelID: 1
+GET /api/fetch_fm_data?turbineModel=S%2088 304 - - 294.750 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_data_based_on_event?event=FM103%20Elec_SafetyChainStop 304 - - 210.575 ms
+Response data saved to response_for_initial_question_sent-back.json
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 119.004 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 122.089 ms
+Received data: { trackerCount: 1, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet.
+GET /api/fetch_consecutive_question_for_event?trackerCount=1&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 238.465 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 224.831 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 187.766 ms
+Received data: { trackerCount: 2, selectedItem: 'FM103 Elec_SafetyChainStop' }
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+EventID: 76
+Returning ActionName: Check safety chain contactor -75K5 for NO contact operation.
+GET /api/fetch_consecutive_question_for_event?trackerCount=2&selectedItem=FM103%20Elec_SafetyChainStop 304 - - 308.962 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 201.101 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check safety chain contactor -75K5 for NO contact operation" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20safety%20chain%20contactor%20-75K5%20for%20NO%20contact%20operation. 304 - - 159.718 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Check control cable (7X2.5 Sq mm) from nacelle to bottom cabinet" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Check%20control%20cable%20(7X2.5%20Sq%20mm)%20from%20nacelle%20to%20bottom%20cabinet. 304 - - 172.835 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.219 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 1.115 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1441 - 609.054 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 480.717 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'FM200  Elec_CurrentAverageHighStop',
+  timestamp: '2024-12-29 19:58:27',
+  mainData: {
+    EventID: 33,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-11-21 11:51:32.6833333',
+    UpdatedOn: '2024-11-21 11:51:32.6833333',
+    IsActive: '1',
+    CreatedBy: '41064',
+    UpdatedBy: '41064',
+    EventName: 'FM200  Elec_CurrentAverageHighStop'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 34,
+      ModelID: 1,
+      ParentID: 33,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 12:09:52.2366667',
+      UpdatedOn: '2024-11-21 12:09:52.2366667',
+      IsActive: '1',
+      TopCauseName: 'Error is due to current measurement hardware issue between MFR and power circuit CT measurement',
+      ProbabilityPercentage: 20,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 35,
+      ModelID: 1,
+      ParentID: 33,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 12:09:52.2400000',
+      UpdatedOn: '2024-11-21 12:09:52.2400000',
+      IsActive: '1',
+      TopCauseName: 'Error is due to Power circuit component failures',
+      ProbabilityPercentage: 30,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 36,
+      ModelID: 1,
+      ParentID: 33,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 12:09:52.2400000',
+      UpdatedOn: '2024-11-21 12:09:52.2400000',
+      IsActive: '1',
+      TopCauseName: 'Error is due to issue of cable damage or looseness',
+      ProbabilityPercentage: 50,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    }
+  ],
+  eventObject: [
+    {
+      EventID: 37,
+      RootID: 33,
+      EventName: 'MFR parameter is not set as per operational manual',
+      ProbabilityPercentage: 20,
+      IsParent: '0',
+      ParentID: 34,
+      ActionID: 94,
+      ActionName: 'Ensure correct parameter setting of MFR.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 38,
+      RootID: 33,
+      EventName: 'Error is set due to Faulty MFR',
+      ProbabilityPercentage: 20,
+      IsParent: '0',
+      ParentID: 34,
+      ActionID: 95,
+      ActionName: 'Check the MFR (3A1). Replace if required.',
+      ActionTime: '00:30:00',
+      ActionCost: 65300,
+      Level: 2
+    },
+    {
+      EventID: 39,
+      RootID: 33,
+      EventName: 'Error is due to Faulty CTs',
+      ProbabilityPercentage: 30,
+      IsParent: '0',
+      ParentID: 34,
+      ActionID: 96,
+      ActionName: 'Measure the resistance of the current measurement CTs -3T1, -3T2 and -3T3. If found faulty, replace the CT.',
+      ActionTime: '02:00:00',
+      ActionCost: 3000,
+      Level: 2
+    },
+    {
+      EventID: 40,
+      RootID: 33,
+      EventName: 'Error is due to Current measurement wiring issue between MFR and Power circuit Measurement signals',
+      ProbabilityPercentage: 30,
+      IsParent: '0',
+      ParentID: 34,
+      ActionID: 97,
+      ActionName: 'Check cable continuity between -3T1, -3T2 and -3T3 and MFR -3A1. If faulty, repair/replace the cable.',
+      ActionTime: '00:30:00',
+      ActionCost: 300,
+      Level: 2
+    },
+    {
+      EventID: 41,
+      RootID: 33,
+      EventName: 'Faulty bypass contactor',
+      ProbabilityPercentage: 20,
+      IsParent: '0',
+      ParentID: 35,
+      ActionID: 98,
+      ActionName: 'Inspect the condition of bypass contactor. Replace if found faulty.',
+      ActionTime: '01:00:00',
+      ActionCost: 290502,
+      Level: 2
+    },
+    {
+      EventID: 42,
+      RootID: 33,
+      EventName: 'Faulty generator contactor',
+      ProbabilityPercentage: 20,
+      IsParent: '0',
+      ParentID: 35,
+      ActionID: 99,
+      ActionName: 'Inspect the condition of generator contactor. Replace if found faulty.',
+      ActionTime: '01:00:00',
+      ActionCost: 49000,
+      Level: 2
+    },
+    {
+      EventID: 43,
+      RootID: 33,
+      EventName: 'Error is due to Generator windings',
+      ProbabilityPercentage: 5,
+      IsParent: '0',
+      ParentID: 35,
+      ActionID: 100,
+      ActionName: 'Check generator stator and rotor winding for internal short circuit and insulation damage. Replace the generator if found faulty',
+      ActionTime: '02:00:00',
+      ActionCost: 2500000,
+      Level: 2
+    },
+    {
+      EventID: 44,
+      RootID: 33,
+      EventName: 'Error is due to Slipring or Slipring brushes',
+      ProbabilityPercentage: 55,
+      IsParent: '0',
+      ParentID: 35,
+      ActionID: 101,
+      ActionName: 'Visually inspect the condition of generator slip ring brush holders and brushes. Repair/replace if found faulty.',
+      ActionTime: '00:20:00',
+      ActionCost: 400000,
+      Level: 2
+    },
+    {
+      EventID: 45,
+      RootID: 33,
+      EventName: 'Power cable damage at cable loop in T4',
+      ProbabilityPercentage: 3,
+      IsParent: '0',
+      ParentID: 36,
+      ActionID: 102,
+      ActionName: 'Check power cables for any damage in T4 section.',
+      ActionTime: '02:00:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 46,
+      RootID: 33,
+      EventName: 'Stator cable connection issue at Junction box',
+      ProbabilityPercentage: 18.1,
+      IsParent: '0',
+      ParentID: 36,
+      ActionID: 103,
+      ActionName: 'Check stator cables for short circuit and damage at tower junction box. Repair/replace if required.',
+      ActionTime: '00:25:00',
+      ActionCost: 2000,
+      Level: 2
+    },
+    {
+      EventID: 47,
+      RootID: 33,
+      EventName: 'Connection issue at generator stator terminal box',
+      ProbabilityPercentage: 22.2,
+      IsParent: '0',
+      ParentID: 36,
+      ActionID: 104,
+      ActionName: 'Visually inspect cable connections at generator stator terminal box. Repair/replace parts if required.',
+      ActionTime: '00:45:00',
+      ActionCost: 2000,
+      Level: 2
+    },
+    {
+      EventID: 48,
+      RootID: 33,
+      EventName: 'Rotor cabling at slipring terminal box',
+      ProbabilityPercentage: 22.2,
+      IsParent: '0',
+      ParentID: 36,
+      ActionID: 105,
+      ActionName: 'Visually inspect rotor cable connections at generator slipring terminal box. Repair/replace if required.',
+      ActionTime: '01:00:00',
+      ActionCost: 5000,
+      Level: 2
+    },
+    {
+      EventID: 49,
+      RootID: 33,
+      EventName: 'Rotor terminal box',
+      ProbabilityPercentage: 34.4,
+      IsParent: '0',
+      ParentID: 36,
+      ActionID: 106,
+      ActionName: 'Check condition of rotor cable. Repair/replace if faulty.',
+      ActionTime: '00:30:00',
+      ActionCost: 8000,
+      Level: 2
+    }
+  ]
+}
+GET /api/fetch_event_causes_actions?eventName=FM200%20%20Elec_CurrentAverageHighStop 304 - - 562.398 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM200%20%20Elec_CurrentAverageHighStop 404 44 - 252.951 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.305 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.510 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1441 - 513.334 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 475.689 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.292 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.365 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 511.396 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 529.726 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'FM200  Elec_CurrentAverageHighStop',
+  timestamp: '2024-12-29 20:00:24',
+  mainData: {
+    EventID: 33,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-11-21 11:51:32.6833333',
+    UpdatedOn: '2024-11-21 11:51:32.6833333',
+    IsActive: '1',
+    CreatedBy: '41064',
+    UpdatedBy: '41064',
+    EventName: 'FM200  Elec_CurrentAverageHighStop'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 34,
+      ModelID: 1,
+      ParentID: 33,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 12:09:52.2366667',
+      UpdatedOn: '2024-11-21 12:09:52.2366667',
+      IsActive: '1',
+      TopCauseName: 'Error is due to current measurement hardware issue between MFR and power circuit CT measurement',
+      ProbabilityPercentage: 20,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 35,
+      ModelID: 1,
+      ParentID: 33,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 12:09:52.2400000',
+      UpdatedOn: '2024-11-21 12:09:52.2400000',
+      IsActive: '1',
+      TopCauseName: 'Error is due to Power circuit component failures',
+      ProbabilityPercentage: 30,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 36,
+      ModelID: 1,
+      ParentID: 33,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 12:09:52.2400000',
+      UpdatedOn: '2024-11-21 12:09:52.2400000',
+      IsActive: '1',
+      TopCauseName: 'Error is due to issue of cable damage or looseness',
+      ProbabilityPercentage: 50,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    }
+  ],
+  eventObject: [
+    {
+      EventID: 37,
+      RootID: 33,
+      EventName: 'MFR parameter is not set as per operational manual',
+      ProbabilityPercentage: 20,
+      IsParent: '0',
+      ParentID: 34,
+      ActionID: 94,
+      ActionName: 'Ensure correct parameter setting of MFR.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 38,
+      RootID: 33,
+      EventName: 'Error is set due to Faulty MFR',
+      ProbabilityPercentage: 20,
+      IsParent: '0',
+      ParentID: 34,
+      ActionID: 95,
+      ActionName: 'Check the MFR (3A1). Replace if required.',
+      ActionTime: '00:30:00',
+      ActionCost: 65300,
+      Level: 2
+    },
+    {
+      EventID: 39,
+      RootID: 33,
+      EventName: 'Error is due to Faulty CTs',
+      ProbabilityPercentage: 30,
+      IsParent: '0',
+      ParentID: 34,
+      ActionID: 96,
+      ActionName: 'Measure the resistance of the current measurement CTs -3T1, -3T2 and -3T3. If found faulty, replace the CT.',
+      ActionTime: '02:00:00',
+      ActionCost: 3000,
+      Level: 2
+    },
+    {
+      EventID: 40,
+      RootID: 33,
+      EventName: 'Error is due to Current measurement wiring issue between MFR and Power circuit Measurement signals',
+      ProbabilityPercentage: 30,
+      IsParent: '0',
+      ParentID: 34,
+      ActionID: 97,
+      ActionName: 'Check cable continuity between -3T1, -3T2 and -3T3 and MFR -3A1. If faulty, repair/replace the cable.',
+      ActionTime: '00:30:00',
+      ActionCost: 300,
+      Level: 2
+    },
+    {
+      EventID: 41,
+      RootID: 33,
+      EventName: 'Faulty bypass contactor',
+      ProbabilityPercentage: 20,
+      IsParent: '0',
+      ParentID: 35,
+      ActionID: 98,
+      ActionName: 'Inspect the condition of bypass contactor. Replace if found faulty.',
+      ActionTime: '01:00:00',
+      ActionCost: 290502,
+      Level: 2
+    },
+    {
+      EventID: 42,
+      RootID: 33,
+      EventName: 'Faulty generator contactor',
+      ProbabilityPercentage: 20,
+      IsParent: '0',
+      ParentID: 35,
+      ActionID: 99,
+      ActionName: 'Inspect the condition of generator contactor. Replace if found faulty.',
+      ActionTime: '01:00:00',
+      ActionCost: 49000,
+      Level: 2
+    },
+    {
+      EventID: 43,
+      RootID: 33,
+      EventName: 'Error is due to Generator windings',
+      ProbabilityPercentage: 5,
+      IsParent: '0',
+      ParentID: 35,
+      ActionID: 100,
+      ActionName: 'Check generator stator and rotor winding for internal short circuit and insulation damage. Replace the generator if found faulty',
+      ActionTime: '02:00:00',
+      ActionCost: 2500000,
+      Level: 2
+    },
+    {
+      EventID: 44,
+      RootID: 33,
+      EventName: 'Error is due to Slipring or Slipring brushes',
+      ProbabilityPercentage: 55,
+      IsParent: '0',
+      ParentID: 35,
+      ActionID: 101,
+      ActionName: 'Visually inspect the condition of generator slip ring brush holders and brushes. Repair/replace if found faulty.',
+      ActionTime: '00:20:00',
+      ActionCost: 400000,
+      Level: 2
+    },
+    {
+      EventID: 45,
+      RootID: 33,
+      EventName: 'Power cable damage at cable loop in T4',
+      ProbabilityPercentage: 3,
+      IsParent: '0',
+      ParentID: 36,
+      ActionID: 102,
+      ActionName: 'Check power cables for any damage in T4 section.',
+      ActionTime: '02:00:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 46,
+      RootID: 33,
+      EventName: 'Stator cable connection issue at Junction box',
+      ProbabilityPercentage: 18.1,
+      IsParent: '0',
+      ParentID: 36,
+      ActionID: 103,
+      ActionName: 'Check stator cables for short circuit and damage at tower junction box. Repair/replace if required.',
+      ActionTime: '00:25:00',
+      ActionCost: 2000,
+      Level: 2
+    },
+    {
+      EventID: 47,
+      RootID: 33,
+      EventName: 'Connection issue at generator stator terminal box',
+      ProbabilityPercentage: 22.2,
+      IsParent: '0',
+      ParentID: 36,
+      ActionID: 104,
+      ActionName: 'Visually inspect cable connections at generator stator terminal box. Repair/replace parts if required.',
+      ActionTime: '00:45:00',
+      ActionCost: 2000,
+      Level: 2
+    },
+    {
+      EventID: 48,
+      RootID: 33,
+      EventName: 'Rotor cabling at slipring terminal box',
+      ProbabilityPercentage: 22.2,
+      IsParent: '0',
+      ParentID: 36,
+      ActionID: 105,
+      ActionName: 'Visually inspect rotor cable connections at generator slipring terminal box. Repair/replace if required.',
+      ActionTime: '01:00:00',
+      ActionCost: 5000,
+      Level: 2
+    },
+    {
+      EventID: 49,
+      RootID: 33,
+      EventName: 'Rotor terminal box',
+      ProbabilityPercentage: 34.4,
+      IsParent: '0',
+      ParentID: 36,
+      ActionID: 106,
+      ActionName: 'Check condition of rotor cable. Repair/replace if faulty.',
+      ActionTime: '00:30:00',
+      ActionCost: 8000,
+      Level: 2
+    }
+  ]
+}
+GET /api/fetch_event_causes_actions?eventName=FM200%20%20Elec_CurrentAverageHighStop 304 - - 498.761 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM200%20%20Elec_CurrentAverageHighStop 404 44 - 228.834 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.361 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.317 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 504.595 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 472.331 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'mainEvent',
+  timestamp: '2024-12-29 20:00:53',
+  mainData: {
+    EventID: 405,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-29 12:03:58.0000000',
+    UpdatedOn: '2024-12-29 12:03:58.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'mainEvent'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 417,
+      ModelID: 1,
+      ParentID: 405,
+      IsParent: '1',
+      CreatedOn: '2024-12-29 12:27:41.0000000',
+      UpdatedOn: '2024-12-29 19:55:11.0000000',
+      IsActive: '1',
+      TopCauseName: 'jokling',
+      ProbabilityPercentage: 40,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: true
+    },
+    {
+      EventID: 419,
+      ModelID: 1,
+      ParentID: 405,
+      IsParent: '0',
+      CreatedOn: '2024-12-29 19:55:10.0000000',
+      UpdatedOn: '2024-12-29 19:55:10.0000000',
+      IsActive: '1',
+      TopCauseName: 'new',
+      ProbabilityPercentage: 60,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=mainEvent 200 845 - 412.320 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 210.125 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Data written to ./event_related_data.json.
+GET /api/fetch_cause_from_top_cause?topCauseName=jokling 200 692 - 359.902 ms
+Received CauseName: shankar
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved EventID: 420
+Fetched Child Event Data: [
+  {
+    EventID: 421,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:38.0000000',
+    UpdatedOn: '2024-12-29 19:55:38.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 5994737048',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  {
+    EventID: 422,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:42.0000000',
+    UpdatedOn: '2024-12-29 19:55:42.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 3915912632',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  statement: '\n' +
+    '            SELECT \n' +
+    '                [EventID], \n' +
+    '                [ModelID], \n' +
+    '                [ParentID], \n' +
+    '                [IsParent], \n' +
+    '                [CreatedOn], \n' +
+    '                [UpdatedOn], \n' +
+    '                [IsActive], \n' +
+    '                [ProbabilityPercentage],\n' +
+    '                [EventName],\n' +
+    '                [CreatedBy],\n' +
+    '                [UpdatedBy]\n' +
+    '            FROM [Tbl_Events_Main]\n' +
+    '            WHERE [ParentID] = ? AND [IsActive] = 1\n' +
+    '        ',
+  parameters: [ 420 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ParentID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'IsParent',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'CreatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'UpdatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'IsActive',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'ProbabilityPercentage',
+      dataType: 3,
+      dataTypeName: 'SQL_DECIMAL',
+      columnSize: 5,
+      decimalDigits: 2,
+      nullable: true
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'CreatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'UpdatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: true
+    }
+  ]
+]
+Data successfully saved to event_data_sent_back.json
+GET /api/fetch_sub_cause_based_on_cause?CauseName=shankar 304 - - 249.802 ms
+Database connection closed.
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 343.756 ms
+GET /api/fetch_main_table_data 200 1441 - 589.224 ms
+Deletion data logged: {
+  timestamp: '2024-12-29T14:34:37Z',
+  modalName: 'mainEvent',
+  parentCauseName: null,
+  subCauseName: 'shankar',
+  deletionFlag: true
+}
+POST /api/deleted_cause 200 187 - 4.222 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 230.684 ms
+GET /api/fetch_main_table_data 304 - - 554.725 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 306.978 ms
+GET /api/fetch_main_table_data 200 1441 - 556.496 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 311.368 ms
+GET /api/fetch_main_table_data 304 - - 654.512 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 333.761 ms
+GET /api/fetch_main_table_data 304 - - 692.577 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 292.537 ms
+GET /api/fetch_main_table_data 200 1441 - 567.929 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=mainEvent 404 44 - 306.318 ms
+GET /api/fetch_main_table_data 200 1441 - 569.903 ms
+Deletion data logged: {
+  timestamp: '2024-12-29T14:38:54Z',
+  modalName: 'mainEvent',
+  parentCauseName: 'jokling',
+  subCauseName: 'shankar',
+  deletionFlag: true
+}
+POST /api/deleted_cause 200 192 - 2.967 ms
+OPTIONS /api/deleted_top_cause 200 4 - 0.479 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Root event details: { ModelID: 1, EventID: 405, EventName: 'mainEvent' }
+First-level cause details: { EventID: 419, EventName: 'new' }
+Deleted event: 419
+Deleted first-level cause: { EventID: 419, EventName: 'new' }
+POST /api/deleted_top_cause 200 65 - 475.657 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'mainEvent',
+  timestamp: '2024-12-29 20:09:07',
+  mainData: {
+    EventID: 405,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-29 12:03:58.0000000',
+    UpdatedOn: '2024-12-29 12:03:58.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'mainEvent'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 417,
+      ModelID: 1,
+      ParentID: 405,
+      IsParent: '1',
+      CreatedOn: '2024-12-29 12:27:41.0000000',
+      UpdatedOn: '2024-12-29 19:55:11.0000000',
+      IsActive: '1',
+      TopCauseName: 'jokling',
+      ProbabilityPercentage: 40,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: true
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=mainEvent 200 578 - 370.935 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Data written to ./event_related_data.json.
+GET /api/fetch_cause_from_top_cause?topCauseName=jokling 200 692 - 393.792 ms
+Received CauseName: shankar
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved EventID: 420
+Fetched Child Event Data: [
+  {
+    EventID: 421,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:38.0000000',
+    UpdatedOn: '2024-12-29 19:55:38.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 5994737048',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  {
+    EventID: 422,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:42.0000000',
+    UpdatedOn: '2024-12-29 19:55:42.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 3915912632',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  statement: '\n' +
+    '            SELECT \n' +
+    '                [EventID], \n' +
+    '                [ModelID], \n' +
+    '                [ParentID], \n' +
+    '                [IsParent], \n' +
+    '                [CreatedOn], \n' +
+    '                [UpdatedOn], \n' +
+    '                [IsActive], \n' +
+    '                [ProbabilityPercentage],\n' +
+    '                [EventName],\n' +
+    '                [CreatedBy],\n' +
+    '                [UpdatedBy]\n' +
+    '            FROM [Tbl_Events_Main]\n' +
+    '            WHERE [ParentID] = ? AND [IsActive] = 1\n' +
+    '        ',
+  parameters: [ 420 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ParentID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'IsParent',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'CreatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'UpdatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'IsActive',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'ProbabilityPercentage',
+      dataType: 3,
+      dataTypeName: 'SQL_DECIMAL',
+      columnSize: 5,
+      decimalDigits: 2,
+      nullable: true
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'CreatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'UpdatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: true
+    }
+  ]
+]
+Data successfully saved to event_data_sent_back.json
+GET /api/fetch_sub_cause_based_on_cause?CauseName=shankar 304 - - 221.641 ms
+Database connection closed.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Received data: {
+  mainEvent: 'mainEvent',
+  causes: [
+    { causeName: 'Untitled Cause', probability: 0, subcauses: [] },
+    { causeName: 'jokling', probability: 40, subcauses: [Array] }
+  ]
+}
+Received data: {
+  mainEvent: 'mainEvent',
+  causes: [
+    { causeName: 'Untitled Cause', probability: 0, subcauses: [] },
+    { causeName: 'jokling', probability: 40, subcauses: [Array] }
+  ]
+}
+POST /api/submit-causes 200 68 - 608.240 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'mainEvent',
+  timestamp: '2024-12-29 20:09:17',
+  mainData: {
+    EventID: 405,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-12-29 12:03:58.0000000',
+    UpdatedOn: '2024-12-29 12:03:58.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'mainEvent'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 423,
+      ModelID: 1,
+      ParentID: 405,
+      IsParent: '0',
+      CreatedOn: '2024-12-29 20:09:16.0000000',
+      UpdatedOn: '2024-12-29 20:09:16.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 0,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    },
+    {
+      EventID: 417,
+      ModelID: 1,
+      ParentID: 405,
+      IsParent: '1',
+      CreatedOn: '2024-12-29 12:27:41.0000000',
+      UpdatedOn: '2024-12-29 20:09:16.0000000',
+      IsActive: '1',
+      TopCauseName: 'jokling',
+      ProbabilityPercentage: 40,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: true
+    }
+  ],
+  eventObject: []
+}
+GET /api/fetch_event_causes_actions?eventName=mainEvent 200 855 - 454.296 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/edited_top_cause_data 200 91 - 312.773 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+POST /api/sub_cause_creation_data 500 34 - 421.334 ms
+Received CauseName: shankar
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved EventID: 420
+Fetched Child Event Data: [
+  {
+    EventID: 421,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:38.0000000',
+    UpdatedOn: '2024-12-29 19:55:38.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 5994737048',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  {
+    EventID: 422,
+    ModelID: 1,
+    ParentID: 420,
+    IsParent: '0',
+    CreatedOn: '2024-12-29 19:55:42.0000000',
+    UpdatedOn: '2024-12-29 19:55:42.0000000',
+    IsActive: '1',
+    ProbabilityPercentage: null,
+    EventName: 'Untitled Nested SubCause 3915912632',
+    CreatedBy: '40139',
+    UpdatedBy: '40139'
+  },
+  statement: '\n' +
+    '            SELECT \n' +
+    '                [EventID], \n' +
+    '                [ModelID], \n' +
+    '                [ParentID], \n' +
+    '                [IsParent], \n' +
+    '                [CreatedOn], \n' +
+    '                [UpdatedOn], \n' +
+    '                [IsActive], \n' +
+    '                [ProbabilityPercentage],\n' +
+    '                [EventName],\n' +
+    '                [CreatedBy],\n' +
+    '                [UpdatedBy]\n' +
+    '            FROM [Tbl_Events_Main]\n' +
+    '            WHERE [ParentID] = ? AND [IsActive] = 1\n' +
+    '        ',
+  parameters: [ 420 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'ParentID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'IsParent',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'CreatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'UpdatedOn',
+      dataType: 93,
+      dataTypeName: 'SQL_TYPE_TIMESTAMP',
+      columnSize: 27,
+      decimalDigits: 7,
+      nullable: true
+    },
+    {
+      name: 'IsActive',
+      dataType: -7,
+      dataTypeName: 'SQL_BIT',
+      columnSize: 1,
+      decimalDigits: 0,
+      nullable: true
+    },
+    {
+      name: 'ProbabilityPercentage',
+      dataType: 3,
+      dataTypeName: 'SQL_DECIMAL',
+      columnSize: 5,
+      decimalDigits: 2,
+      nullable: true
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'CreatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'UpdatedBy',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 100,
+      decimalDigits: 0,
+      nullable: true
+    }
+  ]
+]
+Data successfully saved to event_data_sent_back.json
+GET /api/fetch_sub_cause_based_on_cause?CauseName=shankar 304 - - 501.308 ms
+Database connection closed.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Data written to ./event_related_data.json.
+GET /api/fetch_cause_from_top_cause?topCauseName=bauchand 200 437 - 336.941 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing firstQuery: 
+            SELECT [ModelID], [EventID], [EventName]
+            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            WHERE ParentID = '0' AND EventName = ?
+        
+First Query Result: [
+  { ModelID: 1, EventID: 405, EventName: 'mainEvent' },
+  statement: '\n' +
+    '            SELECT [ModelID], [EventID], [EventName]\n' +
+    '            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    "            WHERE ParentID = '0' AND EventName = ?\n" +
+    '        ',
+  parameters: [ 'mainEvent' ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'ModelID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing secondQuery: 
+            SELECT [EventID], [EventName]
+            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            WHERE ParentID = ? AND EventName = ?
+        
+Second Query Result: [
+  { EventID: 423, EventName: 'bauchand' },
+  statement: '\n' +
+    '            SELECT [EventID], [EventName]\n' +
+    '            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '            WHERE ParentID = ? AND EventName = ?\n' +
+    '        ',
+  parameters: [ 405, 'bauchand' ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing thirdQuery: 
+            SELECT [EventID], [EventName]
+            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+            WHERE ParentID = ?
+        
+Third Query Result: [
+  { EventID: 424, EventName: 'Untitled Cause' },
+  statement: '\n' +
+    '            SELECT [EventID], [EventName]\n' +
+    '            FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '            WHERE ParentID = ?\n' +
+    '        ',
+  parameters: [ 423 ],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'EventID',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    },
+    {
+      name: 'EventName',
+      dataType: 12,
+      dataTypeName: 'SQL_VARCHAR',
+      columnSize: 255,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Executing updateQuery: 
+                UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]
+                SET EventName = ?
+                WHERE EventID = ? AND EventName = ?
+             [ 'bauchandinside', 424, 'Untitled Cause' ]
+Update Result: [
+  statement: '\n' +
+    '                UPDATE [Dezide_UAT].[dbo].[Tbl_Events_Main]\n' +
+    '                SET EventName = ?\n' +
+    '                WHERE EventID = ? AND EventName = ?\n' +
+    '            ',
+  parameters: [ 'bauchandinside', 424, 'Untitled Cause' ],
+  return: undefined,
+  count: 1,
+  columns: []
+]
+POST /api/sub_cause_edited_data 200 200 - 736.818 ms
+Deletion data logged: {
+  timestamp: '2024-12-29T14:39:34Z',
+  modalName: 'mainEvent',
+  parentCauseName: 'bauchand',
+  subCauseName: 'bauchandinside',
+  deletionFlag: true
+}
+POST /api/deleted_cause 200 200 - 2.766 ms

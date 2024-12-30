@@ -1,7 +1,7 @@
 {
-  "actionId": "93",
-  "actionName": "Check for loose/damage connection from DIO280 to PLC relay 58K3 coil supply. Replace the wire if found faulty.",
+  "actionId": "22",
+  "actionName": "Ensure that 24V DC is available at 75K5:33.",
   "infoName": [
-    "Missing nacelle fan feedback signal. When *DO_NacelleFan* is high *DI_FB_NacelleFan* is expected to be high and vice versa.\nTroubleshooting guide built on the basis of below mention drawing version and software version.\nBottom Cabinet Drawing Version: E.05.1.1.2.101A Rev.001.\nTop Cabinet Drawing Version: E.05.1.2.2.101A Rev.000.\nHub Cabinet Drawing Version: E.05.1.3.2.101A Rev.001_Improved.\nSoftware Version: CSM6321X5SX1XXR007."
+    "Safety chain activated. If DI08 *DI_SafetyChain_Activated* .\nTroubleshooting guide built on the basis of below mention drawing version and software version.\nBottom Cabinet Drawing Version: E.05.1.1.2.101A Rev.001.\nTop Cabinet Drawing Version: E.05.1.2.2.101A Rev.000.\nHub Cabinet Drawing Version: E.05.1.3.2.101A Rev.001_Improved.\nSoftware Version: CSM6321X5SX1XXR007."
   ]
 }

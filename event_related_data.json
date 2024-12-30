@@ -1,35 +1,21 @@
 {
-  "topCauseName": "topcause1",
-  "eventID": 360,
+  "topCauseName": "bauchand",
+  "eventID": 423,
   "causeObject": [
     {
-      "EventID": 362,
+      "EventID": 449,
       "ModelID": 1,
-      "ParentID": 360,
+      "ParentID": 423,
       "IsParent": "1",
-      "CreatedOn": "2024-12-28 20:42:46.0000000",
-      "UpdatedOn": "2024-12-28 20:42:46.0000000",
+      "CreatedOn": "2024-12-30 16:18:29.0000000",
+      "UpdatedOn": "2024-12-30 16:18:29.0000000",
       "IsActive": "1",
-      "ProbabilityPercentage": 17,
-      "CauseName": "subcause2",
+      "ProbabilityPercentage": 100,
+      "CauseName": "raffle",
       "CreatedBy": "40139",
       "UpdatedBy": "40139",
       "internalSubCause": true
-    },
-    {
-      "EventID": 361,
-      "ModelID": 1,
-      "ParentID": 360,
-      "IsParent": "0",
-      "CreatedOn": "2024-12-28 20:42:31.0000000",
-      "UpdatedOn": "2024-12-28 20:42:31.0000000",
-      "IsActive": "1",
-      "ProbabilityPercentage": 83,
-      "CauseName": "subcause1",
-      "CreatedBy": "40139",
-      "UpdatedBy": "40139",
-      "internalSubCause": false
     }
   ],
-  "timestamp": "2024-12-28T21:50:13+05:30"
+  "timestamp": "2024-12-30T16:51:29+05:30"
 }

@@ -1,0 +1,4 @@
+(node:5060) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Error during deletion process: TypeError: Cannot read properties of undefined (reading 'EventID')
+    at D:\Dezide_node\Dezide_BE\apis\deleted_cause.js:43:41
