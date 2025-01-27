@@ -1,0 +1,11 @@
+{
+  "modalName": "dummyevent",
+  "eventID": 0,
+  "questions": [
+    {
+      "questionName": "Untitled Question 1",
+      "questionTime": "00:00:00",
+      "questionCost": 0
+    }
+  ]
+}

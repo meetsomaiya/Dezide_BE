@@ -1,0 +1,495 @@
+checkAdmin route module loaded
+Server is listening on port \\.\pipe\76dc56e3-13f8-4da0-9e90-a529672a62ab
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'FM204 Pitch_Angle1_SPDifferenceStop',
+  timestamp: '2025-01-22 16:23:05',
+  mainData: {
+    EventID: 1,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-11-21 00:00:00.0000000',
+    UpdatedOn: '2024-11-21 00:00:00.0000000',
+    IsActive: '1',
+    CreatedBy: '41064',
+    UpdatedBy: '41064',
+    EventName: 'FM204 Pitch_Angle1_SPDifferenceStop'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 2,
+      ModelID: 1,
+      ParentID: 1,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 00:00:00.0000000',
+      UpdatedOn: '2024-11-21 00:00:00.0000000',
+      IsActive: '1',
+      TopCauseName: 'Pitching is not functional due to safety speed input is missing',
+      ProbabilityPercentage: 5.2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 3,
+      ModelID: 1,
+      ParentID: 1,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 00:00:00.0000000',
+      UpdatedOn: '2024-11-21 00:00:00.0000000',
+      IsActive: '1',
+      TopCauseName: 'Issues related to pitch motor',
+      ProbabilityPercentage: 11,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 11,
+      ModelID: 1,
+      ParentID: 1,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 00:00:00.0000000',
+      UpdatedOn: '2024-11-21 00:00:00.0000000',
+      IsActive: '1',
+      TopCauseName: 'Issues related to resolver',
+      ProbabilityPercentage: 5.6,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 22,
+      ModelID: 1,
+      ParentID: 1,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 00:00:00.0000000',
+      UpdatedOn: '2024-11-21 00:00:00.0000000',
+      IsActive: '1',
+      TopCauseName: 'Issues related to encoder',
+      ProbabilityPercentage: 78.2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    }
+  ],
+  eventObject: [
+    {
+      EventID: 2,
+      RootID: 1,
+      EventName: 'Pitching is not functional due to safety speed input is missing',
+      ProbabilityPercentage: 5.2,
+      IsParent: '0',
+      ParentID: 1,
+      ActionID: 107,
+      ActionName: 'Check the status of safety speed.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 1
+    },
+    {
+      EventID: 10,
+      RootID: 1,
+      EventName: 'Faulty bearings of pitch motor',
+      ProbabilityPercentage: 100,
+      IsParent: '0',
+      ParentID: 4,
+      ActionID: 108,
+      ActionName: 'Check for any abnormal noise or vibrations coming from the pitch motor 1 (2M1). Replace the motor if required.',
+      ActionTime: '02:00:00',
+      ActionCost: 85000,
+      Level: 3
+    },
+    {
+      EventID: 8,
+      RootID: 1,
+      EventName: 'Faulty output from frequency converter',
+      ProbabilityPercentage: 20.9,
+      IsParent: '0',
+      ParentID: 6,
+      ActionID: 109,
+      ActionName: 'Replace the frequency converter 1 (2A1) due to output stage failure.',
+      ActionTime: '02:00:00',
+      ActionCost: 77368,
+      Level: 3
+    },
+    {
+      EventID: 9,
+      RootID: 1,
+      EventName: 'Faulty connections of pitch motor',
+      ProbabilityPercentage: 79.1,
+      IsParent: '0',
+      ParentID: 6,
+      ActionID: 110,
+      ActionName: 'Check the connections between pitch motor 1 (2M1) and frequency converter 1 (2A1). Tighten if found loose or replace if found faulty.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 14,
+      RootID: 1,
+      EventName: 'Corrupt firmware and parameters related to resolver',
+      ProbabilityPercentage: 1,
+      IsParent: '0',
+      ParentID: 12,
+      ActionID: 111,
+      ActionName: 'Reload the firmware and parameters to frequency converter 1 (2A1).',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 15,
+      RootID: 1,
+      EventName: 'Faulty resolver\r\n',
+      ProbabilityPercentage: 10,
+      IsParent: '0',
+      ParentID: 12,
+      ActionID: 112,
+      ActionName: 'Replace the resolver 1 (32A1).',
+      ActionTime: '01:20:00',
+      ActionCost: 15000,
+      Level: 3
+    },
+    {
+      EventID: 16,
+      RootID: 1,
+      EventName: 'Faulty resolver cable\\connections\r\n',
+      ProbabilityPercentage: 88,
+      IsParent: '0',
+      ParentID: 12,
+      ActionID: 113,
+      ActionName: 'Check the connections between frequency converter and resolver of blade 1. Replace the resolver cable if found faulty.',
+      ActionTime: '00:30:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 17,
+      RootID: 1,
+      EventName: 'Faulty resolver port\r\n',
+      ProbabilityPercentage: 1,
+      IsParent: '0',
+      ParentID: 12,
+      ActionID: 114,
+      ActionName: 'Replace the frequency converter 1 (2A1) due to resolver port failure.',
+      ActionTime: '02:00:00',
+      ActionCost: 77368,
+      Level: 3
+    },
+    {
+      EventID: 18,
+      RootID: 1,
+      EventName: 'Faulty resolver mounting assembly\r\n',
+      ProbabilityPercentage: 60,
+      IsParent: '0',
+      ParentID: 13,
+      ActionID: 115,
+      ActionName: 'Check the resolver mounting assembly and tighten/replace as necessary.',
+      ActionTime: '00:30:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 19,
+      RootID: 1,
+      EventName: 'Faulty pitch drive gear box\r\n',
+      ProbabilityPercentage: 35,
+      IsParent: '0',
+      ParentID: 13,
+      ActionID: 116,
+      ActionName: 'Check if any noise or vibration is observed in the pitch drive gearbox. Consult with OMS engineering if any abnormality found.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 20,
+      RootID: 1,
+      EventName: 'Damaged pitch bearing teeth\r\n',
+      ProbabilityPercentage: 2,
+      IsParent: '0',
+      ParentID: 13,
+      ActionID: 117,
+      ActionName: 'Check if any of the pitch bearing tooth is damaged. If found damaged, consult with OMS engineering.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 21,
+      RootID: 1,
+      EventName: 'Damaged pinion teeth\r\n',
+      ProbabilityPercentage: 3,
+      IsParent: '0',
+      ParentID: 13,
+      ActionID: 118,
+      ActionName: 'Check if any of the pitch pinion tooth is damaged. If found damaged, consult with OMS engineering.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 24,
+      RootID: 1,
+      EventName: 'Faulty encoder mounting assembly',
+      ProbabilityPercentage: 100,
+      IsParent: '0',
+      ParentID: 23,
+      ActionID: 119,
+      ActionName: 'Check the encoder mounting and gearwheel. Tighten/replace as necessary.',
+      ActionTime: '01:00:00',
+      ActionCost: 133,
+      Level: 3
+    }
+  ]
+}
+GET /api/fetch_event_causes_actions?eventName=FM204%20Pitch_Angle1_SPDifferenceStop 304 - - 55.206 ms
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Check%20for%20any%20abnormal%20noise%20or%20vibrations%20coming%20from%20the%20pitch%20motor%201%20(2M1).%20Replace%20the%20motor%20if%20required. 200 8 - 2.998 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM204%20Pitch_Angle1_SPDifferenceStop 304 - - 34.853 ms
+GET /api/fetch_hovering_data_for_action?actionName=Check%20for%20any%20abnormal%20noise%20or%20vibrations%20coming%20from%20the%20pitch%20motor%201%20(2M1).%20Replace%20the%20motor%20if%20required. 200 187 - 34.098 ms
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Replace%20the%20frequency%20converter%201%20(2A1)%20due%20to%20output%20stage%20failure. 200 8 - 0.278 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Replace%20the%20frequency%20converter%201%20(2A1)%20due%20to%20output%20stage%20failure. 200 194 - 33.059 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20for%20any%20abnormal%20noise%20or%20vibrations%20coming%20from%20the%20pitch%20motor%201%20(2M1).%20Replace%20the%20motor%20if%20required. 304 - - 35.205 ms
+GET /api/fetch_hovering_data_for_action?actionName=Check%20the%20status%20of%20safety%20speed. 304 - - 16.295 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=Is%20this%20error%20active%20for%20all%20three%20blades%20%3F 304 - - 25.132 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20the%20encoder%20mounting%20and%20gearwheel.%20Tighten%2Freplace%20as%20necessary. 304 - - 28.181 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20if%20any%20of%20the%20pitch%20bearing%20tooth%20is%20damaged.%20If%20found%20damaged%2C%20consult%20with%20OMS%20engineering. 304 - - 18.400 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=Is%20this%20error%20active%20for%20all%20three%20blades%20%3F 304 - - 13.681 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=Is%20this%20error%20active%20for%20all%20three%20blades%20%3F 304 - - 20.822 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=Is%20this%20error%20active%20for%20all%20three%20blades%20%3F 304 - - 14.501 ms

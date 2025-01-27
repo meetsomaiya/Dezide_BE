@@ -1,7 +1,8 @@
 console.log('checkAdmin route module loaded');
 
 const express = require('express');
-const { connectToDatabase } = require('./connect.js');
+// const { connectToDatabase } = require('./connect.js');
+const { connectToDatabase } = require('./connect2.js');
 const crypto = require('crypto'); // For generating a random session ID
 const fs = require('fs'); // For file operations
 const moment = require('moment-timezone'); // For working with timezones

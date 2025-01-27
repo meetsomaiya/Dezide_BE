@@ -1,10 +1,15 @@
 {
-  "modalName": "FM91 Elec_FB_NacelleFan_Err",
-  "eventID": 50,
+  "modalName": "FM283 Pitch_EmergencyRun",
+  "eventID": 102,
   "questions": [
     {
-      "questionName": "Is MPCB 7Q2 tripped ?",
+      "questionName": "Is any of the following circuit breaker tripped?",
       "questionTime": "00:05:00",
+      "questionCost": 0
+    },
+    {
+      "questionName": "From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?",
+      "questionTime": "00:01:00",
       "questionCost": 0
     }
   ]

@@ -1,0 +1,539 @@
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 107 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 107, 107, 107, 107 ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 107, 107, 107, 107 ]
+Fetched QuestionAnswers: [
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.',
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%2019K3%20voltage%20surveillence%20nacelle%20supply%20and%20LVRT%20timer 200 770 - 33.608 ms
+Decoded cause: Nacelle to hub 230V AC supply issue
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Nacelle to hub 230V AC supply issue' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 106 ]
+Decoded cause: Faulty cable (+TOW-W10) from CB):X5 to CTO:X5
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5' ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 105 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.'
+]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Decoded cause: Due to 2Q1 trip
+GET /api/fetch_hovering_items_for_topcause?cause=Nacelle%20to%20hub%20230V%20AC%20supply%20issue 200 679 - 38.698 ms
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%20cable%20(%2BTOW-W10)%20from%20CB)%3AX5%20to%20CTO%3AX5 200 611 - 35.909 ms
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 27.968 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=Is%20any%20of%20the%20following%20circuit%20breaker%20tripped%3F 304 - - 25.505 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20battery%20surveillance%20monitoring%20relay%20(17A3)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts.%20Replace%20it%20if%20required. 304 - - 16.491 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20the%20functionality%20of%20safety%20relay%20(-16K1). 304 - - 16.356 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20the%20functionality%20of%2010F1%20MCB%20in%20bottom%20cabinet.%20Replace%20it%20if%20required. 304 - - 13.448 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.183 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.341 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1664 - 26.179 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 26.033 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_turbine_data 304 - - 9.393 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_turbine_data 304 - - 8.917 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved ModelID: 1
+GET /api/fetch_fm_data?turbineModel=S%2088 304 - - 16.522 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Retrieved ModelID: 1
+GET /api/fetch_fm_data?turbineModel=S%2088 304 - - 13.330 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_data_based_on_event?event=FM103%20Elec_SafetyChainStop 304 - - 17.388 ms
+Response data saved to response_for_initial_question_sent-back.json
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 12.357 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+ActionName "Ensure that 24V DC is available at 75K5:33" and its data saved to file.
+GET /api/fetch_image_and_explanation_for_action?actionName=Ensure%20that%2024V%20DC%20is%20available%20at%2075K5%3A33. 304 - - 12.817 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_turbine_data 304 - - 17.658 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_turbine_data 304 - - 7.323 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_turbine_data 304 - - 13.998 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_turbine_data 304 - - 9.557 ms
+OPTIONS /api/login2 204 0 - 1.709 ms
+POST /api/login2 200 1009 - 207.256 ms
+OPTIONS /api/checkAdmin?DomainId=40139&Name=Meet%20Harishbhai%20Somaiya 200 8 - 0.716 ms
+Retrieved DomainId: 40139
+GET /api/checkAdmin?DomainId=40139&Name=Meet%20Harishbhai%20Somaiya 500 61 - 15128.655 ms
+Retrieved DomainId: 40139
+GET /api/checkAdmin?DomainId=40139&Name=Meet%20Harishbhai%20Somaiya 500 61 - 15119.056 ms

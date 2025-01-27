@@ -107,31 +107,20 @@ router.get('/', async (req, res) => {
         const eventHierarchyResults = await dbConnection.query(eventHierarchyQuery, eventHierarchyParams);
 
         const eventObject = eventHierarchyResults
-        .filter(item => item.ActionName !== null)
-        .map(item => ({
-            EventID: item.EventID,
-            RootID: item.RootID,
-            EventName: item.EventName,
-            ProbabilityPercentage: item.ProbabilityPercentage,
-            IsParent: item.IsParent,
-            ParentID: item.ParentID,
-            ActionID: item.ActionID,
-            ActionName: item.ActionName,
-            ActionTime: item.ActionTime,
-            ActionCost: item.ActionCost,
-            Level: item.Level,
-        }))
-        .filter((item, index, self) => 
-            index === self.findIndex(other => 
-                other.EventID === item.EventID &&
-                other.ActionID === item.ActionID &&
-                other.ActionName === item.ActionName &&
-                other.ActionTime === item.ActionTime &&
-                other.ActionCost === item.ActionCost &&
-                other.Level === item.Level
-            )
-        );
-    
+            .filter(item => item.ActionName !== null)
+            .map(item => ({
+                EventID: item.EventID,
+                RootID: item.RootID,
+                EventName: item.EventName,
+                ProbabilityPercentage: item.ProbabilityPercentage,
+                IsParent: item.IsParent,
+                ParentID: item.ParentID,
+                ActionID: item.ActionID,
+                ActionName: item.ActionName,
+                ActionTime: item.ActionTime,
+                ActionCost: item.ActionCost,
+                Level: item.Level,
+            }));
 
         // Prepare the response data
         const dataToWrite = {

@@ -1,9 +1,11 @@
 {
-  "questionName": "Is MPCB 7Q2 tripped ?",
-  "questionID": 2,
-  "eventID": 50,
+  "questionName": "Is any of the following circuit breaker tripped?",
+  "questionID": 3,
+  "eventID": 102,
   "questionAnswers": [
-    "No",
-    "Yes"
+    "None of the breaker tripped.",
+    "230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).",
+    "3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).",
+    "3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO)."
   ]
 }

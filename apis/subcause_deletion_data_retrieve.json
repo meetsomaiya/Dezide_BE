@@ -1,8 +1,8 @@
 {
-  "modalName": "mainEvent",
-  "parentCauseName": "bauchand",
-  "parentSubCauseName": "raffle",
-  "nestedSubCauseName": "lifedeath",
+  "modalName": "dummyevent",
+  "parentCauseName": "nok",
+  "parentSubCauseName": "gok",
+  "nestedSubCauseName": "sok",
   "deletionFlag": true,
-  "timestamp": "2024-12-30 11:17:31"
+  "timestamp": "2025-01-22 05:05:48"
 }

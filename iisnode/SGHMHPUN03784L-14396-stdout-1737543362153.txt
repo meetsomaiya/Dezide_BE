@@ -1,0 +1,2408 @@
+checkAdmin route module loaded
+Server is listening on port \\.\pipe\39c10b67-6a11-49bf-bfc8-abaea08124d6
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName= 400 33 - 2.917 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.405 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1664 - 53.621 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 34.341 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'FM283 Pitch_EmergencyRun',
+  timestamp: '2025-01-22 16:26:04',
+  mainData: {
+    EventID: 102,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-11-21 13:16:08.2733333',
+    UpdatedOn: '2024-11-21 13:16:08.2733333',
+    IsActive: '1',
+    CreatedBy: '41064',
+    UpdatedBy: '41064',
+    EventName: 'FM283 Pitch_EmergencyRun'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 103,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Faulty 10F1',
+      ProbabilityPercentage: 0.3,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 104,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 2Q1 trip',
+      ProbabilityPercentage: 0.7,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 105,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5',
+      ProbabilityPercentage: 0.5,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 106,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Nacelle to hub 230V AC supply issue',
+      ProbabilityPercentage: 2.1,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 107,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer',
+      ProbabilityPercentage: 4.7,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 108,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 19K1 relay-Emergency stop/95 degree switch',
+      ProbabilityPercentage: 5,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 109,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Frequency converter faulty',
+      ProbabilityPercentage: 0.1,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 110,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 16K1 problem',
+      ProbabilityPercentage: 5.9,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 111,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to battery surveillence',
+      ProbabilityPercentage: 2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 112,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to -5 degree switch',
+      ProbabilityPercentage: 2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 113,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to nacelle supply missing to hub',
+      ProbabilityPercentage: 74.7,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 114,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to DC-DC converter',
+      ProbabilityPercentage: 2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    }
+  ],
+  eventObject: [
+    {
+      EventID: 103,
+      RootID: 102,
+      EventName: 'Faulty 10F1',
+      ProbabilityPercentage: 0.3,
+      IsParent: '0',
+      ParentID: 102,
+      ActionID: 25,
+      ActionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 1
+    },
+    {
+      EventID: 105,
+      RootID: 102,
+      EventName: 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5',
+      ProbabilityPercentage: 0.5,
+      IsParent: '0',
+      ParentID: 102,
+      ActionID: 28,
+      ActionName: 'Check resistance between wires X5:1,2,3 and cable insulation of +TOW-W10 wire no. 1,2,3 in the bottom cabinet.',
+      ActionTime: '00:05:00',
+      ActionCost: 0,
+      Level: 1
+    },
+    {
+      EventID: 109,
+      RootID: 102,
+      EventName: 'Frequency converter faulty',
+      ProbabilityPercentage: 0.1,
+      IsParent: '0',
+      ParentID: 102,
+      ActionID: 133,
+      ActionName: 'Check the functionality of frequency converter (-2A1, -4A1 and -6A1) digital input X2:15 (ISD00). Replace the frequency converter if required.',
+      ActionTime: '01:00:00',
+      ActionCost: 144985,
+      Level: 1
+    },
+    {
+      EventID: 115,
+      RootID: 102,
+      EventName: '2Q1 faulty',
+      ProbabilityPercentage: 51.2,
+      IsParent: '0',
+      ParentID: 104,
+      ActionID: 26,
+      ActionName: 'Check the functionality of 2Q1 MPCB in top cabinet. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 4228,
+      Level: 2
+    },
+    {
+      EventID: 116,
+      RootID: 102,
+      EventName: 'Due to loose connections at 2Q1',
+      ProbabilityPercentage: 48.8,
+      IsParent: '0',
+      ParentID: 104,
+      ActionID: 27,
+      ActionName: 'Check connection tightness and settings at 3 phase 230V AC pitch supply MPCB (2Q1) in the top cabinet.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 117,
+      RootID: 102,
+      EventName: 'Faulty 33F1',
+      ProbabilityPercentage: 0.3,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 29,
+      ActionName: 'Check the functionality of 33F1 MCB in bottom cabinet. Replace it if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 118,
+      RootID: 102,
+      EventName: 'Faulty 2F3',
+      ProbabilityPercentage: 1,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 30,
+      ActionName: 'Check the functionality of 2F3 MCB in top cabinet. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 119,
+      RootID: 102,
+      EventName: 'Loose connections at X7:3,4,5 in top cabinet',
+      ProbabilityPercentage: 3.5,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 31,
+      ActionName: 'Check connection tightness at X7:3,4,5 at top cabinet.',
+      ActionTime: '00:05:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 120,
+      RootID: 102,
+      EventName: 'Loose connections at X7:3,4,5 in bottom cabinet',
+      ProbabilityPercentage: 3.4,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 32,
+      ActionName: 'Check connection tightness at X7:3,4,5 at bottom cabinet.',
+      ActionTime: '00:05:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 121,
+      RootID: 102,
+      EventName: 'Due to heater failure',
+      ProbabilityPercentage: 56.8,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 33,
+      ActionName: 'Check the functionality of heater (28E1) in hub cabinet. Replace the heater if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 2163,
+      Level: 2
+    },
+    {
+      EventID: 122,
+      RootID: 102,
+      EventName: 'Due to hub cooling fan failure',
+      ProbabilityPercentage: 35,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 34,
+      ActionName: 'Check the functionality of all hub cabinet cooling fans (28M1, 28M2, 28M3, 28M4).',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 123,
+      RootID: 102,
+      EventName: '19K3 3 seconds timer relay',
+      ProbabilityPercentage: 23.8,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 35,
+      ActionName: 'Check LVRT off delay timer relay (19K3) functionality and connection tightness. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 4718,
+      Level: 2
+    },
+    {
+      EventID: 124,
+      RootID: 102,
+      EventName: '19K2 300 VDC battery charger monitoring',
+      ProbabilityPercentage: 23.8,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 36,
+      ActionName: 'Check battery charger 300V DC monitoring relay (-19K2) connection tightness and functionality. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 125,
+      RootID: 102,
+      EventName: '18K2 230 VAC fan and heating monitoring relay',
+      ProbabilityPercentage: 23.8,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 37,
+      ActionName: 'Check 230V AC monitoring relay (18K2) connection tightness and functionality. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 614,
+      Level: 2
+    },
+    {
+      EventID: 126,
+      RootID: 102,
+      EventName: '18K1 230 VAC 3 phase monitoring realy',
+      ProbabilityPercentage: 28.6,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 38,
+      ActionName: 'Check nacelle 230V AC 3 phase supply monitoring relay connection tightness and functionality of relay (18K1). Replace it if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 1993,
+      Level: 2
+    },
+    {
+      EventID: 127,
+      RootID: 102,
+      EventName: '22S1 FC1 Emer stop 3',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 124,
+      ActionName: 'Check emergency button (22S1) NC connection tightness and functionality of NC contacts.',
+      ActionTime: '00:15:00',
+      ActionCost: 150,
+      Level: 2
+    },
+    {
+      EventID: 128,
+      RootID: 102,
+      EventName: '21S1 FC1 Emer stop 2',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 122,
+      ActionName: 'Check emergency button (21S1) connection tightness and functionality of NC contacts.',
+      ActionTime: '00:15:00',
+      ActionCost: 150,
+      Level: 2
+    },
+    {
+      EventID: 129,
+      RootID: 102,
+      EventName: '20S1 FC1 Emer stop 1',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 120,
+      ActionName: 'Check emergency button (20S1) NC connection tightness and functionality of NC contacts.',
+      ActionTime: '00:15:00',
+      ActionCost: 150,
+      Level: 2
+    },
+    {
+      EventID: 130,
+      RootID: 102,
+      EventName: '20K3 realy FC3 95 degree',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 121,
+      ActionName: 'Check position 95° and 100° monitoring relay (22K1) connection tightness and functionality of NO contacts.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 131,
+      RootID: 102,
+      EventName: '20K2 realy FC2 95 degree',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 123,
+      ActionName: 'Check position 95° and 100° monitoring relay (21K1) connection tightness and functionality of NO contacts.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 132,
+      RootID: 102,
+      EventName: '20K1 realy FC1 95 degree',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 125,
+      ActionName: 'Check position 95° and 100° monitoring relay (20K1) connection tightness and functionality of NO contacts.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 133,
+      RootID: 102,
+      EventName: 'Loose connection in FC circuit ISD00 at FC',
+      ProbabilityPercentage: 52.3,
+      IsParent: '0',
+      ParentID: 110,
+      ActionID: 135,
+      ActionName: 'Check connection tightness at safety relay (-16K1) NO contacts and frequency converters (-2A1, -4A1, -6A1) digital input safety speed at X2:15 (ISD00).',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 134,
+      RootID: 102,
+      EventName: 'Faulty safety relay 16K1',
+      ProbabilityPercentage: 47.7,
+      IsParent: '0',
+      ParentID: 110,
+      ActionID: 134,
+      ActionName: 'Check the functionality of safety relay (-16K1).',
+      ActionTime: '00:20:00',
+      ActionCost: 6823,
+      Level: 2
+    },
+    {
+      EventID: 135,
+      RootID: 102,
+      EventName: '17A3 Batt. surveillence relay',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 111,
+      ActionID: 39,
+      ActionName: 'Check battery surveillance monitoring relay (17A3) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 136,
+      RootID: 102,
+      EventName: '17A2 Batt. surveillence relay',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 111,
+      ActionID: 40,
+      ActionName: 'Check battery surveillance monitoring relay (17A2) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 137,
+      RootID: 102,
+      EventName: '17A1 Batt. surveillence relay',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 111,
+      ActionID: 41,
+      ActionName: 'Check battery surveillance monitoring relay (17A1) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 138,
+      RootID: 102,
+      EventName: '14K1 -5 degree relay FC3',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 112,
+      ActionID: 42,
+      ActionName: 'Check the position -5° relay (14K1) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 139,
+      RootID: 102,
+      EventName: '13K1 -5 degree relay FC2',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 112,
+      ActionID: 43,
+      ActionName: 'Check the position -5° relay (13K1) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 140,
+      RootID: 102,
+      EventName: '12K1 -5 degree relay FC1',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 112,
+      ActionID: 44,
+      ActionName: 'Check the position -5° relays (12K1) connection tightness and functionality NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 141,
+      RootID: 102,
+      EventName: 'Slip ring cables from CTO to slipring',
+      ProbabilityPercentage: 2.4,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 45,
+      ActionName: 'Check slipring cable continuity from top cabinet slip ring supply terminal blocks to internal terminal block of slip ring.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 142,
+      RootID: 102,
+      EventName: 'Safety chain relay (8K2)',
+      ProbabilityPercentage: 10.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 46,
+      ActionName: 'Check connection tightness and functionality of safety chain relay (8K2).',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 143,
+      RootID: 102,
+      EventName: 'Slipring maintenance issue',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 127,
+      ActionName: 'Check the condition of brushes and tracks of hub slip ring.',
+      ActionTime: '00:30:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 144,
+      RootID: 102,
+      EventName: 'Faulty hub slipring SR',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 128,
+      ActionName: 'Check the continuity of slip ring cable between slip ring terminals at nacelle side and in hub cabinet.',
+      ActionTime: '03:00:00',
+      ActionCost: 276316,
+      Level: 2
+    },
+    {
+      EventID: 145,
+      RootID: 102,
+      EventName: 'Loose connection at slipring in nacelle',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 129,
+      ActionName: 'Check hub slip ring connection tightness inside slipring terminal box.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 146,
+      RootID: 102,
+      EventName: 'DIO module faulty',
+      ProbabilityPercentage: 0.1,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 130,
+      ActionName: 'Check the functionality of DIO280 (50A2) module. Replace the module if required.',
+      ActionTime: '00:30:00',
+      ActionCost: 22697,
+      Level: 2
+    },
+    {
+      EventID: 147,
+      RootID: 102,
+      EventName: 'Loose connection at X10A TB in top cabinet (safety speed)',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 131,
+      ActionName: 'Check the safety speed signal from TB X10A:3 to DIO280 module.',
+      ActionTime: '00:20:00',
+      ActionCost: 50,
+      Level: 2
+    },
+    {
+      EventID: 148,
+      RootID: 102,
+      EventName: 'Safety chain contatctor (3K1)',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 132,
+      ActionName: 'Check the functionality and connection tightness of safety chain contactor (-3K1) in top cabinet.',
+      ActionTime: '00:30:00',
+      ActionCost: 1020,
+      Level: 2
+    },
+    {
+      EventID: 149,
+      RootID: 102,
+      EventName: 'safety speed relay (8K1)',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 126,
+      ActionName: 'Check the safety speed relay (8K1) connection tightness and functionality.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 150,
+      RootID: 102,
+      EventName: '16K4 (5A1) DC-DC converter FC2',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 114,
+      ActionID: 47,
+      ActionName: 'Check DC-DC converter monitoring relay (16K4) connection tightness and functionality.',
+      ActionTime: '00:05:00',
+      ActionCost: 437,
+      Level: 2
+    },
+    {
+      EventID: 151,
+      RootID: 102,
+      EventName: '16K3 (5A1) DC-DC converter FC2',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 114,
+      ActionID: 48,
+      ActionName: 'Check DC-DC converter monitoring relay (16K3) connection tightness and functionality.',
+      ActionTime: '00:05:00',
+      ActionCost: 437,
+      Level: 2
+    },
+    {
+      EventID: 152,
+      RootID: 102,
+      EventName: '16K2 (3A1) DC-DC converter FC1',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 114,
+      ActionID: 49,
+      ActionName: 'Check DC-DC converter monitoring relay (16K2) connection tightness and functionality.',
+      ActionTime: '00:05:00',
+      ActionCost: 437,
+      Level: 2
+    }
+  ]
+}
+GET /api/fetch_event_causes_actions?eventName=FM283%20Pitch_EmergencyRun 304 - - 58.776 ms
+Decoded cause: Due to 19K3 voltage surveillence nacelle supply and LVRT timer
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 107 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 107, 107, 107, 107 ]
+GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 30.277 ms
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 107, 107, 107, 107 ]
+Fetched QuestionAnswers: [
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.',
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%2019K3%20voltage%20surveillence%20nacelle%20supply%20and%20LVRT%20timer 200 770 - 29.607 ms
+Decoded cause: Faulty cable (+TOW-W10) from CB):X5 to CTO:X5
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 105 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Decoded cause: Due to 2Q1 trip
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 105, 105, 105, 105 ]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+GET /api/fetch_hovering_items_for_topcause?cause=Faulty%20cable%20(%2BTOW-W10)%20from%20CB)%3AX5%20to%20CTO%3AX5 200 611 - 29.384 ms
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 22.349 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=Is%20any%20of%20the%20following%20circuit%20breaker%20tripped%3F 200 422 - 15.824 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=From%20EVT%20logs%2C%20check%20which%20DIi_PitX_EmergencyRun%20is%20recorded%20as%20true%20(%2B)%20status%20before%20pitch%20emergency%20run%20fault%20recorded%3F 200 405 - 15.454 ms
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Check%20the%20functionality%20of%20safety%20relay%20(-16K1). 200 8 - 2.156 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20the%20functionality%20of%20safety%20relay%20(-16K1). 200 125 - 29.041 ms
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Check%20connection%20tightness%20at%20safety%20relay%20(-16K1)%20NO%20contacts%20and%20frequency%20converters%20(-2A1%2C%20-4A1%2C%20-6A1)%20digital%20input%20safety%20speed%20at%20X2%3A15%20(ISD00). 200 8 - 0.313 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20connection%20tightness%20at%20safety%20relay%20(-16K1)%20NO%20contacts%20and%20frequency%20converters%20(-2A1%2C%20-4A1%2C%20-6A1)%20digital%20input%20safety%20speed%20at%20X2%3A15%20(ISD00). 200 143 - 19.284 ms
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Check%20position%2095%C2%B0%20and%20100%C2%B0%20monitoring%20relay%20(20K1)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts. 200 8 - 0.356 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20position%2095%C2%B0%20and%20100%C2%B0%20monitoring%20relay%20(20K1)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts. 404 32 - 9.596 ms
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Check%20position%2095%C2%B0%20and%20100%C2%B0%20monitoring%20relay%20(21K1)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts. 200 8 - 0.225 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20position%2095%C2%B0%20and%20100%C2%B0%20monitoring%20relay%20(21K1)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts. 404 32 - 10.517 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20battery%20surveillance%20monitoring%20relay%20(17A2)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts.%20Replace%20it%20if%20required. 304 - - 56.313 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=Is%20any%20of%20the%20following%20circuit%20breaker%20tripped%3F 304 - - 11.755 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 14.007 ms
+GET /api/fetch_main_table_data 200 1664 - 25.190 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 29.498 ms
+GET /api/fetch_main_table_data 304 - - 65.072 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=From%20EVT%20logs%2C%20check%20which%20DIi_PitX_EmergencyRun%20is%20recorded%20as%20true%20(%2B)%20status%20before%20pitch%20emergency%20run%20fault%20recorded%3F 304 - - 12.040 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 17.742 ms
+GET /api/fetch_main_table_data 304 - - 29.167 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20battery%20surveillance%20monitoring%20relay%20(17A2)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts.%20Replace%20it%20if%20required. 304 - - 20.510 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20connection%20tightness%20at%20safety%20relay%20(-16K1)%20NO%20contacts%20and%20frequency%20converters%20(-2A1%2C%20-4A1%2C%20-6A1)%20digital%20input%20safety%20speed%20at%20X2%3A15%20(ISD00). 304 - - 15.519 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20position%2095%C2%B0%20and%20100%C2%B0%20monitoring%20relay%20(20K1)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts. 404 32 - 10.677 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20position%2095%C2%B0%20and%20100%C2%B0%20monitoring%20relay%20(21K1)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts. 404 32 - 9.641 ms
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Check%20position%2095%C2%B0%20and%20100%C2%B0%20monitoring%20relay%20(22K1)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts. 200 8 - 0.251 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20position%2095%C2%B0%20and%20100%C2%B0%20monitoring%20relay%20(22K1)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts. 404 32 - 9.495 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.393 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.421 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 200 1664 - 44.923 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 16.544 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'FM283 Pitch_EmergencyRun',
+  timestamp: '2025-01-22 16:30:52',
+  mainData: {
+    EventID: 102,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-11-21 13:16:08.2733333',
+    UpdatedOn: '2024-11-21 13:16:08.2733333',
+    IsActive: '1',
+    CreatedBy: '41064',
+    UpdatedBy: '41064',
+    EventName: 'FM283 Pitch_EmergencyRun'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 103,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Faulty 10F1',
+      ProbabilityPercentage: 0.3,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 104,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 2Q1 trip',
+      ProbabilityPercentage: 0.7,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 105,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5',
+      ProbabilityPercentage: 0.5,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 106,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Nacelle to hub 230V AC supply issue',
+      ProbabilityPercentage: 2.1,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 107,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 19K3 voltage surveillence nacelle supply and LVRT timer',
+      ProbabilityPercentage: 4.7,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 108,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 19K1 relay-Emergency stop/95 degree switch',
+      ProbabilityPercentage: 5,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 109,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Frequency converter faulty',
+      ProbabilityPercentage: 0.1,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 110,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to 16K1 problem',
+      ProbabilityPercentage: 5.9,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 111,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to battery surveillence',
+      ProbabilityPercentage: 2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 112,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to -5 degree switch',
+      ProbabilityPercentage: 2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 113,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to nacelle supply missing to hub',
+      ProbabilityPercentage: 74.7,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 114,
+      ModelID: 1,
+      ParentID: 102,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 14:25:55.2100000',
+      UpdatedOn: '2024-11-21 14:25:55.2100000',
+      IsActive: '1',
+      TopCauseName: 'Due to DC-DC converter',
+      ProbabilityPercentage: 2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    }
+  ],
+  eventObject: [
+    {
+      EventID: 103,
+      RootID: 102,
+      EventName: 'Faulty 10F1',
+      ProbabilityPercentage: 0.3,
+      IsParent: '0',
+      ParentID: 102,
+      ActionID: 25,
+      ActionName: 'Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 1
+    },
+    {
+      EventID: 105,
+      RootID: 102,
+      EventName: 'Faulty cable (+TOW-W10) from CB):X5 to CTO:X5',
+      ProbabilityPercentage: 0.5,
+      IsParent: '0',
+      ParentID: 102,
+      ActionID: 28,
+      ActionName: 'Check resistance between wires X5:1,2,3 and cable insulation of +TOW-W10 wire no. 1,2,3 in the bottom cabinet.',
+      ActionTime: '00:05:00',
+      ActionCost: 0,
+      Level: 1
+    },
+    {
+      EventID: 109,
+      RootID: 102,
+      EventName: 'Frequency converter faulty',
+      ProbabilityPercentage: 0.1,
+      IsParent: '0',
+      ParentID: 102,
+      ActionID: 133,
+      ActionName: 'Check the functionality of frequency converter (-2A1, -4A1 and -6A1) digital input X2:15 (ISD00). Replace the frequency converter if required.',
+      ActionTime: '01:00:00',
+      ActionCost: 144985,
+      Level: 1
+    },
+    {
+      EventID: 115,
+      RootID: 102,
+      EventName: '2Q1 faulty',
+      ProbabilityPercentage: 51.2,
+      IsParent: '0',
+      ParentID: 104,
+      ActionID: 26,
+      ActionName: 'Check the functionality of 2Q1 MPCB in top cabinet. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 4228,
+      Level: 2
+    },
+    {
+      EventID: 116,
+      RootID: 102,
+      EventName: 'Due to loose connections at 2Q1',
+      ProbabilityPercentage: 48.8,
+      IsParent: '0',
+      ParentID: 104,
+      ActionID: 27,
+      ActionName: 'Check connection tightness and settings at 3 phase 230V AC pitch supply MPCB (2Q1) in the top cabinet.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 117,
+      RootID: 102,
+      EventName: 'Faulty 33F1',
+      ProbabilityPercentage: 0.3,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 29,
+      ActionName: 'Check the functionality of 33F1 MCB in bottom cabinet. Replace it if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 118,
+      RootID: 102,
+      EventName: 'Faulty 2F3',
+      ProbabilityPercentage: 1,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 30,
+      ActionName: 'Check the functionality of 2F3 MCB in top cabinet. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 119,
+      RootID: 102,
+      EventName: 'Loose connections at X7:3,4,5 in top cabinet',
+      ProbabilityPercentage: 3.5,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 31,
+      ActionName: 'Check connection tightness at X7:3,4,5 at top cabinet.',
+      ActionTime: '00:05:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 120,
+      RootID: 102,
+      EventName: 'Loose connections at X7:3,4,5 in bottom cabinet',
+      ProbabilityPercentage: 3.4,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 32,
+      ActionName: 'Check connection tightness at X7:3,4,5 at bottom cabinet.',
+      ActionTime: '00:05:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 121,
+      RootID: 102,
+      EventName: 'Due to heater failure',
+      ProbabilityPercentage: 56.8,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 33,
+      ActionName: 'Check the functionality of heater (28E1) in hub cabinet. Replace the heater if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 2163,
+      Level: 2
+    },
+    {
+      EventID: 122,
+      RootID: 102,
+      EventName: 'Due to hub cooling fan failure',
+      ProbabilityPercentage: 35,
+      IsParent: '0',
+      ParentID: 106,
+      ActionID: 34,
+      ActionName: 'Check the functionality of all hub cabinet cooling fans (28M1, 28M2, 28M3, 28M4).',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 123,
+      RootID: 102,
+      EventName: '19K3 3 seconds timer relay',
+      ProbabilityPercentage: 23.8,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 35,
+      ActionName: 'Check LVRT off delay timer relay (19K3) functionality and connection tightness. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 4718,
+      Level: 2
+    },
+    {
+      EventID: 124,
+      RootID: 102,
+      EventName: '19K2 300 VDC battery charger monitoring',
+      ProbabilityPercentage: 23.8,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 36,
+      ActionName: 'Check battery charger 300V DC monitoring relay (-19K2) connection tightness and functionality. Replace it if required.',
+      ActionTime: '00:10:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 125,
+      RootID: 102,
+      EventName: '18K2 230 VAC fan and heating monitoring relay',
+      ProbabilityPercentage: 23.8,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 37,
+      ActionName: 'Check 230V AC monitoring relay (18K2) connection tightness and functionality. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 614,
+      Level: 2
+    },
+    {
+      EventID: 126,
+      RootID: 102,
+      EventName: '18K1 230 VAC 3 phase monitoring realy',
+      ProbabilityPercentage: 28.6,
+      IsParent: '0',
+      ParentID: 107,
+      ActionID: 38,
+      ActionName: 'Check nacelle 230V AC 3 phase supply monitoring relay connection tightness and functionality of relay (18K1). Replace it if required.',
+      ActionTime: '00:20:00',
+      ActionCost: 1993,
+      Level: 2
+    },
+    {
+      EventID: 127,
+      RootID: 102,
+      EventName: '22S1 FC1 Emer stop 3',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 124,
+      ActionName: 'Check emergency button (22S1) NC connection tightness and functionality of NC contacts.',
+      ActionTime: '00:15:00',
+      ActionCost: 150,
+      Level: 2
+    },
+    {
+      EventID: 128,
+      RootID: 102,
+      EventName: '21S1 FC1 Emer stop 2',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 122,
+      ActionName: 'Check emergency button (21S1) connection tightness and functionality of NC contacts.',
+      ActionTime: '00:15:00',
+      ActionCost: 150,
+      Level: 2
+    },
+    {
+      EventID: 129,
+      RootID: 102,
+      EventName: '20S1 FC1 Emer stop 1',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 120,
+      ActionName: 'Check emergency button (20S1) NC connection tightness and functionality of NC contacts.',
+      ActionTime: '00:15:00',
+      ActionCost: 150,
+      Level: 2
+    },
+    {
+      EventID: 130,
+      RootID: 102,
+      EventName: '20K3 realy FC3 95 degree',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 121,
+      ActionName: 'Check position 95° and 100° monitoring relay (22K1) connection tightness and functionality of NO contacts.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 131,
+      RootID: 102,
+      EventName: '20K2 realy FC2 95 degree',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 123,
+      ActionName: 'Check position 95° and 100° monitoring relay (21K1) connection tightness and functionality of NO contacts.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 132,
+      RootID: 102,
+      EventName: '20K1 realy FC1 95 degree',
+      ProbabilityPercentage: 16.7,
+      IsParent: '0',
+      ParentID: 108,
+      ActionID: 125,
+      ActionName: 'Check position 95° and 100° monitoring relay (20K1) connection tightness and functionality of NO contacts.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 133,
+      RootID: 102,
+      EventName: 'Loose connection in FC circuit ISD00 at FC',
+      ProbabilityPercentage: 52.3,
+      IsParent: '0',
+      ParentID: 110,
+      ActionID: 135,
+      ActionName: 'Check connection tightness at safety relay (-16K1) NO contacts and frequency converters (-2A1, -4A1, -6A1) digital input safety speed at X2:15 (ISD00).',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 134,
+      RootID: 102,
+      EventName: 'Faulty safety relay 16K1',
+      ProbabilityPercentage: 47.7,
+      IsParent: '0',
+      ParentID: 110,
+      ActionID: 134,
+      ActionName: 'Check the functionality of safety relay (-16K1).',
+      ActionTime: '00:20:00',
+      ActionCost: 6823,
+      Level: 2
+    },
+    {
+      EventID: 135,
+      RootID: 102,
+      EventName: '17A3 Batt. surveillence relay',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 111,
+      ActionID: 39,
+      ActionName: 'Check battery surveillance monitoring relay (17A3) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 136,
+      RootID: 102,
+      EventName: '17A2 Batt. surveillence relay',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 111,
+      ActionID: 40,
+      ActionName: 'Check battery surveillance monitoring relay (17A2) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 137,
+      RootID: 102,
+      EventName: '17A1 Batt. surveillence relay',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 111,
+      ActionID: 41,
+      ActionName: 'Check battery surveillance monitoring relay (17A1) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 8557,
+      Level: 2
+    },
+    {
+      EventID: 138,
+      RootID: 102,
+      EventName: '14K1 -5 degree relay FC3',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 112,
+      ActionID: 42,
+      ActionName: 'Check the position -5° relay (14K1) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 139,
+      RootID: 102,
+      EventName: '13K1 -5 degree relay FC2',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 112,
+      ActionID: 43,
+      ActionName: 'Check the position -5° relay (13K1) connection tightness and functionality of NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 140,
+      RootID: 102,
+      EventName: '12K1 -5 degree relay FC1',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 112,
+      ActionID: 44,
+      ActionName: 'Check the position -5° relays (12K1) connection tightness and functionality NO contacts. Replace it if required.',
+      ActionTime: '00:05:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 141,
+      RootID: 102,
+      EventName: 'Slip ring cables from CTO to slipring',
+      ProbabilityPercentage: 2.4,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 45,
+      ActionName: 'Check slipring cable continuity from top cabinet slip ring supply terminal blocks to internal terminal block of slip ring.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 142,
+      RootID: 102,
+      EventName: 'Safety chain relay (8K2)',
+      ProbabilityPercentage: 10.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 46,
+      ActionName: 'Check connection tightness and functionality of safety chain relay (8K2).',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 143,
+      RootID: 102,
+      EventName: 'Slipring maintenance issue',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 127,
+      ActionName: 'Check the condition of brushes and tracks of hub slip ring.',
+      ActionTime: '00:30:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 144,
+      RootID: 102,
+      EventName: 'Faulty hub slipring SR',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 128,
+      ActionName: 'Check the continuity of slip ring cable between slip ring terminals at nacelle side and in hub cabinet.',
+      ActionTime: '03:00:00',
+      ActionCost: 276316,
+      Level: 2
+    },
+    {
+      EventID: 145,
+      RootID: 102,
+      EventName: 'Loose connection at slipring in nacelle',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 129,
+      ActionName: 'Check hub slip ring connection tightness inside slipring terminal box.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 2
+    },
+    {
+      EventID: 146,
+      RootID: 102,
+      EventName: 'DIO module faulty',
+      ProbabilityPercentage: 0.1,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 130,
+      ActionName: 'Check the functionality of DIO280 (50A2) module. Replace the module if required.',
+      ActionTime: '00:30:00',
+      ActionCost: 22697,
+      Level: 2
+    },
+    {
+      EventID: 147,
+      RootID: 102,
+      EventName: 'Loose connection at X10A TB in top cabinet (safety speed)',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 131,
+      ActionName: 'Check the safety speed signal from TB X10A:3 to DIO280 module.',
+      ActionTime: '00:20:00',
+      ActionCost: 50,
+      Level: 2
+    },
+    {
+      EventID: 148,
+      RootID: 102,
+      EventName: 'Safety chain contatctor (3K1)',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 132,
+      ActionName: 'Check the functionality and connection tightness of safety chain contactor (-3K1) in top cabinet.',
+      ActionTime: '00:30:00',
+      ActionCost: 1020,
+      Level: 2
+    },
+    {
+      EventID: 149,
+      RootID: 102,
+      EventName: 'safety speed relay (8K1)',
+      ProbabilityPercentage: 14.5,
+      IsParent: '0',
+      ParentID: 113,
+      ActionID: 126,
+      ActionName: 'Check the safety speed relay (8K1) connection tightness and functionality.',
+      ActionTime: '00:10:00',
+      ActionCost: 1251,
+      Level: 2
+    },
+    {
+      EventID: 150,
+      RootID: 102,
+      EventName: '16K4 (5A1) DC-DC converter FC2',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 114,
+      ActionID: 47,
+      ActionName: 'Check DC-DC converter monitoring relay (16K4) connection tightness and functionality.',
+      ActionTime: '00:05:00',
+      ActionCost: 437,
+      Level: 2
+    },
+    {
+      EventID: 151,
+      RootID: 102,
+      EventName: '16K3 (5A1) DC-DC converter FC2',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 114,
+      ActionID: 48,
+      ActionName: 'Check DC-DC converter monitoring relay (16K3) connection tightness and functionality.',
+      ActionTime: '00:05:00',
+      ActionCost: 437,
+      Level: 2
+    },
+    {
+      EventID: 152,
+      RootID: 102,
+      EventName: '16K2 (3A1) DC-DC converter FC1',
+      ProbabilityPercentage: 33.3,
+      IsParent: '0',
+      ParentID: 114,
+      ActionID: 49,
+      ActionName: 'Check DC-DC converter monitoring relay (16K2) connection tightness and functionality.',
+      ActionTime: '00:05:00',
+      ActionCost: 437,
+      Level: 2
+    }
+  ]
+}
+GET /api/fetch_event_causes_actions?eventName=FM283%20Pitch_EmergencyRun 304 - - 54.222 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Decoded cause: Frequency converter faulty
+Connected to the database.
+GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 16.114 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Frequency converter faulty' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 109 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 109, 109, 109, 109 ]
+Fetched Questions: [
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 109, 109, 109, 109 ]
+Fetched QuestionAnswers: [
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Frequency%20converter%20faulty 200 542 - 27.522 ms
+Decoded cause: Due to 19K1 relay-Emergency stop/95 degree switch
+Decoded cause: Nacelle to hub 230V AC supply issue
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 19K1 relay-Emergency stop/95 degree switch' ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Nacelle to hub 230V AC supply issue' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 106 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 108 ]
+Decoded cause: Due to 2Q1 trip
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 108, 108, 108, 108 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Connected to the database.
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 108, 108, 108, 108 ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Due to 2Q1 trip' ]
+Fetched Questions: [
+  'Is any of the following circuit breaker tripped?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 106, 106, 106, 106 ]
+Fetched QuestionAnswers: [
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.',
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 104 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.'
+]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%2019K1%20relay-Emergency%20stop%2F95%20degree%20switch 200 537 - 50.482 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Nacelle%20to%20hub%20230V%20AC%20supply%20issue 200 679 - 42.159 ms
+Fetched Questions: [ 'Is any of the following circuit breaker tripped?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 104, 104, 104, 104 ]
+Fetched QuestionAnswers: [
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Due%20to%202Q1%20trip 200 469 - 40.136 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=Is%20any%20of%20the%20following%20circuit%20breaker%20tripped%3F 304 - - 68.929 ms

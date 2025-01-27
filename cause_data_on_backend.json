@@ -1,13 +1,8 @@
 {
-  "mainEvent": "mainEvent",
+  "mainEvent": "dummyevent",
   "causes": [
     {
       "causeName": "Untitled Cause",
-      "probability": 0,
-      "subcauses": []
-    },
-    {
-      "causeName": "bauchand",
       "probability": 0,
       "subcauses": []
     }

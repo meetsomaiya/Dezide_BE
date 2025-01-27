@@ -1,0 +1,1298 @@
+checkAdmin route module loaded
+Server is listening on port \\.\pipe\793108bd-8265-4aba-8074-60420a120a38
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName= 400 33 - 2.863 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.463 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 55.456 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 31.045 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'dummyevent',
+  timestamp: '2025-01-22 16:18:55',
+  mainData: {
+    EventID: 498,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2025-01-20 16:08:12.0000000',
+    UpdatedOn: '2025-01-20 16:08:12.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'dummyevent'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 566,
+      ModelID: 1,
+      ParentID: 498,
+      IsParent: '1',
+      CreatedOn: '2025-01-22 10:35:07.0000000',
+      UpdatedOn: '2025-01-22 15:00:23.0000000',
+      IsActive: '1',
+      TopCauseName: 'nok',
+      ProbabilityPercentage: 82,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: true
+    },
+    {
+      EventID: 576,
+      ModelID: 1,
+      ParentID: 498,
+      IsParent: '0',
+      CreatedOn: '2025-01-22 15:00:23.0000000',
+      UpdatedOn: '2025-01-22 15:00:23.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 18,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: [
+    {
+      EventID: 566,
+      RootID: 498,
+      EventName: 'nok',
+      ProbabilityPercentage: 82,
+      IsParent: '1',
+      ParentID: 498,
+      ActionID: 159,
+      ActionName: 'Untitled Action',
+      ActionTime: null,
+      ActionCost: null,
+      Level: 1
+    },
+    {
+      EventID: 567,
+      RootID: 498,
+      EventName: 'gok',
+      ProbabilityPercentage: 100,
+      IsParent: '1',
+      ParentID: 566,
+      ActionID: 148,
+      ActionName: 'good',
+      ActionTime: '00:00:00',
+      ActionCost: 0,
+      Level: 2
+    }
+  ]
+}
+GET /api/fetch_event_causes_actions?eventName=dummyevent 304 - - 38.815 ms
+Decoded cause: nok
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'nok' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 566 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 566, 566, 566, 566 ]
+GET /api/fetch_question_for_events?modalName=dummyevent 404 44 - 30.618 ms
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 566, 566, 566, 566 ]
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=nok 200 174 - 23.732 ms
+Decoded cause: Untitled Cause
+Connected to the database.
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Untitled Cause' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 577 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 577, 577, 577, 577 ]
+GET /api/fetch_question_for_events?modalName=dummyevent 404 44 - 21.389 ms
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 577, 577, 577, 577 ]
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=Untitled%20Cause 200 168 - 29.049 ms
+GET /api/fetch_main_table_data 200 1664 - 37.295 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=dummyevent 404 44 - 13.462 ms
+GET /api/fetch_main_table_data 304 - - 24.111 ms
+Decoded cause: nok
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'nok' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 566 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 566, 566, 566, 566 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 566, 566, 566, 566 ]
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=nok 200 174 - 54.950 ms
+Decoded cause: Untitled Cause
+Decoded cause: nok
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Untitled Cause' ]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'nok' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 577 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 566 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 577, 577, 577, 577 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 566, 566, 566, 566 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 577, 577, 577, 577 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 566, 566, 566, 566 ]
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Untitled%20Action 200 8 - 1.921 ms
+Fetched QuestionAnswers: []
+Fetched QuestionAnswers: []
+Connected to the database.
+OPTIONS /api/fetch_hovering_data_for_action?actionName=good 200 8 - 0.373 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Untitled%20Cause 200 168 - 125.590 ms
+GET /api/fetch_hovering_items_for_topcause?cause=nok 200 174 - 107.267 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Untitled%20Action 200 68 - 67.024 ms
+GET /api/fetch_hovering_data_for_action?actionName=good 304 - - 24.330 ms
+Decoded cause: Untitled Cause
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Untitled Cause' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 577 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 577, 577, 577, 577 ]
+Decoded cause: nok
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 577, 577, 577, 577 ]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'nok' ]
+Fetched QuestionAnswers: []
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 566 ]
+GET /api/fetch_hovering_items_for_topcause?cause=Untitled%20Cause 304 - - 24.880 ms
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 566, 566, 566, 566 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 566, 566, 566, 566 ]
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=nok 304 - - 22.255 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.258 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.326 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 24.994 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 21.081 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'FM204 Pitch_Angle1_SPDifferenceStop',
+  timestamp: '2025-01-22 16:20:11',
+  mainData: {
+    EventID: 1,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2024-11-21 00:00:00.0000000',
+    UpdatedOn: '2024-11-21 00:00:00.0000000',
+    IsActive: '1',
+    CreatedBy: '41064',
+    UpdatedBy: '41064',
+    EventName: 'FM204 Pitch_Angle1_SPDifferenceStop'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 2,
+      ModelID: 1,
+      ParentID: 1,
+      IsParent: '0',
+      CreatedOn: '2024-11-21 00:00:00.0000000',
+      UpdatedOn: '2024-11-21 00:00:00.0000000',
+      IsActive: '1',
+      TopCauseName: 'Pitching is not functional due to safety speed input is missing',
+      ProbabilityPercentage: 5.2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: false
+    },
+    {
+      EventID: 3,
+      ModelID: 1,
+      ParentID: 1,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 00:00:00.0000000',
+      UpdatedOn: '2024-11-21 00:00:00.0000000',
+      IsActive: '1',
+      TopCauseName: 'Issues related to pitch motor',
+      ProbabilityPercentage: 11,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 11,
+      ModelID: 1,
+      ParentID: 1,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 00:00:00.0000000',
+      UpdatedOn: '2024-11-21 00:00:00.0000000',
+      IsActive: '1',
+      TopCauseName: 'Issues related to resolver',
+      ProbabilityPercentage: 5.6,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    },
+    {
+      EventID: 22,
+      ModelID: 1,
+      ParentID: 1,
+      IsParent: '1',
+      CreatedOn: '2024-11-21 00:00:00.0000000',
+      UpdatedOn: '2024-11-21 00:00:00.0000000',
+      IsActive: '1',
+      TopCauseName: 'Issues related to encoder',
+      ProbabilityPercentage: 78.2,
+      CreatedBy: '41064',
+      UpdatedBy: '41064',
+      internalCause: true
+    }
+  ],
+  eventObject: [
+    {
+      EventID: 2,
+      RootID: 1,
+      EventName: 'Pitching is not functional due to safety speed input is missing',
+      ProbabilityPercentage: 5.2,
+      IsParent: '0',
+      ParentID: 1,
+      ActionID: 107,
+      ActionName: 'Check the status of safety speed.',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 1
+    },
+    {
+      EventID: 10,
+      RootID: 1,
+      EventName: 'Faulty bearings of pitch motor',
+      ProbabilityPercentage: 100,
+      IsParent: '0',
+      ParentID: 4,
+      ActionID: 108,
+      ActionName: 'Check for any abnormal noise or vibrations coming from the pitch motor 1 (2M1). Replace the motor if required.',
+      ActionTime: '02:00:00',
+      ActionCost: 85000,
+      Level: 3
+    },
+    {
+      EventID: 8,
+      RootID: 1,
+      EventName: 'Faulty output from frequency converter',
+      ProbabilityPercentage: 20.9,
+      IsParent: '0',
+      ParentID: 6,
+      ActionID: 109,
+      ActionName: 'Replace the frequency converter 1 (2A1) due to output stage failure.',
+      ActionTime: '02:00:00',
+      ActionCost: 77368,
+      Level: 3
+    },
+    {
+      EventID: 9,
+      RootID: 1,
+      EventName: 'Faulty connections of pitch motor',
+      ProbabilityPercentage: 79.1,
+      IsParent: '0',
+      ParentID: 6,
+      ActionID: 110,
+      ActionName: 'Check the connections between pitch motor 1 (2M1) and frequency converter 1 (2A1). Tighten if found loose or replace if found faulty.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 14,
+      RootID: 1,
+      EventName: 'Corrupt firmware and parameters related to resolver',
+      ProbabilityPercentage: 1,
+      IsParent: '0',
+      ParentID: 12,
+      ActionID: 111,
+      ActionName: 'Reload the firmware and parameters to frequency converter 1 (2A1).',
+      ActionTime: '00:10:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 15,
+      RootID: 1,
+      EventName: 'Faulty resolver\r\n',
+      ProbabilityPercentage: 10,
+      IsParent: '0',
+      ParentID: 12,
+      ActionID: 112,
+      ActionName: 'Replace the resolver 1 (32A1).',
+      ActionTime: '01:20:00',
+      ActionCost: 15000,
+      Level: 3
+    },
+    {
+      EventID: 16,
+      RootID: 1,
+      EventName: 'Faulty resolver cable\\connections\r\n',
+      ProbabilityPercentage: 88,
+      IsParent: '0',
+      ParentID: 12,
+      ActionID: 113,
+      ActionName: 'Check the connections between frequency converter and resolver of blade 1. Replace the resolver cable if found faulty.',
+      ActionTime: '00:30:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 17,
+      RootID: 1,
+      EventName: 'Faulty resolver port\r\n',
+      ProbabilityPercentage: 1,
+      IsParent: '0',
+      ParentID: 12,
+      ActionID: 114,
+      ActionName: 'Replace the frequency converter 1 (2A1) due to resolver port failure.',
+      ActionTime: '02:00:00',
+      ActionCost: 77368,
+      Level: 3
+    },
+    {
+      EventID: 18,
+      RootID: 1,
+      EventName: 'Faulty resolver mounting assembly\r\n',
+      ProbabilityPercentage: 60,
+      IsParent: '0',
+      ParentID: 13,
+      ActionID: 115,
+      ActionName: 'Check the resolver mounting assembly and tighten/replace as necessary.',
+      ActionTime: '00:30:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 19,
+      RootID: 1,
+      EventName: 'Faulty pitch drive gear box\r\n',
+      ProbabilityPercentage: 35,
+      IsParent: '0',
+      ParentID: 13,
+      ActionID: 116,
+      ActionName: 'Check if any noise or vibration is observed in the pitch drive gearbox. Consult with OMS engineering if any abnormality found.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 20,
+      RootID: 1,
+      EventName: 'Damaged pitch bearing teeth\r\n',
+      ProbabilityPercentage: 2,
+      IsParent: '0',
+      ParentID: 13,
+      ActionID: 117,
+      ActionName: 'Check if any of the pitch bearing tooth is damaged. If found damaged, consult with OMS engineering.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 21,
+      RootID: 1,
+      EventName: 'Damaged pinion teeth\r\n',
+      ProbabilityPercentage: 3,
+      IsParent: '0',
+      ParentID: 13,
+      ActionID: 118,
+      ActionName: 'Check if any of the pitch pinion tooth is damaged. If found damaged, consult with OMS engineering.',
+      ActionTime: '00:20:00',
+      ActionCost: 0,
+      Level: 3
+    },
+    {
+      EventID: 24,
+      RootID: 1,
+      EventName: 'Faulty encoder mounting assembly',
+      ProbabilityPercentage: 100,
+      IsParent: '0',
+      ParentID: 23,
+      ActionID: 119,
+      ActionName: 'Check the encoder mounting and gearwheel. Tighten/replace as necessary.',
+      ActionTime: '01:00:00',
+      ActionCost: 133,
+      Level: 3
+    }
+  ]
+}
+GET /api/fetch_event_causes_actions?eventName=FM204%20Pitch_Angle1_SPDifferenceStop 304 - - 25.320 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Decoded cause: Issues related to encoder
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Issues related to encoder' ]
+GET /api/fetch_question_for_events?modalName=FM204%20Pitch_Angle1_SPDifferenceStop 304 - - 18.857 ms
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 22 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 22, 22, 22, 22 ]
+Fetched Questions: [ 'Is this error active for all three blades ?' ]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 22, 22, 22, 22 ]
+Fetched QuestionAnswers: [ 'Yes' ]
+GET /api/fetch_hovering_items_for_topcause?cause=Issues%20related%20to%20encoder 200 228 - 24.687 ms
+Decoded cause: Issues related to resolver
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Issues related to resolver' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 11 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 11, 11, 11, 11 ]
+Decoded cause: Issues related to pitch motor
+Fetched Questions: [
+  'Is this error active for all three blades ?',
+  'From EVT logs, check which DIi_PitX_EmergencyRun is recorded as true (+) status before pitch emergency run fault recorded?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 11, 11, 11, 11 ]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Issues related to pitch motor' ]
+Fetched QuestionAnswers: [
+  'Yes',
+  'None of the breaker tripped.',
+  'One of the input high- DI 88/89/90- DIi_Pit1/2/3_EmergencyRun.',
+  'All three digital inputs 88, 89 and 90 DIi_Pit1_EmergencyRun recorded true at the same time.'
+]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 3 ]
+GET /api/fetch_hovering_items_for_topcause?cause=Issues%20related%20to%20resolver 200 545 - 27.268 ms
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 3, 3, 3, 3 ]
+Fetched Questions: [
+  'Is this error active for all three blades ?',
+  'Is MPCB 7Q2 tripped ?',
+  'Is any of the following circuit breaker tripped?'
+]
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 3, 3, 3, 3 ]
+Fetched QuestionAnswers: [
+  'Yes',
+  'Yes',
+  'None of the breaker tripped.',
+  '230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).',
+  '3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).',
+  '3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO).'
+]
+GET /api/fetch_hovering_items_for_topcause?cause=Issues%20related%20to%20pitch%20motor 200 563 - 26.947 ms
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Check%20the%20status%20of%20safety%20speed. 200 8 - 0.399 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20the%20status%20of%20safety%20speed. 200 153 - 13.430 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=Is%20this%20error%20active%20for%20all%20three%20blades%20%3F 200 175 - 13.747 ms
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Check%20the%20encoder%20mounting%20and%20gearwheel.%20Tighten%2Freplace%20as%20necessary. 200 8 - 0.190 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20the%20encoder%20mounting%20and%20gearwheel.%20Tighten%2Freplace%20as%20necessary. 200 178 - 24.125 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Check%20if%20any%20of%20the%20pitch%20pinion%20tooth%20is%20damaged.%20If%20found%20damaged%2C%20consult%20with%20OMS%20engineering. 200 8 - 0.306 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20the%20encoder%20mounting%20and%20gearwheel.%20Tighten%2Freplace%20as%20necessary. 304 - - 28.645 ms
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Check%20if%20any%20noise%20or%20vibration%20is%20observed%20in%20the%20pitch%20drive%20gearbox.%20Consult%20with%20OMS%20engineering%20if%20any%20abnormality%20found. 200 8 - 0.261 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20if%20any%20of%20the%20pitch%20pinion%20tooth%20is%20damaged.%20If%20found%20damaged%2C%20consult%20with%20OMS%20engineering. 200 179 - 24.192 ms
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Check%20the%20resolver%20mounting%20assembly%20and%20tighten%2Freplace%20as%20necessary. 200 8 - 0.371 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Check%20the%20connections%20between%20frequency%20converter%20and%20resolver%20of%20blade%201.%20Replace%20the%20resolver%20cable%20if%20found%20faulty. 200 8 - 0.285 ms
+Connected to the database.
+GET /api/fetch_hovering_data_for_action?actionName=Check%20if%20any%20noise%20or%20vibration%20is%20observed%20in%20the%20pitch%20drive%20gearbox.%20Consult%20with%20OMS%20engineering%20if%20any%20abnormality%20found. 200 186 - 42.005 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+OPTIONS /api/fetch_hovering_data_for_action?actionName=Reload%20the%20firmware%20and%20parameters%20to%20frequency%20converter%201%20(2A1). 200 8 - 0.408 ms
+GET /api/fetch_hovering_data_for_action?actionName=Check%20the%20resolver%20mounting%20assembly%20and%20tighten%2Freplace%20as%20necessary. 200 192 - 35.675 ms
+Connected to the database.
+GET /api/fetch_hovering_data_for_action?actionName=Check%20the%20connections%20between%20frequency%20converter%20and%20resolver%20of%20blade%201.%20Replace%20the%20resolver%20cable%20if%20found%20faulty. 200 192 - 31.102 ms
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Reload%20the%20firmware%20and%20parameters%20to%20frequency%20converter%201%20(2A1). 200 205 - 26.422 ms

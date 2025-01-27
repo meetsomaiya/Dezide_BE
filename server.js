@@ -83,6 +83,18 @@ const api34 = require('./apis/deleted_cause');
 
 const api35 = require('./apis/deleted_subcause');
 
+const api36 = require('./apis/match_actions_causes');
+
+const api37 = require('./apis/add_new_action');
+
+const api38 = require('./apis/edit_action_data');
+
+const api39 = require('./apis/fetch_hovering_data_for_action');
+
+const api40 = require('./apis/fetch_preview_data');
+
+const api41 = require('./apis/add_new_question');
+
 
 
 
@@ -163,6 +175,19 @@ app.use('/api/deleted_top_cause', api33);
 app.use('/api/deleted_cause', api34);
 
 app.use('/api/deleted_subcause', api35);
+
+app.use('/api/match_actions_causes', api36);
+
+app.use('/api/add_new_action', api37);
+
+app.use('/api/edit_action_data', api38);
+
+app.use('/api/fetch_hovering_data_for_action', api39);
+
+app.use('/api/fetch_preview_data', api40);
+
+app.use('/api/add_new_question', api41);
+
 
 
 

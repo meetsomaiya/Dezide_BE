@@ -1,9 +1,3 @@
 {
-  "checkAdmin": true,
-  "id": "c576255f7e626522a1b84389b59cf101",
-  "domain_id": "40139",
-  "name": "Meet Somaiya",
-  "email": "meet.somaiya@suzlon.com",
-  "access": "admin",
-  "admin_type": "admin"
+  "message": "An error occurred while processing the request."
 }

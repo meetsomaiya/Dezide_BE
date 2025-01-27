@@ -1,6 +1,6 @@
 {
-  "fm": "FM201-250",
+  "fm": "FM51-100",
   "eventNames": [
-    "FM204 Pitch_Angle1_SPDifferenceStop"
+    "FM91 Elec_FB_NacelleFan_Err"
   ]
 }

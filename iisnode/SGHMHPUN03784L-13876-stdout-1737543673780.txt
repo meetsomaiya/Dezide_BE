@@ -1,0 +1,714 @@
+checkAdmin route module loaded
+Server is listening on port \\.\pipe\a5f08743-4d1d-4706-8dbe-2bf559e03ff4
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Connected to the database.
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20position%2095%C2%B0%20and%20100%C2%B0%20monitoring%20relay%20(21K1)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts. 404 32 - 30.620 ms
+GET /api/fetch_hovering_data_for_action?actionName=Check%20battery%20surveillance%20monitoring%20relay%20(17A2)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts.%20Replace%20it%20if%20required. 304 - - 60.205 ms
+GET /api/fetch_hovering_data_for_action?actionName=Check%20battery%20surveillance%20monitoring%20relay%20(17A3)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts.%20Replace%20it%20if%20required. 304 - - 44.245 ms
+GET /api/fetch_hovering_data_for_action?actionName=Check%20connection%20tightness%20at%20safety%20relay%20(-16K1)%20NO%20contacts%20and%20frequency%20converters%20(-2A1%2C%20-4A1%2C%20-6A1)%20digital%20input%20safety%20speed%20at%20X2%3A15%20(ISD00). 304 - - 47.170 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=From%20EVT%20logs%2C%20check%20which%20DIi_PitX_EmergencyRun%20is%20recorded%20as%20true%20(%2B)%20status%20before%20pitch%20emergency%20run%20fault%20recorded%3F 304 - - 12.458 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 61.090 ms
+GET /api/fetch_main_table_data 200 1664 - 90.891 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20connection%20tightness%20at%20safety%20relay%20(-16K1)%20NO%20contacts%20and%20frequency%20converters%20(-2A1%2C%20-4A1%2C%20-6A1)%20digital%20input%20safety%20speed%20at%20X2%3A15%20(ISD00). 304 - - 47.554 ms
+GET /api/fetch_hovering_data_for_action?actionName=Check%20the%20functionality%20of%20safety%20relay%20(-16K1). 304 - - 37.499 ms
+GET /api/fetch_hovering_data_for_action?actionName=Check%20battery%20surveillance%20monitoring%20relay%20(17A3)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts.%20Replace%20it%20if%20required. 304 - - 39.616 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=Is%20any%20of%20the%20following%20circuit%20breaker%20tripped%3F 304 - - 13.041 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20battery%20surveillance%20monitoring%20relay%20(17A2)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts.%20Replace%20it%20if%20required. 304 - - 25.512 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=Check%20battery%20surveillance%20monitoring%20relay%20(17A3)%20connection%20tightness%20and%20functionality%20of%20NO%20contacts.%20Replace%20it%20if%20required. 304 - - 24.101 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=FM283%20Pitch_EmergencyRun 304 - - 16.897 ms
+GET /api/fetch_main_table_data 304 - - 35.795 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.195 ms
+GET /api/fetch_question_for_events?modalName= 400 33 - 0.335 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 38.264 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_main_table_data 304 - - 23.155 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Event data saved to JSON file: {
+  eventName: 'dummyevent',
+  timestamp: '2025-01-22 16:32:40',
+  mainData: {
+    EventID: 498,
+    ModelID: 1,
+    ParentID: 0,
+    IsParent: '1',
+    CreatedOn: '2025-01-20 16:08:12.0000000',
+    UpdatedOn: '2025-01-20 16:08:12.0000000',
+    IsActive: '1',
+    CreatedBy: '40139',
+    UpdatedBy: '40139',
+    EventName: 'dummyevent'
+  },
+  tblTopCauseData: [
+    {
+      EventID: 566,
+      ModelID: 1,
+      ParentID: 498,
+      IsParent: '1',
+      CreatedOn: '2025-01-22 10:35:07.0000000',
+      UpdatedOn: '2025-01-22 15:00:23.0000000',
+      IsActive: '1',
+      TopCauseName: 'nok',
+      ProbabilityPercentage: 82,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: true
+    },
+    {
+      EventID: 576,
+      ModelID: 1,
+      ParentID: 498,
+      IsParent: '0',
+      CreatedOn: '2025-01-22 15:00:23.0000000',
+      UpdatedOn: '2025-01-22 15:00:23.0000000',
+      IsActive: '1',
+      TopCauseName: 'Untitled Cause',
+      ProbabilityPercentage: 18,
+      CreatedBy: '40139',
+      UpdatedBy: '40139',
+      internalCause: false
+    }
+  ],
+  eventObject: [
+    {
+      EventID: 566,
+      RootID: 498,
+      EventName: 'nok',
+      ProbabilityPercentage: 82,
+      IsParent: '1',
+      ParentID: 498,
+      ActionID: 159,
+      ActionName: 'Untitled Action',
+      ActionTime: null,
+      ActionCost: null,
+      Level: 1
+    },
+    {
+      EventID: 567,
+      RootID: 498,
+      EventName: 'gok',
+      ProbabilityPercentage: 100,
+      IsParent: '1',
+      ParentID: 566,
+      ActionID: 148,
+      ActionName: 'good',
+      ActionTime: '00:00:00',
+      ActionCost: 0,
+      Level: 2
+    }
+  ]
+}
+GET /api/fetch_event_causes_actions?eventName=dummyevent 304 - - 21.339 ms
+Decoded cause: nok
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'nok' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 566 ]
+GET /api/fetch_question_for_events?modalName=dummyevent 404 44 - 32.099 ms
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 566, 566, 566, 566 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 566, 566, 566, 566 ]
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=nok 200 174 - 33.633 ms
+Decoded cause: nok
+Connected to the database.
+Decoded cause: Untitled Cause
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'nok' ]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+SQL Query for EventID: 
+            SELECT EventID FROM Tbl_Events_Main WHERE EventName = ?;
+         [ 'Untitled Cause' ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 566 ]
+SQL Query for Actions: 
+            SELECT ActionName FROM Tbl_Actions 
+            WHERE CHARINDEX(',' + CAST(? AS VARCHAR) + ',', ',' + CAST(EventID AS VARCHAR) + ',') > 0;
+         [ 577 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 566, 566, 566, 566 ]
+SQL Query for Questions: 
+            SELECT SubEventID, QuestionName
+            FROM Tbl_Questions
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 577, 577, 577, 577 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 566, 566, 566, 566 ]
+Fetched Questions: []
+SQL Query for QuestionAnswers: 
+            SELECT SubEventID, QuestionAnswer
+            FROM Tbl_Question_Answer
+            WHERE CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 0
+            AND (
+                CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = 1 
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) > 1
+                OR CHARINDEX(?, CAST(SubEventID AS VARCHAR)) = LEN(CAST(SubEventID AS VARCHAR)) - LEN(REVERSE(CAST(SubEventID AS VARCHAR))) + 1
+            );
+         [ 577, 577, 577, 577 ]
+Fetched QuestionAnswers: []
+Fetched QuestionAnswers: []
+GET /api/fetch_hovering_items_for_topcause?cause=nok 200 174 - 43.835 ms
+GET /api/fetch_hovering_items_for_topcause?cause=Untitled%20Cause 200 168 - 30.765 ms
+OPTIONS /api/add_new_question 200 4 - 0.569 ms
+Data received on backend: {
+  modalName: 'dummyevent',
+  eventID: 0,
+  questions: [
+    {
+      questionName: 'Untitled Question 1',
+      questionTime: '00:00:00',
+      questionCost: 0
+    }
+  ]
+}
+POST /api/add_new_question 200 198 - 4.855 ms
+OPTIONS /api/add_answer 404 157 - 1.077 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_subquestion_for_event?questionName=Untitled%20Question%201 404 30 - 12.225 ms
+OPTIONS /api/add_answer 404 157 - 0.620 ms
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_hovering_data_for_action?actionName=good 304 - - 158.154 ms
+GET /api/fetch_hovering_data_for_action?actionName=Untitled%20Action 304 - - 140.064 ms
+Connected to the database.
+Connected to the database.
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+Test query result: [
+  { test: 1 },
+  statement: 'SELECT 1 AS test',
+  parameters: [],
+  return: undefined,
+  count: -1,
+  columns: [
+    {
+      name: 'test',
+      dataType: 4,
+      dataTypeName: 'SQL_INTEGER',
+      columnSize: 10,
+      decimalDigits: 0,
+      nullable: false
+    }
+  ]
+]
+GET /api/fetch_question_for_events?modalName=dummyevent 404 44 - 34.021 ms
+GET /api/fetch_main_table_data 200 1664 - 43.268 ms
