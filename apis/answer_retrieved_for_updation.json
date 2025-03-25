@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-03-25T11:28:48.403Z",
+  "metadata": {
+    "modalName": "guideno7",
+    "source": "answer-edit-endpoint",
+    "actualEventID": 584,
+    "questionID": 95
+  },
+  "updateDetails": {
+    "oldAnswer": "goodnice",
+    "newAnswer": "goodnice",
+    "questionName": "gotta",
+    "requestedEventID": 584,
+    "rowsAffected": 1
+  }
+}

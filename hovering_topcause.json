@@ -1,15 +1,8 @@
 {
-  "cause": "Due to 2Q1 trip",
-  "eventId": 104,
+  "cause": "donk",
+  "eventId": 589,
   "actions": [],
-  "questions": [
-    "Is any of the following circuit breaker tripped?"
-  ],
-  "questionAnswers": [
-    "None of the breaker tripped.",
-    "230V AC pitch supply breaker (-2F3) tripped in top cabinet (CTO).",
-    "3 x 230V AC pitch supply breaker (-10F1) tripped in bottom cabinet (CBO).",
-    "3 x 400V AC pitch supply breaker (-33F1) tripped in bottom cabinet (CBO)."
-  ],
-  "timestamp": "2025-01-22 16:49:55"
+  "questions": [],
+  "questionAnswers": [],
+  "timestamp": "2025-03-25 17:36:44"
 }

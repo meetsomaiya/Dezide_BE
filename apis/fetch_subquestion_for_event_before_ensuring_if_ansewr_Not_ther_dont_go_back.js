@@ -3,7 +3,7 @@ const fs = require('fs');
 const { connectToDatabase } = require('./connect2.js');
 const path = require('path');
 
-const router = express.Router();
+const router = express.Router(); // Define the router
 
 // Set up CORS middleware
 router.use((req, res, next) => {
@@ -15,17 +15,19 @@ router.use((req, res, next) => {
   next();
 });
 
+// Handle GET request to fetch question details and write to JSON
 router.get('/', async (req, res) => {
-  const { questionName } = req.query;
+  const { questionName } = req.query;  // Get the questionName from the query parameter
 
   if (!questionName) {
     return res.status(400).json({ error: 'Question name is required' });
   }
 
   try {
+    // Step 1: Connect to the database
     const dbConnection = await connectToDatabase();
 
-    // Fetch QuestionID and EventID
+    // Step 2: Fetch QuestionID and EventID from Tbl_Questions
     const query1 = `SELECT QuestionID, EventID FROM Tbl_Questions WHERE QuestionName = ?`;
     const questionsResult = await dbConnection.query(query1, [questionName]);
 
@@ -35,27 +37,30 @@ router.get('/', async (req, res) => {
 
     const { QuestionID, EventID } = questionsResult[0];
 
-    // Fetch QuestionAnswers
+    // Step 3: Fetch all QuestionAnswers from Tbl_Question_Answer
     const query2 = `SELECT QuestionAnswer FROM Tbl_Question_Answer WHERE QuestionID = ? AND EventID = ?`;
     const answerResult = await dbConnection.query(query2, [QuestionID, EventID]);
 
-    // Prepare response data
+    if (answerResult.length === 0) {
+      return res.status(404).json({ error: 'No answers found for the specified QuestionID and EventID' });
+    }
+
+    // Step 4: Prepare the data to write to the JSON file
     const dataToWrite = {
       questionName,
       questionID: QuestionID,
       eventID: EventID,
-      questionAnswers: answerResult.length > 0 
-        ? answerResult.map(row => row.QuestionAnswer)
-        : ["No Answer Found"]  // Modified this line
+      questionAnswers: answerResult.map(row => row.QuestionAnswer)  // Iterate and fetch all answers
     };
 
-    // Write to file
+    // Step 5: Write data to subquestion_retrieved.json
     fs.writeFile(path.join(__dirname, 'subquestion_retrieved.json'), JSON.stringify(dataToWrite, null, 2), (err) => {
       if (err) {
         console.error('Error writing to file:', err);
         return res.status(500).json({ error: 'Failed to write to file' });
       }
 
+      // Respond with success
       res.status(200).json({
         message: 'Data written to file successfully',
         data: dataToWrite

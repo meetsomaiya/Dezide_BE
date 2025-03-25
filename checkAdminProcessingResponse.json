@@ -1,3 +1,9 @@
 {
-  "message": "An error occurred while processing the request."
+  "checkAdmin": true,
+  "id": "be185cf033581070fd8a189c1aded5d9",
+  "domain_id": "40139",
+  "name": "Meet Somaiya",
+  "email": "meet.somaiya@suzlon.com",
+  "access": "admin",
+  "admin_type": "admin"
 }

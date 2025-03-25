@@ -1,9 +1,14 @@
 {
-  "mainEvent": "dummyevent",
+  "mainEvent": "guideno7",
   "causes": [
     {
       "causeName": "Untitled Cause",
       "probability": 0,
+      "subcauses": []
+    },
+    {
+      "causeName": "nice",
+      "probability": 100,
       "subcauses": []
     }
   ]

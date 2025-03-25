@@ -1,8 +1,7 @@
 {
-  "actionName": "Check the functionality of 10F1 MCB in bottom cabinet. Replace it if required.",
+  "actionName": "work",
   "causes": [
-    "Faulty 10F1",
-    "FM283 Pitch_EmergencyRun"
+    "guideno7"
   ],
-  "timestamp": "2025-01-22T16:50:05+05:30"
+  "timestamp": "2025-03-25T17:37:02+05:30"
 }
