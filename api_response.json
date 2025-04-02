@@ -7,5 +7,18 @@
   "ContactNumber": "02067022444",
   "MobileNumber": "7046412385",
   "EmpGrade": "M3",
-  "IsActive": true
+  "IsActive": true,
+  "Groups": [
+    "CN=SEL_PUNEFS_OMS_SGSLColib_LubPortal_Full,OU=OMS,OU=FileServer_Groups,DC=suzlon,DC=com",
+    "CN=A&B Raters,OU=TestDL,DC=suzlon,DC=com",
+    "CN=SUZLON IT,OU=TestDL,DC=suzlon,DC=com",
+    "CN=OMS-Corp,OU=TestDL,DC=suzlon,DC=com",
+    "CN=Suzlon All India OMS group,OU=TestDL,DC=suzlon,DC=com",
+    "CN=contacts oms,OU=TestDL,DC=suzlon,DC=com",
+    "CN=DLP_Installation,OU=Groups,OU=Pune,OU=Maharashtra,OU=India,DC=suzlon,DC=com",
+    "CN=IB-OMS-DL,OU=TestDL,DC=suzlon,DC=com",
+    "CN=SEL_PUNEFS_OMS_ENG_Digitiz_FULL,OU=OMS,OU=FileServer_Groups,DC=suzlon,DC=com",
+    "CN=Suzlon All India Group,OU=TestDL,DC=suzlon,DC=com",
+    "CN=Suzlon One Earth Group,OU=TestDL,DC=suzlon,DC=com"
+  ]
 }

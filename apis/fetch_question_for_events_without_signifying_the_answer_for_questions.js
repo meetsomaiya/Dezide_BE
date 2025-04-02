@@ -1,9 +1,9 @@
 const express = require('express');
 const fs = require('fs');
-const { connectToDatabase } = require('./connect4.js');
+const { connectToDatabase } = require('./connect2.js');
 const path = require('path');
 
-const router = express.Router();
+const router = express.Router(); // Define the router
 
 // Set up CORS middleware
 router.use((req, res, next) => {
@@ -17,17 +17,17 @@ router.use((req, res, next) => {
 
 // Define the route to handle the API request
 router.get('/', async (req, res) => {
-  const { modalName } = req.query;
+  const { modalName } = req.query; // Retrieve the modalName from the query parameter
 
   if (!modalName) {
     return res.status(400).json({ error: "modalName is required" });
   }
 
-  let connection;
   try {
-    connection = await connectToDatabase();
+    // Connect to the database
+    const connection = await connectToDatabase();
 
-    // Step 1: Fetch the EventID from Tbl_Events_Main
+    // Step 1: Fetch the EventID from Tbl_Events_Main where EventName matches modalName
     const eventQuery = `
       SELECT EventID
       FROM Tbl_Events_Main
@@ -41,9 +41,9 @@ router.get('/', async (req, res) => {
 
     const eventID = eventResult[0].EventID;
 
-    // Step 2: Fetch questions including QuestionID
+    // Step 2: Fetch the QuestionName, QuestionTime, and QuestionCost from Tbl_Questions where EventID matches
     const questionQuery = `
-      SELECT QuestionID, QuestionTime, QuestionCost, QuestionName
+      SELECT QuestionTime, QuestionCost, QuestionName
       FROM Tbl_Questions
       WHERE EventID = ?
     `;
@@ -53,35 +53,18 @@ router.get('/', async (req, res) => {
       return res.status(404).json({ error: "No questions found for the event" });
     }
 
-    // Step 3: Check for answers in Tbl_Question_Answer for each question
-    const questionsWithAnswerFlags = [];
-    
-    for (const row of questionResult) {
-      const answerCheckQuery = `
-        SELECT TOP 1 1 AS hasAnswer 
-        FROM Tbl_Question_Answer 
-        WHERE QuestionID = ?
-      `;
-      const answerResult = await connection.query(answerCheckQuery, [row.QuestionID]);
-      
-      const questionData = {
-        questionName: row.QuestionName,
-        questionTime: row.QuestionTime,
-        questionCost: row.QuestionCost,
-        hasAnswer: answerResult.length > 0 // Explicitly set true/false
-      };
-
-      questionsWithAnswerFlags.push(questionData);
-    }
-
-    // Step 4: Create the response object
+    // Step 3: Create the response object
     const responseData = {
       modalName: modalName,
       eventID: eventID,
-      questions: questionsWithAnswerFlags,
+      questions: questionResult.map((row) => ({
+        questionName: row.QuestionName,
+        questionTime: row.QuestionTime,
+        questionCost: row.QuestionCost,
+      })),
     };
 
-    // Write the response data to a JSON file
+    // Write the response data to a JSON file for verification purposes
     fs.writeFileSync(
       'response_question-for_event-sent_back.json',
       JSON.stringify(responseData, null, 2)
@@ -90,21 +73,11 @@ router.get('/', async (req, res) => {
     // Send the response back to the client
     res.status(200).json(responseData);
 
+    // Close the database connection
+    await connection.close();
   } catch (error) {
     console.error('Error processing the request:', error);
-    res.status(500).json({ 
-      error: 'An error occurred while processing the request.',
-      details: error.message 
-    });
-  } finally {
-    // Ensure connection is always closed
-    if (connection) {
-      try {
-        await connection.close();
-      } catch (closeError) {
-        console.error('Error closing connection:', closeError);
-      }
-    }
+    res.status(500).json({ error: 'An error occurred while processing the request.' });
   }
 });
 

@@ -1,16 +1,18 @@
 {
-  "modalName": "guideno7",
+  "modalName": "nocook",
   "eventID": 584,
   "questions": [
     {
-      "questionName": "gotta",
+      "questionName": "good",
       "questionTime": "00:00:00",
-      "questionCost": 0
+      "questionCost": 0,
+      "hasAnswer": true
     },
     {
-      "questionName": "work",
+      "questionName": "Untitled Question 5319626",
       "questionTime": "00:00:00",
-      "questionCost": 0
+      "questionCost": 0,
+      "hasAnswer": false
     }
   ]
 }

@@ -57,6 +57,9 @@ const routes = {
     handle_edit_answer_click: require('./apis/handle_edit_answer_click'),
     delete_question_for_model: require('./apis/delete_question_for_model'),
     delete_answer_for_question: require('./apis/delete_answer_for_question'),
+    delete_action_for_model: require('./apis/delete_action_for_model'),
+    'update-modal-name': require('./apis/update-modal-name'),  // Properly formatted route key
+    link_question_with_cause: require('./apis/link_question_with_cause'),
 };
 
 // Dynamically register routes

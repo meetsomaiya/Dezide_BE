@@ -1,0 +1,25 @@
+[
+  {
+    "receivedAt": "2025-04-01T06:59:09.870Z",
+    "previousName": "guideno7",
+    "currentName": "popcorn"
+  },
+  {
+    "timestamp": "2025-04-01T07:03:57.288Z",
+    "previousName": "guideno7",
+    "currentName": "boss",
+    "dbUpdated": true
+  },
+  {
+    "timestamp": "2025-04-01T07:04:13.187Z",
+    "previousName": "boss",
+    "currentName": "cook",
+    "dbUpdated": true
+  },
+  {
+    "timestamp": "2025-04-01T07:04:17.245Z",
+    "previousName": "cook",
+    "currentName": "nocook",
+    "dbUpdated": true
+  }
+]

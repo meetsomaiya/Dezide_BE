@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-03-25T11:28:48.403Z",
+  "timestamp": "2025-04-02T12:30:49.953Z",
   "metadata": {
-    "modalName": "guideno7",
+    "modalName": "nocook",
     "source": "answer-edit-endpoint",
     "actualEventID": 584,
-    "questionID": 95
+    "questionID": 107
   },
   "updateDetails": {
-    "oldAnswer": "goodnice",
-    "newAnswer": "goodnice",
-    "questionName": "gotta",
+    "oldAnswer": "Untitled Answer 433014",
+    "newAnswer": "Untitled Answer 433014",
+    "questionName": "good",
     "requestedEventID": 584,
     "rowsAffected": 1
   }

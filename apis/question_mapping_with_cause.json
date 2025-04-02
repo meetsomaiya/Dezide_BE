@@ -1,0 +1,25 @@
+[
+  {
+    "timestamp": "2025-04-02 08:30:42",
+    "modalName": "nocook",
+    "causeName": "donk",
+    "actionType": "identify",
+    "questionAnswer": "Untitled Answer 436904"
+  },
+  {
+    "timestamp": "2025-04-02 08:30:49",
+    "modalName": "nocook",
+    "causeName": "nice",
+    "actionType": "eliminate",
+    "questionAnswer": "Untitled Answer 436904"
+  },
+  {
+    "timestamp": "2025-04-02 08:49:19",
+    "modalName": "nocook",
+    "causeName": "donk",
+    "actionType": "identify",
+    "questionAnswer": "Untitled Answer 436904",
+    "initialEventId": 584,
+    "updatingEventId": 589
+  }
+]
