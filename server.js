@@ -60,6 +60,8 @@ const routes = {
     delete_action_for_model: require('./apis/delete_action_for_model'),
     'update-modal-name': require('./apis/update-modal-name'),  // Properly formatted route key
     link_question_with_cause: require('./apis/link_question_with_cause'),
+    fetch_hovering_data_for_question_answer: require('./apis/fetch_hovering_data_for_question_answer'),
+    delete_top_cause: require('./apis/delete_top_cause'),
 };
 
 // Dynamically register routes

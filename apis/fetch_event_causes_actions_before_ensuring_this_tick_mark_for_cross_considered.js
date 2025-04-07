@@ -15,18 +15,6 @@ router.use((req, res, next) => {
     next();
 });
 
-// Helper function to check if an EventID exists in comma-separated SubEventIDs
-async function checkHasQuestionAnswer(dbConnection, eventId) {
-    const query = `
-        SELECT COUNT(1) AS Count
-        FROM Tbl_Question_Answer
-        WHERE ',' + SubEventID + ',' LIKE '%,' + CAST(? AS VARCHAR) + ',%'
-    `;
-    const params = [eventId];
-    const results = await dbConnection.query(query, params);
-    return results[0].Count > 0;
-}
-
 // Define the GET endpoint
 router.get('/', async (req, res) => {
     const eventName = req.query.eventName;
@@ -63,10 +51,6 @@ router.get('/', async (req, res) => {
         }
 
         const mainData = mainEventResults[0];
-        
-        // Check if main event has question answers
-        const mainEventHasQA = await checkHasQuestionAnswer(dbConnection, mainData.EventID);
-        mainData.hasQuestionAnswer = mainEventHasQA;
 
         // Fetch top causes using ParentID
         const topCausesQuery = `
@@ -100,7 +84,6 @@ router.get('/', async (req, res) => {
             const internalCheckResults = await dbConnection.query(internalCheckQuery, internalCheckParams);
 
             const hasInternalData = internalCheckResults[0].InternalCount > 0;
-            const hasQuestionAnswer = await checkHasQuestionAnswer(dbConnection, cause.EventID);
 
             tblTopCauseData.push({
                 EventID: cause.EventID,
@@ -114,8 +97,7 @@ router.get('/', async (req, res) => {
                 ProbabilityPercentage: cause.ProbabilityPercentage,
                 CreatedBy: cause.CreatedBy,
                 UpdatedBy: cause.UpdatedBy,
-                internalCause: hasInternalData,
-                hasQuestionAnswer: hasQuestionAnswer // Add the flag
+                internalCause: hasInternalData, // Add internalCause property
             });
         }
 
@@ -124,30 +106,22 @@ router.get('/', async (req, res) => {
         const eventHierarchyParams = [mainData.EventID];
         const eventHierarchyResults = await dbConnection.query(eventHierarchyQuery, eventHierarchyParams);
 
-        // Process event hierarchy to add hasQuestionAnswer flag
-        const processedEventHierarchy = [];
-        for (const item of eventHierarchyResults) {
-            if (item.ActionName !== null) {
-                const hasQuestionAnswer = await checkHasQuestionAnswer(dbConnection, item.EventID);
-                processedEventHierarchy.push({
-                    EventID: item.EventID,
-                    RootID: item.RootID,
-                    EventName: item.EventName,
-                    ProbabilityPercentage: item.ProbabilityPercentage,
-                    IsParent: item.IsParent,
-                    ParentID: item.ParentID,
-                    ActionID: item.ActionID,
-                    ActionName: item.ActionName,
-                    ActionTime: item.ActionTime,
-                    ActionCost: item.ActionCost,
-                    Level: item.Level,
-                    hasQuestionAnswer: hasQuestionAnswer
-                });
-            }
-        }
-
-        // Remove duplicates from eventObject
-        const eventObject = processedEventHierarchy.filter((item, index, self) => 
+        const eventObject = eventHierarchyResults
+        .filter(item => item.ActionName !== null)
+        .map(item => ({
+            EventID: item.EventID,
+            RootID: item.RootID,
+            EventName: item.EventName,
+            ProbabilityPercentage: item.ProbabilityPercentage,
+            IsParent: item.IsParent,
+            ParentID: item.ParentID,
+            ActionID: item.ActionID,
+            ActionName: item.ActionName,
+            ActionTime: item.ActionTime,
+            ActionCost: item.ActionCost,
+            Level: item.Level,
+        }))
+        .filter((item, index, self) => 
             index === self.findIndex(other => 
                 other.EventID === item.EventID &&
                 other.ActionID === item.ActionID &&
@@ -157,6 +131,7 @@ router.get('/', async (req, res) => {
                 other.Level === item.Level
             )
         );
+    
 
         // Prepare the response data
         const dataToWrite = {
@@ -191,6 +166,7 @@ router.get('/', async (req, res) => {
         }
     }
 });
+
 
 // Export the router
 module.exports = router;

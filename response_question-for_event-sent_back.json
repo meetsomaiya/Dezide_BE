@@ -3,16 +3,10 @@
   "eventID": 584,
   "questions": [
     {
-      "questionName": "good",
+      "questionName": "mouse",
       "questionTime": "00:00:00",
       "questionCost": 0,
       "hasAnswer": true
-    },
-    {
-      "questionName": "Untitled Question 5319626",
-      "questionTime": "00:00:00",
-      "questionCost": 0,
-      "hasAnswer": false
     }
   ]
 }

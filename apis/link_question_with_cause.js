@@ -22,19 +22,38 @@ router.use(express.json());
 // Path to the JSON file
 const MAPPING_FILE_PATH = path.join(__dirname, 'question_mapping_with_cause.json');
 
-// Function to recursively find EventID by traversing ParentID hierarchy
-async function findEventIdByHierarchy(connection, parentId, eventName) {
+// Function to log queries with parameters
+function logQuery(query, params) {
+  console.log('Executing query:', query);
+  console.log('With parameters:', params);
+}
+
+// Modified function to find EventID by hierarchy
+async function findEventIdInHierarchy(connection, parentId, targetEventName) {
   try {
+    // First, get all child events of the current parentId
     const query = `
       SELECT EventID, ParentID, EventName 
       FROM Tbl_Events_Main 
-      WHERE ParentID = ? AND EventName = ?
+      WHERE ParentID = ?
     `;
-    const result = await connection.query(query, [parentId, eventName]);
+    logQuery(query, [parentId]);
+    const results = await connection.query(query, [parentId]);
     
-    if (result.length > 0) {
-      return result[0].EventID;
+    // Check if any of these directly match our target event name
+    const directMatch = results.find(event => event.EventName === targetEventName);
+    if (directMatch) {
+      return directMatch.EventID;
     }
+    
+    // If no direct match, recursively search through all children
+    for (const event of results) {
+      const foundId = await findEventIdInHierarchy(connection, event.EventID, targetEventName);
+      if (foundId) {
+        return foundId;
+      }
+    }
+    
     return null;
   } catch (error) {
     console.error('Error finding event in hierarchy:', error);
@@ -42,46 +61,87 @@ async function findEventIdByHierarchy(connection, parentId, eventName) {
   }
 }
 
-// Function to update SubEventID in Tbl_Question_Answer
-async function updateSubEventId(connection, eventId, questionAnswer, updatingEventId) {
+// Function to update SubEventID in both Tbl_Question_Answer and Tbl_Questions
+async function updateSubEventIds(connection, eventId, questionAnswer, updatingEventId) {
   try {
-    // First get the current SubEventID
-    const getQuery = `
-      SELECT SubEventID 
+    let questionId = null;
+    
+    // First update Tbl_Question_Answer and get QuestionID
+    const getQaQuery = `
+      SELECT SubEventID, QuestionID 
       FROM Tbl_Question_Answer 
       WHERE EventID = ? AND QuestionAnswer = ?
     `;
-    const current = await connection.query(getQuery, [eventId, questionAnswer]);
+    logQuery(getQaQuery, [eventId, questionAnswer]);
+    const currentQa = await connection.query(getQaQuery, [eventId, questionAnswer]);
     
-    if (current.length === 0) {
-      console.log('No matching question answer found');
-      return false;
+    if (currentQa.length > 0) {
+      // Update Tbl_Question_Answer
+      let newQaSubEventIds = [];
+      const currentQaSubEventIds = currentQa[0].SubEventID ? currentQa[0].SubEventID.split(',').map(id => id.trim()) : [];
+
+      if (currentQaSubEventIds.includes(eventId.toString())) {
+        newQaSubEventIds = currentQaSubEventIds.map(id => 
+          id === eventId.toString() ? updatingEventId.toString() : id
+        );
+      } else {
+        newQaSubEventIds = [...currentQaSubEventIds];
+        if (!newQaSubEventIds.includes(updatingEventId.toString())) {
+          newQaSubEventIds.push(updatingEventId.toString());
+        }
+      }
+
+      const updateQaQuery = `
+        UPDATE Tbl_Question_Answer 
+        SET SubEventID = ? 
+        WHERE EventID = ? AND QuestionAnswer = ?
+      `;
+      logQuery(updateQaQuery, [newQaSubEventIds.join(','), eventId, questionAnswer]);
+      await connection.query(updateQaQuery, [newQaSubEventIds.join(','), eventId, questionAnswer]);
+      
+      // Store the QuestionID for updating Tbl_Questions
+      questionId = currentQa[0].QuestionID;
     }
 
-    let newSubEventIds = [];
-    const currentSubEventIds = current[0].SubEventID ? current[0].SubEventID.split(',').map(id => id.trim()) : [];
+    // Update Tbl_Questions using both EventID and QuestionID
+    if (questionId) {
+      const getQuestionsQuery = `
+        SELECT SubEventID 
+        FROM Tbl_Questions 
+        WHERE EventID = ? AND QuestionID = ?
+      `;
+      logQuery(getQuestionsQuery, [eventId, questionId]);
+      const currentQuestions = await connection.query(getQuestionsQuery, [eventId, questionId]);
+      
+      if (currentQuestions.length > 0) {
+        let newQuestionsSubEventIds = [];
+        const currentQuestionsSubEventIds = currentQuestions[0].SubEventID ? 
+          currentQuestions[0].SubEventID.split(',').map(id => id.trim()) : [];
 
-    if (currentSubEventIds.includes(eventId.toString())) {
-      // Replace the original EventID with updatingEventId
-      newSubEventIds = currentSubEventIds.map(id => 
-        id === eventId.toString() ? updatingEventId.toString() : id
-      );
-    } else {
-      // Add the updatingEventId to the existing ones
-      newSubEventIds = [...currentSubEventIds, updatingEventId.toString()];
+        if (currentQuestionsSubEventIds.includes(eventId.toString())) {
+          newQuestionsSubEventIds = currentQuestionsSubEventIds.map(id => 
+            id === eventId.toString() ? updatingEventId.toString() : id
+          );
+        } else {
+          newQuestionsSubEventIds = [...currentQuestionsSubEventIds];
+          if (!newQuestionsSubEventIds.includes(updatingEventId.toString())) {
+            newQuestionsSubEventIds.push(updatingEventId.toString());
+          }
+        }
+
+        const updateQuestionsQuery = `
+          UPDATE Tbl_Questions 
+          SET SubEventID = ? 
+          WHERE EventID = ? AND QuestionID = ?
+        `;
+        logQuery(updateQuestionsQuery, [newQuestionsSubEventIds.join(','), eventId, questionId]);
+        await connection.query(updateQuestionsQuery, [newQuestionsSubEventIds.join(','), eventId, questionId]);
+      }
     }
-
-    // Update the record
-    const updateQuery = `
-      UPDATE Tbl_Question_Answer 
-      SET SubEventID = ? 
-      WHERE EventID = ? AND QuestionAnswer = ?
-    `;
-    await connection.query(updateQuery, [newSubEventIds.join(','), eventId, questionAnswer]);
     
     return true;
   } catch (error) {
-    console.error('Error updating SubEventID:', error);
+    console.error('Error updating SubEventIDs:', error);
     throw error;
   }
 }
@@ -92,58 +152,43 @@ router.post('/', async (req, res) => {
   try {
     const { causeName, actionType, questionAnswer, modalName } = req.body;
     
-    // Log the received data
+    console.log('\n=== NEW REQUEST RECEIVED ===');
     console.log('Received data:', { causeName, actionType, questionAnswer, modalName });
     
     // Connect to database
+    console.log('\n[1] Connecting to database...');
     connection = await connectToDatabase();
+    console.log('Database connection established');
     
     // Step 1: Find the initial EventID for modalName
+    console.log('\n[2] Finding initial event for modal:', modalName);
     const initialEventQuery = `
       SELECT EventID 
       FROM Tbl_Events_Main 
       WHERE EventName = ?
     `;
+    logQuery(initialEventQuery, [modalName]);
     const initialEventResult = await connection.query(initialEventQuery, [modalName]);
     
     if (initialEventResult.length === 0) {
       throw new Error(`No event found with name: ${modalName}`);
     }
     const initialEventId = initialEventResult[0].EventID;
+    console.log(`Found initial EventID: ${initialEventId}`);
     
     // Step 2: Traverse the hierarchy to find the EventID for causeName
-    let currentParentId = initialEventId;
-    let updatingEventId = null;
-    let hierarchyTraversed = false;
+    console.log('\n[3] Traversing hierarchy to find cause:', causeName);
+    const updatingEventId = await findEventIdInHierarchy(connection, initialEventId, causeName);
     
-    // First try to find in existing hierarchy
-    updatingEventId = await findEventIdByHierarchy(connection, currentParentId, causeName);
-    
-    // If not found, keep traversing up the hierarchy
-    while (!updatingEventId && !hierarchyTraversed) {
-      const parentQuery = `
-        SELECT ParentID 
-        FROM Tbl_Events_Main 
-        WHERE EventID = ?
-      `;
-      const parentResult = await connection.query(parentQuery, [currentParentId]);
-      
-      if (parentResult.length === 0 || !parentResult[0].ParentID) {
-        hierarchyTraversed = true;
-      } else {
-        currentParentId = parentResult[0].ParentID;
-        updatingEventId = await findEventIdByHierarchy(connection, currentParentId, causeName);
-      }
-    }
-    
-    // If still not found, create new entry (implementation depends on your requirements)
     if (!updatingEventId) {
       throw new Error(`Could not find event for cause: ${causeName} in hierarchy`);
     }
+    console.log(`\n[4] Found updating EventID: ${updatingEventId}`);
     
     // Step 3: If actionType is 'identify', update the question answer
     if (actionType === 'identify') {
-      const updateSuccess = await updateSubEventId(
+      console.log('\n[5] Action type is "identify", updating question mappings...');
+      const updateSuccess = await updateSubEventIds(
         connection, 
         initialEventId, 
         questionAnswer, 
@@ -153,6 +198,7 @@ router.post('/', async (req, res) => {
       if (!updateSuccess) {
         throw new Error('Failed to update question answer mapping');
       }
+      console.log('Successfully updated question mappings');
     }
     
     // Create the mapping object with timestamp
@@ -167,6 +213,7 @@ router.post('/', async (req, res) => {
     };
     
     // Read existing data or create new array if file doesn't exist
+    console.log('\n[6] Updating mapping file...');
     let existingData = [];
     try {
       const fileContent = await fs.readFile(MAPPING_FILE_PATH, 'utf8');
@@ -190,7 +237,7 @@ router.post('/', async (req, res) => {
       'utf8'
     );
     
-    console.log('Successfully saved mapping:', mappingEntry);
+    console.log('\n[7] Successfully saved mapping:', mappingEntry);
     
     res.status(200).json({
       success: true,
@@ -199,7 +246,7 @@ router.post('/', async (req, res) => {
     });
     
   } catch (error) {
-    console.error('Error in link_question_with_cause:', error);
+    console.error('\n[ERROR] in link_question_with_cause:', error);
     res.status(500).json({
       success: false,
       message: 'Failed to save mapping',
@@ -208,11 +255,14 @@ router.post('/', async (req, res) => {
   } finally {
     if (connection) {
       try {
+        console.log('\n[8] Closing database connection...');
         await connection.close();
+        console.log('Database connection closed');
       } catch (err) {
         console.error('Error closing connection:', err);
       }
     }
+    console.log('\n=== REQUEST PROCESSING COMPLETE ===\n');
   }
 });
 

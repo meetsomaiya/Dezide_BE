@@ -74,29 +74,18 @@ router.get('/', async (req, res) => {
             CauseName: record.EventName,                     // VARCHAR
             CreatedBy: record.CreatedBy,                     // VARCHAR
             UpdatedBy: record.UpdatedBy,                     // VARCHAR
-            hasQuestionAnswer: false                         // Initialize as false
         }));
 
-        // Check for sub-causes and question answers for each related EventID
+        // Check for sub-causes for each related EventID
         for (const cause of organizedCauseObjects) {
-            // Check for sub-causes
             const subCauseQuery = `
                 SELECT COUNT(1) AS Count
                 FROM [Tbl_Events_Main]
                 WHERE [ParentID] = ? AND [IsActive] = 1
             `;
             const subCauseResult = await connection.query(subCauseQuery, [cause.EventID]);
-            cause.internalSubCause = (subCauseResult[0].Count > 0);
 
-            // Check if this EventID exists in Tbl_Question_Answer
-            const questionAnswerQuery = `
-                SELECT COUNT(1) AS Count
-                FROM [Tbl_Question_Answer]
-                WHERE [SubEventID] LIKE '%' + CAST(? AS VARCHAR) + '%'
-                OR [SubEventID] = CAST(? AS VARCHAR)
-            `;
-            const questionAnswerResult = await connection.query(questionAnswerQuery, [cause.EventID, cause.EventID]);
-            cause.hasQuestionAnswer = (questionAnswerResult[0].Count > 0);
+            cause.internalSubCause = (subCauseResult[0].Count > 0); // Set flag based on sub-cause presence
         }
 
         // Prepare data for JSON file and response

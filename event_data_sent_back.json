@@ -10,6 +10,21 @@
     "ProbabilityPercentage": null,
     "EventName": "nowork",
     "CreatedBy": "40139",
-    "UpdatedBy": "40139"
+    "UpdatedBy": "40139",
+    "hasQuestionAnswer": true
+  },
+  {
+    "EventID": 592,
+    "ModelID": 1,
+    "ParentID": 587,
+    "IsParent": "0",
+    "CreatedOn": "2025-04-07 16:03:05.0000000",
+    "UpdatedOn": "2025-04-07 16:03:05.0000000",
+    "IsActive": "1",
+    "ProbabilityPercentage": null,
+    "EventName": "Untitled Nested SubCause 9964274872",
+    "CreatedBy": "40139",
+    "UpdatedBy": "40139",
+    "hasQuestionAnswer": true
   }
 ]

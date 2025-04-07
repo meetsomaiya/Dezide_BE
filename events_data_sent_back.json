@@ -1,6 +1,6 @@
 {
   "eventName": "nocook",
-  "timestamp": "2025-04-02 18:18:58",
+  "timestamp": "2025-04-07 17:42:55",
   "mainData": {
     "EventID": 584,
     "ModelID": 1,
@@ -11,7 +11,8 @@
     "IsActive": "1",
     "CreatedBy": "40139",
     "UpdatedBy": "40139",
-    "EventName": "nocook"
+    "EventName": "nocook",
+    "hasQuestionAnswer": false
   },
   "tblTopCauseData": [
     {
@@ -20,13 +21,29 @@
       "ParentID": 584,
       "IsParent": "0",
       "CreatedOn": "2025-03-20 15:11:59.0000000",
-      "UpdatedOn": "2025-03-20 15:11:59.0000000",
+      "UpdatedOn": "2025-04-07 16:30:12.0000000",
       "IsActive": "1",
       "TopCauseName": "donk",
-      "ProbabilityPercentage": 49,
+      "ProbabilityPercentage": 33,
       "CreatedBy": "40139",
       "UpdatedBy": "40139",
-      "internalCause": false
+      "internalCause": false,
+      "hasQuestionAnswer": true
+    },
+    {
+      "EventID": 591,
+      "ModelID": 1,
+      "ParentID": 584,
+      "IsParent": "0",
+      "CreatedOn": "2025-04-03 09:46:46.0000000",
+      "UpdatedOn": "2025-04-07 16:30:12.0000000",
+      "IsActive": "1",
+      "TopCauseName": "worstcase",
+      "ProbabilityPercentage": 32,
+      "CreatedBy": "40139",
+      "UpdatedBy": "40139",
+      "internalCause": false,
+      "hasQuestionAnswer": false
     },
     {
       "EventID": 585,
@@ -34,54 +51,44 @@
       "ParentID": 584,
       "IsParent": "1",
       "CreatedOn": "2025-03-20 15:11:19.0000000",
-      "UpdatedOn": "2025-03-20 15:11:59.0000000",
+      "UpdatedOn": "2025-04-07 16:30:12.0000000",
       "IsActive": "1",
       "TopCauseName": "nice",
-      "ProbabilityPercentage": 51,
+      "ProbabilityPercentage": 34,
       "CreatedBy": "40139",
       "UpdatedBy": "40139",
-      "internalCause": true
+      "internalCause": true,
+      "hasQuestionAnswer": true
     }
   ],
   "eventObject": [
     {
-      "EventID": 584,
-      "RootID": 584,
-      "EventName": "nocook",
-      "ProbabilityPercentage": null,
-      "IsParent": "1",
-      "ParentID": 0,
-      "ActionID": 169,
-      "ActionName": "Untitled Action",
-      "ActionTime": "0",
-      "ActionCost": 0,
-      "Level": 0
-    },
-    {
       "EventID": 585,
       "RootID": 584,
       "EventName": "nice",
-      "ProbabilityPercentage": 51,
+      "ProbabilityPercentage": 34,
       "IsParent": "1",
       "ParentID": 584,
       "ActionID": 168,
       "ActionName": "smartwork",
       "ActionTime": "89",
       "ActionCost": 99,
-      "Level": 1
+      "Level": 1,
+      "hasQuestionAnswer": true
     },
     {
       "EventID": 589,
       "RootID": 584,
       "EventName": "donk",
-      "ProbabilityPercentage": 49,
+      "ProbabilityPercentage": 33,
       "IsParent": "0",
       "ParentID": 584,
       "ActionID": 159,
       "ActionName": "Untitled Action",
       "ActionTime": null,
       "ActionCost": null,
-      "Level": 1
+      "Level": 1,
+      "hasQuestionAnswer": true
     }
   ]
 }

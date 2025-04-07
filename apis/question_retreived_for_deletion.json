@@ -130,5 +130,41 @@
     "deletedAt": "2025-04-02 06:56:56",
     "status": "deleted",
     "ipAddress": "::1"
+  },
+  {
+    "questionName": "good",
+    "modelName": "nocook",
+    "eventId": 584,
+    "questionId": 107,
+    "deletedAt": "2025-04-04 01:14:21",
+    "status": "deleted",
+    "ipAddress": "::1"
+  },
+  {
+    "questionName": "walker",
+    "modelName": "nocook",
+    "eventId": 584,
+    "questionId": 109,
+    "deletedAt": "2025-04-04 01:20:24",
+    "status": "deleted",
+    "ipAddress": "::1"
+  },
+  {
+    "questionName": "Untitled Question 5319626",
+    "modelName": "nocook",
+    "eventId": 584,
+    "questionId": 108,
+    "deletedAt": "2025-04-04 01:21:37",
+    "status": "deleted",
+    "ipAddress": "::1"
+  },
+  {
+    "questionName": "superb",
+    "modelName": "nocook",
+    "eventId": 584,
+    "questionId": 110,
+    "deletedAt": "2025-04-04 05:48:39",
+    "status": "deleted",
+    "ipAddress": "::1"
   }
 ]

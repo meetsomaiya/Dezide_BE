@@ -63,49 +63,9 @@ router.get('/', async (req, res) => {
             FROM [Tbl_Events_Main]
             WHERE [ParentID] = ? AND [IsActive] = 1
         `;
-        let childEventResult = await dbConnection.query(childEventQuery, [eventID]);
+        const childEventResult = await dbConnection.query(childEventQuery, [eventID]);
 
         console.log('Fetched Child Event Data:', childEventResult);
-
-        // Get all unique EventIDs from the child events
-        const eventIds = childEventResult.map(event => event.EventID);
-        
-        if (eventIds.length > 0) {
-            // Query Tbl_Question_Answer to find which events have associated Q&A
-            const qaQuery = `
-                SELECT [SubEventID]
-                FROM [Tbl_Question_Answer]
-                WHERE [IsActive] = 1
-            `;
-            const qaResults = await dbConnection.query(qaQuery);
-            
-            // Create a Set of all EventIDs that have Q&A
-            const eventsWithQA = new Set();
-            
-            qaResults.forEach(qa => {
-                if (qa.SubEventID) {
-                    // Split comma-separated SubEventIDs and add each to the Set
-                    qa.SubEventID.split(',').forEach(id => {
-                        const trimmedId = id.trim();
-                        if (trimmedId) {
-                            eventsWithQA.add(trimmedId);
-                        }
-                    });
-                }
-            });
-            
-            // Add hasQuestionAnswer flag to each event
-            childEventResult = childEventResult.map(event => ({
-                ...event,
-                hasQuestionAnswer: eventsWithQA.has(event.EventID.toString())
-            }));
-        } else {
-            // If no child events, ensure each has the flag set to false
-            childEventResult = childEventResult.map(event => ({
-                ...event,
-                hasQuestionAnswer: false
-            }));
-        }
 
         // Prepare the data to save to a JSON file
         const filePath = './event_data_sent_back.json';

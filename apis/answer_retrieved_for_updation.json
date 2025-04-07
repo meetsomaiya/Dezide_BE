@@ -1,15 +1,15 @@
 {
-  "timestamp": "2025-04-02T12:30:49.953Z",
+  "timestamp": "2025-04-07T11:30:27.206Z",
   "metadata": {
     "modalName": "nocook",
     "source": "answer-edit-endpoint",
     "actualEventID": 584,
-    "questionID": 107
+    "questionID": 111
   },
   "updateDetails": {
-    "oldAnswer": "Untitled Answer 433014",
-    "newAnswer": "Untitled Answer 433014",
-    "questionName": "good",
+    "oldAnswer": "cook",
+    "newAnswer": "cook",
+    "questionName": "mouse",
     "requestedEventID": 584,
     "rowsAffected": 1
   }

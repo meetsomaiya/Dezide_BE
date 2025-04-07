@@ -1,5 +1,5 @@
 {
-  "mainEvent": "guideno7",
+  "mainEvent": "nocook",
   "causes": [
     {
       "causeName": "Untitled Cause",
@@ -7,8 +7,18 @@
       "subcauses": []
     },
     {
+      "causeName": "donk",
+      "probability": 33,
+      "subcauses": []
+    },
+    {
+      "causeName": "worstcase",
+      "probability": 32,
+      "subcauses": []
+    },
+    {
       "causeName": "nice",
-      "probability": 100,
+      "probability": 34,
       "subcauses": []
     }
   ]

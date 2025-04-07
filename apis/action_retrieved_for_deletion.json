@@ -36,5 +36,14 @@
     "childEventId": 589,
     "childEventName": "donk",
     "rowsAffected": 1
+  },
+  {
+    "timestamp": "2025-04-04 00:18:00",
+    "action": "Untitled Action",
+    "model": "nocook",
+    "deleted": true,
+    "deletedFromChild": false,
+    "eventId": 584,
+    "rowsAffected": 1
   }
 ]
