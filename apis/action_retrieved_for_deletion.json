@@ -45,5 +45,16 @@
     "deletedFromChild": false,
     "eventId": 584,
     "rowsAffected": 1
+  },
+  {
+    "timestamp": "2025-04-29 05:19:07",
+    "action": "Untitled Action",
+    "model": "dummywork",
+    "deleted": true,
+    "deletedFromChild": true,
+    "eventId": 584,
+    "childEventId": 589,
+    "childEventName": "donk",
+    "rowsAffected": 1
   }
 ]

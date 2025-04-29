@@ -1,6 +1,6 @@
 {
-  "eventName": "nocook",
-  "timestamp": "2025-04-07 17:42:55",
+  "eventName": "dummywork",
+  "timestamp": "2025-04-29 15:01:22",
   "mainData": {
     "EventID": 584,
     "ModelID": 1,
@@ -11,7 +11,7 @@
     "IsActive": "1",
     "CreatedBy": "40139",
     "UpdatedBy": "40139",
-    "EventName": "nocook",
+    "EventName": "dummywork",
     "hasQuestionAnswer": false
   },
   "tblTopCauseData": [
@@ -63,6 +63,20 @@
   ],
   "eventObject": [
     {
+      "EventID": 584,
+      "RootID": 584,
+      "EventName": "dummywork",
+      "ProbabilityPercentage": null,
+      "IsParent": "1",
+      "ParentID": 0,
+      "ActionID": 170,
+      "ActionName": "action1",
+      "ActionTime": "0",
+      "ActionCost": 0,
+      "Level": 0,
+      "hasQuestionAnswer": false
+    },
+    {
       "EventID": 585,
       "RootID": 584,
       "EventName": "nice",
@@ -73,20 +87,6 @@
       "ActionName": "smartwork",
       "ActionTime": "89",
       "ActionCost": 99,
-      "Level": 1,
-      "hasQuestionAnswer": true
-    },
-    {
-      "EventID": 589,
-      "RootID": 584,
-      "EventName": "donk",
-      "ProbabilityPercentage": 33,
-      "IsParent": "0",
-      "ParentID": 584,
-      "ActionID": 159,
-      "ActionName": "Untitled Action",
-      "ActionTime": null,
-      "ActionCost": null,
       "Level": 1,
       "hasQuestionAnswer": true
     }

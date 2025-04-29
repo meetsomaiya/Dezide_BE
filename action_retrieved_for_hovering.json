@@ -1,8 +1,7 @@
 {
-  "actionName": "Untitled Action",
+  "actionName": "action1",
   "causes": [
-    "donk",
-    "nocook"
+    "dummywork"
   ],
-  "timestamp": "2025-04-07T17:43:05+05:30"
+  "timestamp": "2025-04-29T15:01:24+05:30"
 }

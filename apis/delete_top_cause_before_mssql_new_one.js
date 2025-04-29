@@ -6,7 +6,7 @@ const { connectToDatabase } = require('./connect2.js');
 
 const router = express.Router();
 
-// Set up CORS middleware (unchanged)
+// Set up CORS middleware
 router.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
@@ -18,7 +18,7 @@ router.use((req, res, next) => {
 
 router.use(express.json());
 
-// Helper function to save detailed cause data (unchanged)
+// Helper function to save detailed cause data
 const saveCauseDetailData = (data) => {
   const filePath = path.join(__dirname, 'top_cause_detail_for_deletion.json');
   const timestamp = moment().tz('America/New_York').format('YYYY-MM-DD HH:mm:ss');
@@ -31,7 +31,7 @@ const saveCauseDetailData = (data) => {
   console.log('✅ Detailed cause data saved to:', filePath);
 };
 
-// Improved getEventHierarchy with proper connection management
+// Improved getEventHierarchy with proper connection management and additional tables
 async function getEventHierarchy(name) {
   let connection;
   try {
@@ -47,6 +47,18 @@ async function getEventHierarchy(name) {
     }
     
     const eventId = mainEventResult[0].EventID;
+    
+    // Get Questions for this event
+    const questionsQuery = `SELECT * FROM Tbl_Questions WHERE EventID = ?`;
+    const questions = await connection.query(questionsQuery, [eventId]);
+    
+    // Get Question Answers for this event
+    const questionAnswersQuery = `SELECT * FROM Tbl_Question_Answer WHERE EventID = ?`;
+    const questionAnswers = await connection.query(questionAnswersQuery, [eventId]);
+    
+    // Get Actions for this event
+    const actionsQuery = `SELECT * FROM Tbl_Actions WHERE EventID = ?`;
+    const actions = await connection.query(actionsQuery, [eventId]);
     
     // Get causes (direct children)
     const causesQuery = `SELECT * FROM Tbl_Events_Main WHERE ParentID = ?`;
@@ -93,6 +105,9 @@ async function getEventHierarchy(name) {
     const fullHierarchy = {
       eventId,
       name,
+      questions,
+      questionAnswers,
+      actions,
       causes: causesWithSubcauses
     };
     
@@ -114,7 +129,7 @@ async function getEventHierarchy(name) {
   }
 }
 
-// Get event hierarchy endpoint (unchanged)
+// Get event hierarchy endpoint
 router.post('/', async (req, res) => {
   try {
     const { name } = req.body;
