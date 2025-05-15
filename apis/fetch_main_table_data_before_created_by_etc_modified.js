@@ -27,6 +27,19 @@ router.get('/', async (req, res) => {
 
         const eventModelMap = []; // To store the complete data structure
 
+        // Get the current date and time in Indian Standard Time
+        const currentDate = new Date();
+        const istOffset = 5.5 * 60 * 60 * 1000; // Offset for IST in milliseconds
+        const istDate = new Date(currentDate.getTime() + istOffset);
+        const formattedDateTime = istDate.toLocaleString('en-US', {
+            month: 'short',
+            day: '2-digit',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+        });
+
         for (const row of eventResult) {
             const { EventName, ModelID } = row;
 
@@ -36,26 +49,15 @@ router.get('/', async (req, res) => {
 
             const modelNameArray = modelResult.map(modelRow => modelRow.ModelName);
 
-            // Query to fetch additional fields for the EventName
-            const queryEventDetails = `
-                SELECT UpdatedOn, UpdatedBy, CreatedOn, CreatedBy 
-                FROM Tbl_Events_Main 
-                WHERE EventName = ?
-            `;
-            const eventDetailsResult = await connection.query(queryEventDetails, [EventName]);
-
-            // Extract the required fields from the query result
-            const { UpdatedOn, UpdatedBy, CreatedOn, CreatedBy } = eventDetailsResult[0];
-
             // Add all the required fields
             eventModelMap.push({
                 EventName,
                 ModelNames: modelNameArray,
                 language: ["us"],
-                lastChange: UpdatedOn,
-                lastChangeBy: UpdatedBy,
-                published: CreatedOn,
-                createdBy: CreatedBy,
+                lastChange: formattedDateTime,
+                lastChangeBy: "Meet Somaiya",
+                published: formattedDateTime,
+                createdBy: "Meet Somaiya",
                 version: 1
             });
         }

@@ -1,14 +1,8 @@
 {
-  "cause": "nice",
-  "eventId": 585,
-  "actions": [
-    "smartwork"
-  ],
-  "questions": [
-    "mouse"
-  ],
-  "questionAnswers": [
-    "cook"
-  ],
-  "timestamp": "2025-04-29 15:02:10"
+  "cause": "Untitled Cause 2",
+  "eventId": 638,
+  "actions": [],
+  "questions": [],
+  "questionAnswers": [],
+  "timestamp": "2025-05-15 10:44:16"
 }

@@ -40,27 +40,41 @@ router.get('/', async (req, res) => {
       return res.status(404).json({ error: 'ActionName not found' });
     }
 
-    // Extract EventID from the first query result
     const eventID = actionResult[0].EventID;
+    const causes = [];
 
-    // Step 2: Fetch the EventName for the retrieved EventID
-    const eventQuery = `SELECT [EventID], [EventName]
-                        FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
-                        WHERE EventID = ?`;
+    // Step 2: Recursively get EventNames and ParentIDs
+    let currentEventID = eventID;
 
-    const eventResult = await dbConnection.query(eventQuery, [eventID]);
+    while (currentEventID) {
+      const eventQuery = `SELECT [EventID], [ParentID], [IsParent], [EventName]
+                          FROM [Dezide_UAT].[dbo].[Tbl_Events_Main]
+                          WHERE EventID = ?`;
 
-    if (eventResult.length === 0) {
-      return res.status(404).json({ error: 'EventID not found in Tbl_Events_Main' });
+      const eventResult = await dbConnection.query(eventQuery, [currentEventID]);
+
+      if (eventResult.length === 0) {
+        break;
+      }
+
+      const eventName = eventResult[0].EventName;
+      const parentID = eventResult[0].ParentID;
+
+      causes.push(eventName);
+
+      // Move to the next level (ParentID) for the next query
+      currentEventID = parentID;
+
+      // If there's no ParentID (IsParent is false), stop the loop
+      if (!parentID || eventResult[0].IsParent === 0) {
+        break;
+      }
     }
-
-    // Extract the EventName (cause) from the query result
-    const eventName = eventResult[0].EventName;
 
     // Write the data to the JSON file
     const dataToWrite = {
       actionName: actionName,
-      causes: [eventName], // Wrap the single cause in an array for consistency
+      causes: causes,
       timestamp: moment().format(),
     };
 
@@ -71,7 +85,7 @@ router.get('/', async (req, res) => {
       }
 
       // Send a success response back to the client
-      res.status(200).json({ message: 'Data logged successfully', causes: [eventName] });
+      res.status(200).json({ message: 'Data logged successfully', causes: causes });
     });
 
     // Don't forget to close the connection when done

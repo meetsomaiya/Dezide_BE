@@ -1,5 +1,5 @@
 {
-  "mainEvent": "nocook",
+  "mainEvent": "worknow",
   "causes": [
     {
       "causeName": "Untitled Cause",
@@ -7,18 +7,18 @@
       "subcauses": []
     },
     {
-      "causeName": "donk",
-      "probability": 33,
+      "causeName": "cookmeet",
+      "probability": 31,
       "subcauses": []
     },
     {
-      "causeName": "worstcase",
-      "probability": 32,
+      "causeName": "Untitled Cause 2",
+      "probability": 39,
       "subcauses": []
     },
     {
-      "causeName": "nice",
-      "probability": 34,
+      "causeName": "Untitled Cause 3",
+      "probability": 31,
       "subcauses": []
     }
   ]
