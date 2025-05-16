@@ -51,8 +51,8 @@ async function fetchEventNames(connection, subEventIds) {
 router.post('/', async (req, res) => {
   let connection;
   try {
-    const { answer, questionName, modalName } = req.body; // Retrieve parameters from the request body
-
+    const { answer, questionName, modalName } = req.body;
+    
     if (!answer || !questionName || !modalName) {
       return res.status(400).json({ 
         error: 'answer, questionName and modalName are all required' 
@@ -118,27 +118,36 @@ router.post('/', async (req, res) => {
       }
     }
 
+    // Read existing data
+    let existingData = {};
+    try {
+      const fileContent = await fs.readFile(HOVERING_ITEMS_FILE, 'utf-8');
+      existingData = JSON.parse(fileContent);
+    } catch (error) {
+      if (error.code !== 'ENOENT') {
+        throw error;
+      }
+    }
+
     // Create a composite key to store all answer-question-modal combinations
     const recordKey = `${questionName}_${answer.substring(0, 20).replace(/\s+/g, '_')}`;
     
-    // Prepare the data to be written to the JSON file
-    const newRecord = {
-      [recordKey]: {
-        answer,
-        questionName,
-        modalName,
-        eventId,
-        questionId,
-        subEventIds,
-        eventNames,
-        timestamp: new Date().toISOString()
-      }
+    // Store all three parameters with timestamp
+    existingData[recordKey] = {
+      answer,
+      questionName,
+      modalName,
+      eventId,
+      questionId,
+      subEventIds,
+      eventNames,
+      timestamp: new Date().toISOString()
     };
 
-    // Write the new record to the JSON file (append or overwrite)
+    // Write back to file
     await fs.writeFile(
       HOVERING_ITEMS_FILE,
-      JSON.stringify(newRecord, null, 2),
+      JSON.stringify(existingData, null, 2),
       'utf-8'
     );
 

@@ -1,8 +1,8 @@
 {
-  "actionName": "Ensure correct parameter setting of MFR",
-  "timestamp": "2025-05-15T04:00:28.893Z",
+  "actionName": "Check power cables for any damage in T4 section",
+  "timestamp": "2025-05-16T11:49:41.228Z",
   "record": {
-    "actionExplaination": "Check the MFR parameter and verify the CT ratio andmeasurement limit parameter in analog values through SC-Commander.\nDifferent MFR version has different parameter file and some of the MFR parameter can be site specific soensure to upload correct parameter file if any deviation noticed in existing parameter file.",
+    "actionExplaination": "Check power cables over the drum and in the cable loop for any insulation damage or short circuit. Repair\\replace the cable if required.",
     "actionImage": "data:image/png;base64,null",
     "isActive": "1"
   }

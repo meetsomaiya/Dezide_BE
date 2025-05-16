@@ -48,10 +48,10 @@ async function fetchEventNames(connection, subEventIds) {
 }
 
 // Endpoint to fetch and store hovering data
-router.post('/', async (req, res) => {
+router.get('/', async (req, res) => {
   let connection;
   try {
-    const { answer, questionName, modalName } = req.body; // Retrieve parameters from the request body
+    const { answer, questionName, modalName } = req.query; // Retrieve parameters from query string
 
     if (!answer || !questionName || !modalName) {
       return res.status(400).json({ 

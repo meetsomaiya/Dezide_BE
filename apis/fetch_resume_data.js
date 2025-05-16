@@ -1,10 +1,10 @@
 const express = require('express');
-const moment = require('moment-timezone'); // For working with timezones
-const { connectToDatabase } = require('./connect2.js'); // Database connection function
+const moment = require('moment-timezone');
+const { connectToDatabase } = require('./connect2.js');
+const fs = require('fs');
 
-const router = express.Router(); // Define the router
+const router = express.Router();
 
-// Middleware: Set up CORS
 router.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
@@ -14,64 +14,65 @@ router.use((req, res, next) => {
     next();
 });
 
-// Middleware: Parse JSON bodies for POST requests
-router.use(express.json()); // Ensure body is parsed as JSON
+router.use(express.json());
 
-// Endpoint to fetch resume data
-router.post('/', async (req, res) => {
+router.get('/', async (req, res) => {
+    const session_id = req.query.session_id;
+
+    if (!session_id) {
+        return res.status(400).json({ error: 'Session ID is required.' });
+    }
+
+    // Write session_id to file
+    fs.writeFileSync(
+        'session_id_retrieved_for_resume.json',
+        JSON.stringify({ session_id }, null, 4),
+        'utf8'
+    );
+
     try {
-        const { session_id } = req.body;
+        const connection = await connectToDatabase();
 
-        if (!session_id) {
-            return res.status(400).json({ error: 'Session ID is required.' });
-        }
-
-        // Connect to the database
-        const dbConnection = await connectToDatabase();
-
-        // Query to fetch the session data
+        // Select 'time' first, then all other columns
         const query = `
             SELECT 
-                [time], 
+                [time],
+                [model_name],
+                [session_id],
+                [solved],
+                [diagnosis],
+                [performed_steps],
+                [total_steps],
+                [step_type],
+                [step_name],
+                [step_answer],
+                [step_operation],
                 [order],
-                [model_name], 
-                [session_id], 
-                [solved], 
-                [diagnosis], 
-                [performed_steps], 
-                [total_steps], 
-                [step_type], 
-                [step_name], 
-                [step_answer], 
-                [step_operation], 
-                [sequence_step_type], 
-                [sequence_step_name], 
-                [sequence_step_answer], 
+                [sequence_step_type],
+                [sequence_step_name],
+                [sequence_step_answer],
                 [sequence_step_operation]
-            FROM Dezide_UAT.dbo.your_table_name 
-            WHERE session_id = ?;
+            FROM session_info
+            WHERE session_id = ?
         `;
+        const result = await connection.query(query, [session_id]);
+        await connection.close();
 
-        // Execute the query with the provided session_id
-        const result = await dbConnection.query(query, [session_id]);
+        // Write result to file
+        fs.writeFileSync(
+            'response_for_sesion_id_sent_back.json',
+            JSON.stringify(result, null, 4),
+            'utf8'
+        );
 
-        // Close the database connection
-        await dbConnection.close();
-
-        if (result.length === 0) {
-            return res.status(404).json({ error: 'No data found for the provided session ID.' });
-        }
-
-        // Respond with the data
-        res.status(200).json({
-            message: 'Session data retrieved successfully.',
-            data: result, // Sending back the queried data
+        res.status(200).json(result);
+    } catch (err) {
+        res.status(500).json({
+            error: 'Database error',
+            details: err.message,
+            stack: err.stack
         });
-    } catch (error) {
-        console.error('Error fetching session data:', error);
-        res.status(500).json({ error: 'An error occurred while fetching session data.' });
     }
 });
 
-// Export the router
 module.exports = router;
